@@ -120,11 +120,11 @@ nav:
   - Indicatieregister:
       - indicatieregister/index.md
       - Indicatieregister 2: 
-          - indicatieregister-2/index.md
-          - Autorisatiematrix: indicatieregister-2/autorisatiematrix.md
+          - indicatieregister/indicatieregister-2/index.md
+          - Autorisatiematrix: indicatieregister/indicatieregister-2/autorisatiematrix.md
           - Raadplegen: 
-              - indicatieregister-2/raadplegen.md
-              - ucir-0001: indicatieregister-2/raadplegen/ucir-0001-raadplegen.md
+              - indicatieregister/indicatieregister-2/raadplegen.md
+              - ucir-0001: indicatieregister/indicatieregister-2/raadplegen/ucir-0001-raadplegen.md
   - Bemiddelingsregister:
       - bemiddelingsregister/bemiddelingsregister.md
   - Leveringsregister:
