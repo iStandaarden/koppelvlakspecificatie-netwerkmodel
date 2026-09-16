@@ -46,7 +46,7 @@ theme:
     - navigation.footer
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.expand
+    # - navigation.expand
     - navigation.indexes
     - navigation.path
     - search.highlight
@@ -125,6 +125,8 @@ nav:
           - Raadplegen: 
               - indicatieregister/indicatieregister-2/raadplegen/index.md
               - ucir-0001: indicatieregister/indicatieregister-2/raadplegen/ucir-0001-raadplegen.md
+      - Indicatieregister 3: 
+          - indicatieregister/indicatieregister-3/index.md
   - Bemiddelingsregister:
       - bemiddelingsregister/index.md
   - Leveringsregister:
