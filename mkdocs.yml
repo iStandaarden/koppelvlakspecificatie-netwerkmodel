@@ -126,6 +126,6 @@ nav:
               - indicatieregister/indicatieregister-2/raadplegen/index.md
               - ucir-0001: indicatieregister/indicatieregister-2/raadplegen/ucir-0001-raadplegen.md
   - Bemiddelingsregister:
-      - bemiddelingsregister/bemiddelingsregister.md
+      - bemiddelingsregister/index.md
   - Leveringsregister:
-      - leveringsregister/leveringsregister.md
+      - leveringsregister/index.md
