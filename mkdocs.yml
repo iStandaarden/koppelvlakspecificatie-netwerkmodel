@@ -1,10 +1,10 @@
 # Site information
-site_name: Implementatiehandleidingen Netwerkmodel
-site_url: https://istandaarden.github.io/implementatiehandleiding-netwerkmodel/
+site_name: Koppelvlakspecificatie Netwerkmodel
+site_url: https://istandaarden.github.io/koppelvlakspecificatie-netwerkmodel/
 
 # Repository information
-repo_url: https://github.com/iStandaarden/implementatiehandleiding-netwerkmodel
-repo_name: iStandaarden/implementatiehandleiding-netwerkmodel
+repo_url: https://github.com/iStandaarden/koppelvlakspecificatie-netwerkmodel
+repo_name: iStandaarden/koppelvlakspecificatie-netwerkmodel
 
 # Theme configuration
 theme:
@@ -12,8 +12,8 @@ theme:
   language: nl
   icon:
     repo: fontawesome/brands/github
-    logo: material/cog-transfer-outline
-  favicon: assets/cog-transfer-outline-custom.png
+    logo: material/graphql
+  favicon: assets/graphql-custom.png
   custom_dir: docs/overrides
   palette:
     # Palette toggle for automatic mode
@@ -117,5 +117,15 @@ nav:
       - index.md
       - Versiebeheer: welkom/versiebeheer.md
       - Release notes: welkom/release-notes.md
-  - Zorgaanbieder:
-      - zorgaanbieder/ta-zorgaanbieder.md
+  - Indicatieregister:
+      - indicatieregister/index.md
+      - Indicatieregister 2: 
+        - indicatieregister-2/index.md
+        - Autorisatiematrix: indicatieregister-2/autorisatiematrix.md
+        - Raadplegen: 
+          - indicatieregister-2/raadplegen.md
+          - ucir-0001: indicatieregister-2/raadplegen/ucir-0001-raadplegen.md
+  - Bemiddelingsregister:
+      - bemiddelingsregister/bemiddelingsregister.md
+  - Leveringsregister:
+      - leveringsregister/leveringsregister.md
