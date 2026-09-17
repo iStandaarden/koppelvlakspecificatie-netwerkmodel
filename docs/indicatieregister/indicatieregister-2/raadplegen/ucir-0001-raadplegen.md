@@ -1,6 +1,4 @@
-# ucir-0001-raadplegen
-
-## Raadplegen van Wlz-indicatie door initieel verantwoordelijk Zorgkantoor (UCIR-0001) 
+# Raadplegen van Wlz-indicatie door initieel verantwoordelijk Zorgkantoor (UCIR-0001) 
 
 ```mermaid
 ---

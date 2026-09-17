@@ -117,17 +117,22 @@ nav:
       - index.md
       - Versiebeheer: welkom/versiebeheer.md
       - Release notes: welkom/release-notes.md
+  - Leeswijzer:
+      - leeswijzer/index.md
+      - Raadplegen: leeswijzer/raadplegen.md
   - Indicatieregister:
       - indicatieregister/index.md
       - Indicatieregister 2: 
           - indicatieregister/indicatieregister-2/index.md
-          - Autorisatiematrix: indicatieregister/indicatieregister-2/autorisatiematrix.md
           - Raadplegen: 
               - indicatieregister/indicatieregister-2/raadplegen/index.md
               - ucir-0001: indicatieregister/indicatieregister-2/raadplegen/ucir-0001-raadplegen.md
+          - Autorisatiematrix: indicatieregister/indicatieregister-2/autorisatiematrix.md
       - Indicatieregister 3: 
           - indicatieregister/indicatieregister-3/index.md
   - Bemiddelingsregister:
       - bemiddelingsregister/index.md
   - Leveringsregister:
       - leveringsregister/index.md
+  - Generiek:
+      - generiek/index.md
