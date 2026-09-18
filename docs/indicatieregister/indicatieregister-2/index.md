@@ -1,6 +1,8 @@
 # Indicatieregister 2
 
-Hier de documentatie bij en verwijzing naar de koppelvlakspecificatie van het Indicatieregister 2
+!!! info "Status: In productie" 
+
+Documentatie bij de koppelvlakspecificatie van het **Indicatieregister 2**
 
 ## Specificaties en documentatie
 

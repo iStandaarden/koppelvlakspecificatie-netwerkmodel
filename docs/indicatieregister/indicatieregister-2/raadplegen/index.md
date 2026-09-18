@@ -40,7 +40,7 @@ Kies een use-case voor de beschrijving van het raadplegen of controleren van de 
 
 | Doel | toelichting | raadplegen | toegangscontrole |
 | :-- |:-- | :-- | :-- |
-| Wlz Indicatie raadplegen | **Als** zorgaanbieder die betrokken is bij het leveren van zorg, **wil ik** de Wlz Indicatie raadplegen van de client waar ik een bemiddelingsspecificatie heb, **zodat** ik inzicht heb in de geïndiceerde zorg  | [UCIR-0002-raadplegen](/raadplegen/zorgaanbieder/UCIR-0002-raadplegen.md) | [UCIR-0002-toegangscontrole](/raadplegen/zorgaanbieder/UCIR-0002-toegangscontrole.md) |
+| Wlz Indicatie raadplegen | **Als** zorgaanbieder die betrokken is bij het leveren van zorg, **wil ik** de Wlz Indicatie raadplegen van de client waar ik een bemiddelingsspecificatie heb, **zodat** ik inzicht heb in de geïndiceerde zorg  | [UCIR-0002-raadplegen](./ucir-0002-raadplegen.md) | [UCIR-0002-toegangscontrole](../toegangscontrole/UCIR-0002-toegangscontrole.md) |
 
 
 ### Zorgkantoor
