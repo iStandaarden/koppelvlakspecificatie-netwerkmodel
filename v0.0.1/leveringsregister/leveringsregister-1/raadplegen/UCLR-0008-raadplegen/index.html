@@ -1394,7 +1394,7 @@ flowchart LR
 </thead>
 <tbody>
 <tr>
-<td><a href="/gql-query/zorgkantoor/QLR-0008-ZK.graphql"><strong>QLR-0008-ZK</strong></a></td>
+<td><a href="https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/zorgkantoor/QLR-0008-ZK.graphql"><strong>QLR-0008-ZK</strong>.graphql</a></td>
 <td>Op basis van de (ontvangen) afstelID en eigen identificatie, het Afstel en overig toegestane informatie raadplegen raadplegen</td>
 <td><code>afstelID</code>, <code>bemiddelingspecificatieID</code></td>
 <td>Afstel /  Levering /  Client / Uitstelperiode / Leveringperiode / Behandelingperiode</td>
@@ -1449,7 +1449,7 @@ stateDiagram
 </tr>
 <tr>
 <td style="text-align: right;">2.</td>
-<td style="text-align: left;">Zijn het <strong><code>afstelID</code></strong> en <strong><code>bemiddelingspecificatieID</code></strong> bekend? <br><ol><li> - <strong>Ja</strong> →  Ga verder naar stap 6 <br></li><li> - <strong>Nee</strong> → Wacht op notificatie <a href="/notificaties/"><strong><code>NIEUWE_AFSTEL_ZORGKANTOOR</code></strong> of <strong><code>GEWIJZIGDE_AFSTEL_ZORGKANTOOR</code></strong></a></li></ol></td>
+<td style="text-align: left;">Zijn het <strong><code>afstelID</code></strong> en <strong><code>bemiddelingspecificatieID</code></strong> bekend? <br><ol><li> - <strong>Ja</strong> →  Ga verder naar stap 6 <br></li><li> - <strong>Nee</strong> → Wacht op notificatie <a href="../notificaties/"><strong><code>NIEUWE_AFSTEL_ZORGKANTOOR</code></strong> of <strong><code>GEWIJZIGDE_AFSTEL_ZORGKANTOOR</code></strong></a></li></ol></td>
 </tr>
 <tr>
 <td style="text-align: right;">4.</td>
@@ -1461,7 +1461,7 @@ stateDiagram
 </tr>
 <tr>
 <td style="text-align: right;">6.</td>
-<td style="text-align: left;">Het zorgkantoor vult het verplichte <strong><code>afstelID</code></strong> en <strong><code>bemiddelingspecificatieID</code></strong> in query-template <a href="/gql-query/zorgkantoor/QLR-0008-ZK.graphql">QLR-0008-ZK.graphql</a> en initieert een raadpleging van het afstel in het Leveringsregister.</td>
+<td style="text-align: left;">Het zorgkantoor vult het verplichte <strong><code>afstelID</code></strong> en <strong><code>bemiddelingspecificatieID</code></strong> in query-template <a href="https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/zorgkantoor/QLR-0008-ZK.graphql">QLR-0008-ZK.graphqlgraphql</a> en initieert een raadpleging van het afstel in het Leveringsregister.</td>
 </tr>
 <tr>
 <td style="text-align: right;">7.</td>
@@ -1469,7 +1469,7 @@ stateDiagram
 </tr>
 <tr>
 <td style="text-align: right;">8.</td>
-<td style="text-align: left;">De PEP voert de <a href="UCLR-0008-toegangscontrole.md">toegangscontrole</a> uit en stuurt bij toegang het request door naar het Leveringsregister.</td>
+<td style="text-align: left;">De PEP voert de <a href="../../toegangscontrole/UCLR-0008-toegangscontrole/">toegangscontrole</a> uit en stuurt bij toegang het request door naar het Leveringsregister.</td>
 </tr>
 <tr>
 <td style="text-align: right;">9.</td>
@@ -1481,8 +1481,6 @@ stateDiagram
 </tr>
 </tbody>
 </table>
-<hr>
-<p>Ga naar beschrijving van de bijbehorende <a href="UCLR-0008-toegangscontrole.md">toegangscontrole</a> | Terug naar <a href="/raadplegen/README.md">Raadplegen</a></p>
 
 
 

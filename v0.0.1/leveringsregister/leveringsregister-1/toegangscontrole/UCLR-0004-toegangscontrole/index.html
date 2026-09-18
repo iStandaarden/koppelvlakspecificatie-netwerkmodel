@@ -1359,7 +1359,7 @@ Voor de controle op de toegang van deze query is er een PIP controle nodig. De t
 <h3 id="action">Action<a class="headerlink" href="#action" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>Type:</strong> <code>raadplegen</code> (read)</li>
-<li><strong>Omschrijving:</strong> Uitvoeren van GraphQL-query <a href="/gql-query/zorgkantoor/QLR-0004-ZK.graphql">QLR-0004-ZK</a> op het Leveringsregister door een zorgkantoor.</li>
+<li><strong>Omschrijving:</strong> Uitvoeren van GraphQL-query <a href="https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/zorgkantoor/QLR-0004-ZK.graphql">QLR-0004-Zk.graphql</a> op het Leveringsregister door een zorgkantoor.</li>
 </ul>
 <h3 id="resource">Resource<a class="headerlink" href="#resource" title="Permanent link">¶</a></h3>
 <ul>
@@ -1483,27 +1483,25 @@ stateDiagram
 </tbody>
 </table>
 <p><strong>Controle query PIP:</strong>
-</p><div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>query PIPValidatie (
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  $bemiddelingspecificatieID: UUID! # afkomstig uit query
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  $uzovicodeZorgkantoor: String! # afkomstig uit Access-token
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>) {
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  bemiddelingspecificatie(
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    where: {
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>      bemiddelingspecificatieID: { eq: $bemiddelingspecificatieID }
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>      bemiddeling: { verantwoordelijkZorgkantoor: { eq: $uzovicodeZorgkantoor } }
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    }
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>  ) {
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    bemiddelingspecificatieID
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    uitvoerendZorgkantoor
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    bemiddeling {
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>      bemiddelingID
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>      verantwoordelijkZorgkantoor
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    }
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>  }
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>}
-</span></code></pre></div><p></p>
-<hr>
-<p>Ga naar <a href="/raadplegen/zorgkantoor/UCLR-0006-raadplegen.md">UC beschrijving raadplegen</a> -- Terug naar <a href="/raadplegen/README.md">Raadplegen</a></p>
+```gql
+query PIPValidatie (
+  $bemiddelingspecificatieID: UUID! # afkomstig uit query
+  $uzovicodeZorgkantoor: String! # afkomstig uit Access-token
+) {
+  bemiddelingspecificatie(
+    where: {
+      bemiddelingspecificatieID: { eq: $bemiddelingspecificatieID }
+      bemiddeling: { verantwoordelijkZorgkantoor: { eq: $uzovicodeZorgkantoor } }
+    }
+  ) {
+    bemiddelingspecificatieID
+    uitvoerendZorgkantoor
+    bemiddeling {
+      bemiddelingID
+      verantwoordelijkZorgkantoor
+    }
+  }
+}</p>
 
 
 

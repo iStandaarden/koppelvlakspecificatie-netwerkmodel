@@ -1403,7 +1403,7 @@ flowchart LR
 </thead>
 <tbody>
 <tr>
-<td><a href="/gql-query/aanbieder/QLR-0002-ZA.graphql">QLR-0002-ZA</a></td>
+<td><a href="https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/aanbieder/QLR-0002-ZA.graphql">QLR-0002-ZA.graphql</a></td>
 <td>Op basis van de (ontvangen) verzoekAanbiederID en eigen identiteit, het VerzoekAanbieder, Verzoek, Levering en Client raadplegen</td>
 <td><code>verzoekAanbiederID</code>, <code>agbcode</code></td>
 <td>VerzoekAanbieder, Verzoek, Levering, Client</td>
@@ -1411,7 +1411,7 @@ flowchart LR
 </tbody>
 </table>
 <h2 id="proces-raadplegen">Proces raadplegen<a class="headerlink" href="#proces-raadplegen" title="Permanent link">¶</a></h2>
-<p>Een aanbieder wordt opgenomen in VerzoekAanbieder bij een Verzoek. De aanbieder ontvangt hiervoor een notificatie <a href="/notificaties/aanbieder/nieuw_verzoekaanbieder_aanbieder.md">NIEUW_VERZOEKAANBIEDER_AANBIEDER</a>. Op basis van deze notificatie kan de aanbieder de informatie in het Leveringsregister raadplegen.</p>
+<p>Een aanbieder wordt opgenomen in VerzoekAanbieder bij een Verzoek. De aanbieder ontvangt hiervoor een notificatie <a href="../notificaties/aanbieder/nieuw_verzoekaanbieder_aanbieder.md">NIEUW_VERZOEKAANBIEDER_AANBIEDER</a>. Op basis van deze notificatie kan de aanbieder de informatie in het Leveringsregister raadplegen.</p>
 <h3 id="schematisch">Schematisch:<a class="headerlink" href="#schematisch" title="Permanent link">¶</a></h3>
 <p></p><pre class="mermaid-zoom"><code>---
 config:
@@ -1453,13 +1453,11 @@ stateDiagram
 | 2. | Is <code>verzoekAanbiederID</code> bekend?<br> - <strong>Ja</strong> -&gt; Ga verder naar stap 5 <br> - <strong>Nee</strong> -&gt; Wacht op notificatie [NIEUW_VERZOEKAANBIEDER_AANBIEDER]/notificaties/aanbieder/nieuw_verzoekaanbieder_aanbieder.md | 
 | 3. | Notificatie is ontvangen |
 | 4. | Gebruik de informatie uit de notificatie voor het raadplegen van het Leveringsregister |
-| 5. | De aanbieder vult <code>verzoekAanbiederID</code> in query-template <a href="/gql-query/aanbieder/QLR-0002-ZA.graphql">QLR-0002-ZA</a> en initieert een raadpleging |
+| 5. | De aanbieder vult <code>verzoekAanbiederID</code> in query-template <a href="https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/aanbieder/QLR-0002-ZA.graphql">QLR-0002-ZA.graphql</a> en initieert een raadpleging |
 | 6. | De <strong>aanbieder</strong> stuurt Graphql-request + Acces-token naar het Policy Enforcement Point (PEP) |
-| 7. | De PEP voert de <a href="/raadplegen/aanbieder/UCLR-0002-toegangscontrole.md">toegangscontrole</a> uit en stuurt bij toegang het request door naar het leveringsregister. |
+| 7. | De PEP voert de <a href="../../toegangscontrole/UCLR-0002-toegangscontrole/">toegangscontrole</a> uit en stuurt bij toegang het request door naar het leveringsregister. |
 | 8. | De aanbieder ontvangt response van de PEP (bij ongeldig verzoek) of vanuit het Leveringsregister (resource). |
 | 9. | <em>Einde proces</em> | <p></p>
-<hr>
-<p>Ga naar beschrijving van de bijbehorende <a href="/raadplegen/aanbieder/UCLR-0002-toegangscontrole.md">toegangscontrole</a> | Terug naar <a href="/raadplegen/README.md">Raadplegen</a></p>
 
 
 

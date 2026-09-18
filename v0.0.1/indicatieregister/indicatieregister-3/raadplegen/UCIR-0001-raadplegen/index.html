@@ -1373,7 +1373,7 @@ flowchart LR
 </thead>
 <tbody>
 <tr>
-<td><a href="/gql-query/zorgkantoor/QIR-0001-ZKi.graphql"><strong>QIR-0001-ZKi</strong></a></td>
+<td><a href="https://github.com/iStandaarden/iWlz-indicatie/tree/Indicatieregister-3/gql-query/zorgkantoor/QIR-0001-ZKi.graphql"><strong>QIR-0001-ZKi</strong>.graphql</a></td>
 <td>Op basis van de (ontvangen) wlzIndicatieID en eigen identificatie, de bijbehorende WlzIndicatie raadplegen inclusief cliëntgegevens</td>
 <td>wlzIndicatieID,  Uzovicode</td>
 <td>Alle klassen/nodes</td>
@@ -1429,11 +1429,11 @@ stateDiagram
 </tr>
 <tr>
 <td style="text-align: right;">2.</td>
-<td style="text-align: left;">Is de <strong><code>wlzIndicatieID</code></strong> bekend? <br> - <strong>Ja</strong> →  Ga verder naar stap 3 <br> - <strong>Nee</strong> → Wacht op notificatie <a href="/notificaties/nieuwe_indicatie_zorgkantoor.md">NIEUWE_INDICATIE_ZORGKANTOOR</a></td>
+<td style="text-align: left;">Is de <strong><code>wlzIndicatieID</code></strong> bekend? <br> - <strong>Ja</strong> →  Ga verder naar stap 3 <br> - <strong>Nee</strong> → Wacht op notificatie <a href="../../notificaties/nieuwe_indicatie_zorgkantoor/">NIEUWE_INDICATIE_ZORGKANTOOR</a></td>
 </tr>
 <tr>
 <td style="text-align: right;">3.</td>
-<td style="text-align: left;">Het <strong>Zorgkantoor</strong> vult de verplichte <strong><code>wlzIndicatieID</code></strong> en de eigen <strong><code>uzovicode</code></strong> in query-template <a href="/gql-query/zorgkantoor/QIR-0001-ZKi.graphql">QIR-0001-ZKi.graphql</a> en initieert een raadpleging van de Wlz-indicatie in het Indicatieregister.</td>
+<td style="text-align: left;">Het <strong>Zorgkantoor</strong> vult de verplichte <strong><code>wlzIndicatieID</code></strong> en de eigen <strong><code>uzovicode</code></strong> in query-template <a href="https://github.com/iStandaarden/iWlz-indicatie/tree/Indicatieregister-3/gql-query/zorgkantoor/QIR-0001-ZKi.graphql">QIR-0001-ZKi.graphqlgraphql</a> en initieert een raadpleging van de Wlz-indicatie in het Indicatieregister.</td>
 </tr>
 <tr>
 <td style="text-align: right;">4.</td>
@@ -1441,7 +1441,7 @@ stateDiagram
 </tr>
 <tr>
 <td style="text-align: right;">5.</td>
-<td style="text-align: left;">De PEP voert de <a href="UCIR-0001-toegangscontrole.md">toegangscontrole</a> uit en stuurt bij toegang het request door naar het Indicatieregister.</td>
+<td style="text-align: left;">De PEP voert de <a href="../../toegangscontrole/UCIR-0001-toegangscontrole/">toegangscontrole</a> uit en stuurt bij toegang het request door naar het Indicatieregister.</td>
 </tr>
 <tr>
 <td style="text-align: right;">6.</td>
@@ -1453,8 +1453,6 @@ stateDiagram
 </tr>
 </tbody>
 </table>
-<hr>
-<p>Ga naar <a href="UCIR-0001-toegangscontrole.md">toegangscontrole</a> -- Terug naar <a href="/raadplegen/README.md">Raadplegen</a></p>
 
 
 

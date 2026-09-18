@@ -1390,7 +1390,7 @@ flowchart LR
 </thead>
 <tbody>
 <tr>
-<td><a href="/gql-query/zorgaanbieder/QBR-0001-ZA.graphql"><strong>QBR-0001-ZA</strong></a></td>
+<td><a href="https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgaanbieder/QBR-0001-ZA.graphql"><strong>QBR-0001-ZA</strong>.graphql</a></td>
 <td>Op basis van de (ontvangen) bemiddelingspecificatieID en eigen identificatie, de Bemiddelingspecificatie, Bemiddeling en Cliënt gegevens raadplegen</td>
 <td><code>bemiddelingspecificatieID</code>,  eigen <code>AGBcode</code></td>
 <td>Bemiddelingspecificatie /  Bemiddeling /  Client</td>
@@ -1398,7 +1398,7 @@ flowchart LR
 </tbody>
 </table>
 <h2 id="proces-raadplegen"><strong>Proces raadplegen</strong><a class="headerlink" href="#proces-raadplegen" title="Permanent link">¶</a></h2>
-<p>Een zorgaanbieder wordt bij de zorg van een client betrokken door het zorgkantoor. Het zorgkantoor registreert een bemiddelingspecificatie (toewijzing) voor het leveren van zorg door de zorgaanbieder. De zorgaanbieder ontvangt hiervan een notificatie <a href="/notificaties/nieuwe_bemiddelingspecificatie_zorgaanbieder.md"><code>NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGAANBIEDER</code></a>. Op basis van deze notificatie kan de zorgaanbieder de informatie in het bemiddelingsregister raadplegen. </p>
+<p>Een zorgaanbieder wordt bij de zorg van een client betrokken door het zorgkantoor. Het zorgkantoor registreert een bemiddelingspecificatie (toewijzing) voor het leveren van zorg door de zorgaanbieder. De zorgaanbieder ontvangt hiervan een notificatie <a href="../../notificaties/nieuwe_bemiddelingspecificatie_zorgaanbieder/"><code>NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGAANBIEDER</code></a>. Op basis van deze notificatie kan de zorgaanbieder de informatie in het bemiddelingsregister raadplegen. </p>
 <blockquote>
 <p>[!NOTE]
 Voor een volledige beeld moeten er altijd 2 bevragingen worden uitgevoerd.
@@ -1461,7 +1461,7 @@ stateDiagram
 </tr>
 <tr>
 <td style="text-align: right;">2.</td>
-<td style="text-align: left;">Is de <strong><code>bemiddelingspecificatie</code></strong> bekend? <br> - <strong>Ja</strong> →  Ga verder naar stap 6 <br> - <strong>Nee</strong> → Wacht op notificatie <a href="/notificaties/nieuwe_bemiddelingspecificatie_zorgaanbieder.md"><strong><code>NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGAANBIEDER</code></strong></a></td>
+<td style="text-align: left;">Is de <strong><code>bemiddelingspecificatie</code></strong> bekend? <br> - <strong>Ja</strong> →  Ga verder naar stap 6 <br> - <strong>Nee</strong> → Wacht op notificatie <a href="../../notificaties/nieuwe_bemiddelingspecificatie_zorgaanbieder/"><strong><code>NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGAANBIEDER</code></strong></a></td>
 </tr>
 <tr>
 <td style="text-align: right;">4.</td>
@@ -1473,7 +1473,7 @@ stateDiagram
 </tr>
 <tr>
 <td style="text-align: right;">6.</td>
-<td style="text-align: left;">De <strong>Zorgaanbieder</strong> vult de verplichte <strong><code>bemiddelingspecificatieID</code></strong> in query-template <a href="/gql-query/zorgaanbieder/QBR-0001-ZA.graphql">QBR-0001-ZA.graphql</a> en initieert een raadpleging van de bemiddelingspecificatie in het Bemiddelingsregister.</td>
+<td style="text-align: left;">De <strong>Zorgaanbieder</strong> vult de verplichte <strong><code>bemiddelingspecificatieID</code></strong> in query-template <a href="https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgaanbieder/QBR-0001-ZA.graphql">QBR-0001-ZA.graphqlgraphql</a> en initieert een raadpleging van de bemiddelingspecificatie in het Bemiddelingsregister.</td>
 </tr>
 <tr>
 <td style="text-align: right;">7.</td>
@@ -1481,7 +1481,7 @@ stateDiagram
 </tr>
 <tr>
 <td style="text-align: right;">8.</td>
-<td style="text-align: left;">De PEP voert de <a href="UCBR-0001-toegangscontrole.md">toegangscontrole</a> uit en stuurt bij toegang het request door naar het Bemiddelingsregister.</td>
+<td style="text-align: left;">De PEP voert de <a href="../../toegangscontrole/UCBR-0001-toegangscontrole/">toegangscontrole</a> uit en stuurt bij toegang het request door naar het Bemiddelingsregister.</td>
 </tr>
 <tr>
 <td style="text-align: right;">9.</td>
@@ -1493,8 +1493,6 @@ stateDiagram
 </tr>
 </tbody>
 </table>
-<hr>
-<p>Ga naar beschrijving van de bijbehorende <a href="UCBR-0001-toegangscontrole.md">toegangscontrole</a> | Ga naar <a href="../UCBR-0002_3-raadplegen/">UCBR-0002_3-raadplegen</a> voor de beschrijving van het raadplegen van de overlappende toewijzingen |  Terug naar <a href="/raadplegen/README.md">Raadplegen</a></p>
 
 
 

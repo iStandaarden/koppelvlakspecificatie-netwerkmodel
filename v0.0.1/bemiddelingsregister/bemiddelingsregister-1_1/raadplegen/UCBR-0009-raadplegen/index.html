@@ -1390,7 +1390,7 @@ flowchart LR
 </thead>
 <tbody>
 <tr>
-<td><a href="/gql-query/zorgaanbieder/QBR-0009-ZAr.graphql"><strong>QBR-0009-ZA</strong></a></td>
+<td><a href="https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgaanbieder/QBR-0009-ZAr.graphql"><strong>QBR-0009-ZA</strong>.graphql</a></td>
 <td>Op basis van de (ontvangen) regiehouderID en eigen identificatie, de Regiehouder, Bemiddeling en Cliënt gegevens raadplegen</td>
 <td><code>regiehouderID</code>,  <code>AGBcode</code></td>
 <td>Regiehouder /  Bemiddeling /  Client</td>
@@ -1398,7 +1398,7 @@ flowchart LR
 </tbody>
 </table>
 <h2 id="proces-raadplegen"><strong>Proces raadplegen</strong><a class="headerlink" href="#proces-raadplegen" title="Permanent link">¶</a></h2>
-<p>Een zorgaanbieder wordt Coordinator zorg thuis of dossierhouder voor een client. Het zorgkantoor registreert dit in Regiehouder. De zorgaanbieder ontvangt hiervan een notificatie <a href="/notificaties/nieuwe_regiehouder_zorgaanbieder.md"><code>NIEUWE_REGIEHOUDER_ZORGAANBIEDER</code></a>. Op basis van deze notificatie kan de zorgaanbieder de informatie in het bemiddelingsregister raadplegen. </p>
+<p>Een zorgaanbieder wordt Coordinator zorg thuis of dossierhouder voor een client. Het zorgkantoor registreert dit in Regiehouder. De zorgaanbieder ontvangt hiervan een notificatie <a href="../../notificaties/nieuwe_regiehouder_zorgaanbieder/"><code>NIEUWE_REGIEHOUDER_ZORGAANBIEDER</code></a>. Op basis van deze notificatie kan de zorgaanbieder de informatie in het bemiddelingsregister raadplegen. </p>
 <h3 id="schematisch">Schematisch:<a class="headerlink" href="#schematisch" title="Permanent link">¶</a></h3>
 <pre class="mermaid-zoom"><code>---
 config:
@@ -1448,7 +1448,7 @@ stateDiagram
 </tr>
 <tr>
 <td style="text-align: right;">2.</td>
-<td style="text-align: left;">Is de <strong><code>regiehouderID</code></strong> bekend? <br> - <strong>Ja</strong> →  Ga verder naar stap 6 <br> - <strong>Nee</strong> → Wacht op notificatie <a href="/notificaties/nieuwe_regiehouder_zorgaanbieder.md"><strong><code>NIEUWE_REGIEHOUDER_ZORGAANBIEDER</code></strong></a></td>
+<td style="text-align: left;">Is de <strong><code>regiehouderID</code></strong> bekend? <br> - <strong>Ja</strong> →  Ga verder naar stap 6 <br> - <strong>Nee</strong> → Wacht op notificatie <a href="../../notificaties/nieuwe_regiehouder_zorgaanbieder/"><strong><code>NIEUWE_REGIEHOUDER_ZORGAANBIEDER</code></strong></a></td>
 </tr>
 <tr>
 <td style="text-align: right;">4.</td>
@@ -1460,7 +1460,7 @@ stateDiagram
 </tr>
 <tr>
 <td style="text-align: right;">6.</td>
-<td style="text-align: left;">De <strong>Zorgaanbieder</strong> vult de verplichte <strong><code>regiehouderID</code></strong> in query-template <a href="/gql-query/zorgaanbieder/QBR-0009-ZAr.graphql">QBR-0009-ZAr.graphql</a> en initieert een raadpleging van de regierol en periode in het Bemiddelingsregister.</td>
+<td style="text-align: left;">De <strong>Zorgaanbieder</strong> vult de verplichte <strong><code>regiehouderID</code></strong> in query-template <a href="https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgaanbieder/QBR-0009-ZAr.graphql">QBR-0009-ZAr.graphqlgraphql</a> en initieert een raadpleging van de regierol en periode in het Bemiddelingsregister.</td>
 </tr>
 <tr>
 <td style="text-align: right;">7.</td>
@@ -1468,7 +1468,7 @@ stateDiagram
 </tr>
 <tr>
 <td style="text-align: right;">8.</td>
-<td style="text-align: left;">De PEP voert de <a href="UCBR-0009-toegangscontrole.md">toegangscontrole</a> uit en stuurt bij toegang het request door naar het Bemiddelingsregister.</td>
+<td style="text-align: left;">De PEP voert de <a href="../../toegangscontrole/UCBR-0009-toegangscontrole/">toegangscontrole</a> uit en stuurt bij toegang het request door naar het Bemiddelingsregister.</td>
 </tr>
 <tr>
 <td style="text-align: right;">9.</td>
@@ -1480,8 +1480,6 @@ stateDiagram
 </tr>
 </tbody>
 </table>
-<hr>
-<p>Ga naar beschrijving van de bijbehorende <a href="UCBR-0009-toegangscontrole.md">toegangscontrole</a> | Terug naar <a href="/raadplegen/README.md">Raadplegen</a></p>
 
 
 

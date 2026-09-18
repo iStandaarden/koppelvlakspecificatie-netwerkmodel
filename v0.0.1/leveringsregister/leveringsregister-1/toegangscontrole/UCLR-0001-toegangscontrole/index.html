@@ -1373,17 +1373,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#op-basis-van-de-gegevens-van-de-bemiddelingsspecificatie-waarvan-de-leveringstatus-geraadpleegd-wordt-controleren-of-er-voor-het-raadplegende-zorgaanbieder-een-bemiddelingspecifcatie-is-dat-overlapt-heeft-als-het-resultaat-leeg-is-bestaat-er-geen-geldige-bemiddelingspecificatie-met-overlap-voor-het-raadplegende-zorgaanbieder-query-pipcontextbsvalidatie-bemiddelingspecificatieid-uuid-bemiddelingspecificatieid-uit-initiele-query-agbcodetoken-string-afkomstig-uit-token-toewijzingingangsdatum-date-toewijzingingangsdatum-uit-pipcontextdata-toewijzingeinddatum-date-eventueel-toewijzingeinddatum-uit-pipcontextdata-toewijzingeinddatummoment-datetime-als-er-een-einddatum-is-t0000000000100-datumvaststellingmoment-date-datumdeel-vaststellingsmoment-bemiddelingspecificatie-where-bemiddelingspecificatieid-eq-bemiddelingspecificatieid-bemiddelingspecificatieid-bemiddeling-bemiddelingid-bemiddelingspecificatie-where-and-er-moet-een-eigenbemiddelingspecificatie-zijn-voor-opvragende-zorgaanbieder-instelling-eq-agbcodetoken-eigenbspectoewijzingingangsdatum-lte-opgevraagdebspectoewijzingeinddatum-of-eigenbspecvaststellingsmoment-lte-opgevraagdebspectoewijzingeinddatum-or-toewijzingingangsdatum-lte-toewijzingeinddatum-vaststellingmoment-lte-toewijzingeinddatummoment-eigenbspectoewijzingeinddatum-is-null-of-eigenbspectoewijzingeinddatum-gte-opgevraagdebspectoewijzingingangsdatum-of-eigenbspectoewijzingeinddatum-gte-opgevraagdebspecvaststellingmoment-or-toewijzingeinddatum-eq-null-toewijzingeinddatum-gte-toewijzingingangsdatum-toewijzingeinddatum-gte-datumvaststellingmoment-die-toegang-geldt-tm-31-mei-van-het-jaar-dat-volgt-op-de-einddatum-van-de-eigen-bemiddelingspecificatie-bemiddelingspecificatieid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        # Op basis van de gegevens van de bemiddelingsspecificatie waarvan de leveringstatus geraadpleegd wordt, # controleren of er voor het raadplegende zorgaanbieder een bemiddelingspecifcatie is dat overlapt heeft. # Als het resultaat leeg is, bestaat er geen geldige Bemiddelingspecificatie met overlap # voor het raadplegende zorgaanbieder. query PIPcontextBSvalidatie( $bemiddelingspecificatieID: UUID! # bemiddelingspecificatieID uit initiele query $agbcodeToken: String! # afkomstig uit token $toewijzingIngangsdatum: Date! # toewijzingIngangsdatum uit PIPcontextdata $toewijzingEinddatum: Date # eventueel toewijzingEinddatum uit PIPcontextdata $toewijzingEinddatumMoment: DateTime # als er een einddatum is + T00:00:00.000+01:00 $datumvaststellingMoment: Date! # datumdeel vaststellingsmoment ) { bemiddelingspecificatie( where: {bemiddelingspecificatieID: {eq: $bemiddelingspecificatieID}} ) { # bemiddelingspecificatieID bemiddeling { # bemiddelingID bemiddelingspecificatie( where: { and: [ # Er moet een eigen.bemiddelingspecificatie zijn voor opvragende zorgaanbieder {instelling: {eq: $agbcodeToken}} # eigen.bspec.toewijzingIngangsdatum lte opgevraagde.Bspec.toewijzingEinddatum of # eigen.bspec.vaststellingsmoment lte opgevraagde.bspec.toewijzingeinddatum { or: [ {toewijzingIngangsdatum: {lte: $toewijzingEinddatum}} {vaststellingMoment: {lte: $toewijzingEinddatumMoment}} ] } # eigen.bspec.toewijzingEinddatum is null of # eigen.bspec.toewijzingEinddatum gte opgevraagde.bspec.toewijzingIngangsdatum of # eigen.bspec.toewijzingEinddatum gte opgevraagde.bspec.vaststellingMoment { or: [ {toewijzingEinddatum: {eq: null}} {toewijzingEinddatum: {gte: $toewijzingIngangsdatum}} {toewijzingEinddatum: {gte: $datumvaststellingMoment}} ] } # die toegang geldt t/m 31 mei van het jaar dat volgt op de einddatum van de eigen Bemiddelingspecificatie. ] } ) { bemiddelingspecificatieID } } } }
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1426,7 +1415,7 @@ Voor de controle op toegang van deze query is er een PIP controle nodig. De toet
 <h3 id="action">Action<a class="headerlink" href="#action" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>Type:</strong> <code>raadplegen</code> (read)</li>
-<li><strong>Omschrijving:</strong> Uitvoeren van GraphQL-query <a href="/gql-query/aanbieder/QLR-0001-ZA.graphql">QLR-0001-ZA</a>  op het Leveringsregister door een aanbieder. </li>
+<li><strong>Omschrijving:</strong> Uitvoeren van GraphQL-query <a href="https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/aanbieder/QLR-0001-ZA.graphql">QLR-0001-ZA.graphql</a>  op het Leveringsregister door een aanbieder. </li>
 </ul>
 <h3 id="resource">Resource<a class="headerlink" href="#resource" title="Permanent link">¶</a></h3>
 <ul>
@@ -1461,7 +1450,7 @@ Voor de controle op toegang van deze query is er een PIP controle nodig. De toet
 </ul>
 <p>### Resultaat</p>
 <blockquote>
-<p>Toegang tot het Leveringsregister via query <a href="/iWlz-levering/gql-query/aanbieder/QLR-0001-ZA.graphql">QLR-0001-ZA</a> is <strong>alleen toegestaan</strong> als:
+<p>Toegang tot het Leveringsregister via query <a href="https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/aanbieder/QLR-0001-ZA.graphql">QLR-0001-ZA.graphql</a> is <strong>alleen toegestaan</strong> als:
 - De relevante parameters aanwezig zijn in de query;
 - De acces-token bevat een geldige <code>agbcode</code>;
 - Er een <code>Bemiddelingspecificatie is voor:
@@ -1581,7 +1570,7 @@ stateDiagram
 </span></code></pre></div>
 <h3 id="2-pip-context-validatie">2. PIP context validatie<a class="headerlink" href="#2-pip-context-validatie" title="Permanent link">¶</a></h3>
 <p>Validatie aanwezigheid <em>Eigen</em> Bemiddelingspecificatie met overlap op te vragen Bemiddelingspecificatie (Informatieve)</p>
-<h2 id="op-basis-van-de-gegevens-van-de-bemiddelingsspecificatie-waarvan-de-leveringstatus-geraadpleegd-wordt-controleren-of-er-voor-het-raadplegende-zorgaanbieder-een-bemiddelingspecifcatie-is-dat-overlapt-heeft-als-het-resultaat-leeg-is-bestaat-er-geen-geldige-bemiddelingspecificatie-met-overlap-voor-het-raadplegende-zorgaanbieder-query-pipcontextbsvalidatie-bemiddelingspecificatieid-uuid-bemiddelingspecificatieid-uit-initiele-query-agbcodetoken-string-afkomstig-uit-token-toewijzingingangsdatum-date-toewijzingingangsdatum-uit-pipcontextdata-toewijzingeinddatum-date-eventueel-toewijzingeinddatum-uit-pipcontextdata-toewijzingeinddatummoment-datetime-als-er-een-einddatum-is-t0000000000100-datumvaststellingmoment-date-datumdeel-vaststellingsmoment-bemiddelingspecificatie-where-bemiddelingspecificatieid-eq-bemiddelingspecificatieid-bemiddelingspecificatieid-bemiddeling-bemiddelingid-bemiddelingspecificatie-where-and-er-moet-een-eigenbemiddelingspecificatie-zijn-voor-opvragende-zorgaanbieder-instelling-eq-agbcodetoken-eigenbspectoewijzingingangsdatum-lte-opgevraagdebspectoewijzingeinddatum-of-eigenbspecvaststellingsmoment-lte-opgevraagdebspectoewijzingeinddatum-or-toewijzingingangsdatum-lte-toewijzingeinddatum-vaststellingmoment-lte-toewijzingeinddatummoment-eigenbspectoewijzingeinddatum-is-null-of-eigenbspectoewijzingeinddatum-gte-opgevraagdebspectoewijzingingangsdatum-of-eigenbspectoewijzingeinddatum-gte-opgevraagdebspecvaststellingmoment-or-toewijzingeinddatum-eq-null-toewijzingeinddatum-gte-toewijzingingangsdatum-toewijzingeinddatum-gte-datumvaststellingmoment-die-toegang-geldt-tm-31-mei-van-het-jaar-dat-volgt-op-de-einddatum-van-de-eigen-bemiddelingspecificatie-bemiddelingspecificatieid"><div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>    # Op basis van de gegevens van de bemiddelingsspecificatie waarvan de leveringstatus geraadpleegd wordt,
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>    # Op basis van de gegevens van de bemiddelingsspecificatie waarvan de leveringstatus geraadpleegd wordt,
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    # controleren of er voor het raadplegende zorgaanbieder een bemiddelingspecifcatie is dat overlapt heeft.
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    # Als het resultaat leeg is, bestaat er geen geldige Bemiddelingspecificatie met overlap
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    # voor het raadplegende zorgaanbieder.
@@ -1632,8 +1621,7 @@ stateDiagram
 </span><span id="__span-1-49"><a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a>        }
 </span><span id="__span-1-50"><a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a>    }
 </span><span id="__span-1-51"><a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a>    }
-</span></code></pre></div><a class="headerlink" href="#op-basis-van-de-gegevens-van-de-bemiddelingsspecificatie-waarvan-de-leveringstatus-geraadpleegd-wordt-controleren-of-er-voor-het-raadplegende-zorgaanbieder-een-bemiddelingspecifcatie-is-dat-overlapt-heeft-als-het-resultaat-leeg-is-bestaat-er-geen-geldige-bemiddelingspecificatie-met-overlap-voor-het-raadplegende-zorgaanbieder-query-pipcontextbsvalidatie-bemiddelingspecificatieid-uuid-bemiddelingspecificatieid-uit-initiele-query-agbcodetoken-string-afkomstig-uit-token-toewijzingingangsdatum-date-toewijzingingangsdatum-uit-pipcontextdata-toewijzingeinddatum-date-eventueel-toewijzingeinddatum-uit-pipcontextdata-toewijzingeinddatummoment-datetime-als-er-een-einddatum-is-t0000000000100-datumvaststellingmoment-date-datumdeel-vaststellingsmoment-bemiddelingspecificatie-where-bemiddelingspecificatieid-eq-bemiddelingspecificatieid-bemiddelingspecificatieid-bemiddeling-bemiddelingid-bemiddelingspecificatie-where-and-er-moet-een-eigenbemiddelingspecificatie-zijn-voor-opvragende-zorgaanbieder-instelling-eq-agbcodetoken-eigenbspectoewijzingingangsdatum-lte-opgevraagdebspectoewijzingeinddatum-of-eigenbspecvaststellingsmoment-lte-opgevraagdebspectoewijzingeinddatum-or-toewijzingingangsdatum-lte-toewijzingeinddatum-vaststellingmoment-lte-toewijzingeinddatummoment-eigenbspectoewijzingeinddatum-is-null-of-eigenbspectoewijzingeinddatum-gte-opgevraagdebspectoewijzingingangsdatum-of-eigenbspectoewijzingeinddatum-gte-opgevraagdebspecvaststellingmoment-or-toewijzingeinddatum-eq-null-toewijzingeinddatum-gte-toewijzingingangsdatum-toewijzingeinddatum-gte-datumvaststellingmoment-die-toegang-geldt-tm-31-mei-van-het-jaar-dat-volgt-op-de-einddatum-van-de-eigen-bemiddelingspecificatie-bemiddelingspecificatieid" title="Permanent link">¶</a></h2>
-<p>Ga naar <a href="/raadplegen/aanbieder/UCLR-0001-raadplegen.md">UC beschrijving raadplegen</a> -- Terug naar <a href="/raadplegen/README.md">Raadplegen</a></p>
+</span></code></pre></div>
 
 
 

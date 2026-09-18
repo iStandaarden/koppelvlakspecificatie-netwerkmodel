@@ -1445,11 +1445,11 @@ stateDiagram
 </tr>
 <tr>
 <td>2.</td>
-<td style="text-align: left;">Zijn het <code>verzoekID</code> en <code>bemiddelingspecificatieID</code> bekend? <br><ol><li> - <strong>Ja</strong> -&gt; Ga verder naar stap 4 <br></li><li> - <strong>Nee</strong> -&gt; Wacht op notificatie <a href="/notificaties/zorgkantoor/nieuw_verzoek_zorgkantoor.md">NIEUW_VERZOEK_ZORGKANTOOR</a></li></ol></td>
+<td style="text-align: left;">Zijn het <code>verzoekID</code> en <code>bemiddelingspecificatieID</code> bekend? <br><ol><li> - <strong>Ja</strong> -&gt; Ga verder naar stap 4 <br></li><li> - <strong>Nee</strong> -&gt; Wacht op notificatie <a href="../notificaties/zorgkantoor/nieuw_verzoek_zorgkantoor.md">NIEUW_VERZOEK_ZORGKANTOOR</a></li></ol></td>
 </tr>
 <tr>
 <td>4.</td>
-<td style="text-align: left;">Het zorgkantoor vult het verplichte <code>verzoekID</code> en <code>bemiddelingspecificatieID</code> in query-template <a href="/gql-query/zorgkantoor/QLR-0004-ZK.graphql">QLR-0004-ZK</a> en initieert een raadpleging van het Verzoek in het Leveringsregister.</td>
+<td style="text-align: left;">Het zorgkantoor vult het verplichte <code>verzoekID</code> en <code>bemiddelingspecificatieID</code> in query-template <a href="https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/zorgkantoor/QLR-0004-ZK.graphql">QLR-0004-Zk.graphql</a> en initieert een raadpleging van het Verzoek in het Leveringsregister.</td>
 </tr>
 <tr>
 <td>4.</td>
@@ -1457,7 +1457,7 @@ stateDiagram
 </tr>
 <tr>
 <td>5.</td>
-<td style="text-align: left;">De PEP voert de <a href="/raadplegen/zorgkantoor/UCLR-0004-toegangscontrole.md">toegangscontrole</a> uit en stuurt bij toegang het request door naar het leveringsregister.</td>
+<td style="text-align: left;">De PEP voert de <a href="../../toegangscontrole/UCLR-0004-toegangscontrole/">toegangscontrole</a> uit en stuurt bij toegang het request door naar het leveringsregister.</td>
 </tr>
 <tr>
 <td>6.</td>
@@ -1469,8 +1469,6 @@ stateDiagram
 </tr>
 </tbody>
 </table>
-<hr>
-<p>Ga naar beschrijving van de bijbehorende <a href="/raadplegen/zorgkantoor/UCLR-0004-toegangscontrole.md">toegangscontrole</a> | Terug naar <a href="/raadplegen/README.md">Raadplegen</a></p>
 
 
 
