@@ -40,11 +40,11 @@ Het zorgkantoor mag de overdracht raadplegen.
 
 | **Query ID** | **Beschrijving** | **Verplichte input** | **resultaat** |
 |---|---|---|---|
-| [**QBR-0007-ZKn**](/gql-query/zorgkantoor/QBR-0007-ZKn.graphql) | Op basis van de overdrachtID en eigen identificatie de overgedragen Bemiddeling, Bemiddelingspecificatie(s) en Client raadplegen | `overdrachtID`, `uzoviCode` | Overdracht /  Bemiddeling /  Overdrachtspecificatie / Bemiddelingspecificatie / Client |
+| [**QBR-0007-ZKn**.graphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgkantoor/QBR-0007-ZKn.graphql) | Op basis van de overdrachtID en eigen identificatie de overgedragen Bemiddeling, Bemiddelingspecificatie(s) en Client raadplegen | `overdrachtID`, `uzoviCode` | Overdracht /  Bemiddeling /  Overdrachtspecificatie / Bemiddelingspecificatie / Client |
 
 ## **Proces raadplegen**
 
-Een zorgkantoor ontvangt van een ander zorgkantoor dat verantwoordelijk is voor de bemiddeling van zorg aan een client de notificatie [`NIEUWE_OVERDRACHT_ZORGKANTOOR](/notificaties/nieuwe_overdracht_zorgkantoor.md). Op basis van deze notificatie kan het zorgkantoor de informatie in het bemiddelingsregister raadplegen. 
+Een zorgkantoor ontvangt van een ander zorgkantoor dat verantwoordelijk is voor de bemiddeling van zorg aan een client de notificatie [`NIEUWE_OVERDRACHT_ZORGKANTOOR](../notificaties/nieuwe_overdracht_zorgkantoor.md). Op basis van deze notificatie kan het zorgkantoor de informatie in het bemiddelingsregister raadplegen. 
 
 > [!NOTE]
 > Voor een volledige beeld moeten er **altijd** 2 bevragingen worden uitgevoerd.
@@ -106,19 +106,16 @@ stateDiagram
 | --: | :-- |
 | 1. | *Start* raadplegen **Overdracht**  | 
 | 2. | Is de **`overdrachtID`** bekend? <br/> - **Ja** →  Ga verder naar stap 6 <br/> - **Nee** → Ga verder volgende stap.  | 
-| 3. | Wacht op notificatie [**`NIEUWE_OVERDRACHT_ZORGKANTOOR`**](/notificaties/nieuwe_overdracht_zorgkantoor.md) |
+| 3. | Wacht op notificatie [**`NIEUWE_OVERDRACHT_ZORGKANTOOR`**](../notificaties/nieuwe_overdracht_zorgkantoor.md) |
 | 4. | Notificatie is ontvangen | 
 | 5. | Gebruik de informatie uit de notificatie voor het raadplegen van het bemiddelingsregister →  Ga verder naar stap 8. |
 | | |
 | 6. | Overdrachtdatum bekend? <br/> - **Ja** →  Ga verder naar volgende stap. <br/> - **Nee** → Ga verder naar stap 8. |
 | 7. | Volg de beschrijving van [UCBR-0008-raadplegen]() |
 | | |
-| 8. | Het zorgkantoor vult de verplichte **`overdrachtID`** en en **`verantwoordelijkZorgkantoor`**in query-template [QBR-0007_ZKn.graphql](/gql-query/zorgkantoor/QBR-0007-ZKn.graphql) en initieert een raadpleging van de Overdracht in het Bemiddelingsregister. | 
+| 8. | Het zorgkantoor vult de verplichte **`overdrachtID`** en en **`verantwoordelijkZorgkantoor`**in query-template [QBR-0007_ZKn.graphqlgraphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgkantoor/QBR-0007-ZKn.graphql) en initieert een raadpleging van de Overdracht in het Bemiddelingsregister. | 
 | 9. | Het zorgkantoor stuurt Graphql-request + Access-token naar het Policy Enforcement Point (PEP) |
-| 10. | De PEP voert de [toegangscontrole](UCBR-0007-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Bemiddelingsregister. |
+| 10. | De PEP voert de [toegangscontrole](../toegangscontrole/UCBR-0007-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Bemiddelingsregister. |
 | 11. | Het zorgkantoor ontvangt response van de PEP (bij ongeldig verzoek) of vanuit het Bemiddelingsregister (resource) |
 | 12. | *Einde proces* | 
 
----
-
-Ga naar beschrijving van de bijbehorende [toegangscontrole](UCBR-0007-toegangscontrole.md) | Ga naar [UCBR-0008-raadplegen](UCBR-0008-raadplegen.md) voor de beschrijving van het raadplegen van de overlappende toewijzingen |  Terug naar [Raadplegen](/raadplegen/README.md)

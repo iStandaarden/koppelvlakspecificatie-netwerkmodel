@@ -15,7 +15,7 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van deze bes
 
 ### Action
 * **Type:** `raadplegen` (read)
-* **Omschrijving:** Uitvoeren van GraphQL-query [QLR-0009-ZK.graphql](/gql-query/zorgkantoor/QLR-0009-ZK.graphql) op het Leveringsregister door een uitvoerend zorgkantoor.
+* **Omschrijving:** Uitvoeren van GraphQL-query [QLR-0009-ZK.graphqlgraphql](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/zorgkantoor/QLR-0009-ZK.graphql) op het Leveringsregister door een uitvoerend zorgkantoor.
 
 ### Resource
 * **Type:** `Leveringsregister`
@@ -90,7 +90,7 @@ query PIPcontextBSdata(
 
 ### Resultaat 
 
-Toegang tot het Bemiddelingsregister via query [QLR-0009](/gql-query/zorgkantoor/QLR-0009-ZK.graphql) is **alleen toegestaan** als:
+Toegang tot het Bemiddelingsregister via query [QLR-0009graphql](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/zorgkantoor/QLR-0009-ZK.graphql) is **alleen toegestaan** als:
 - Parameter `bemiddelingspecificatieID` is meegegeven in de query
 - De acces-token bevat een geldige `uzovicode`
 - De PIP raadplegeing context-data oplevert die volgens de gestelde voorwaarden toegang geeft.
@@ -176,6 +176,5 @@ stateDiagram
 | 4. | Het zorgkantoor krijgt toegang tot het Leveringsregister.|
 | 5. | *Einde* |
 
----
-Ga naar [UC beschrijving raadplegen](UCLR-0009-raadplegen.md) -- terug naar [Raadplegen](../README.md)
+
 

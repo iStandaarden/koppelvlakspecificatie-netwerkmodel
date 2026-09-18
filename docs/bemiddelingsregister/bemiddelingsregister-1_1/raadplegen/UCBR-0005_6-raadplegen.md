@@ -43,8 +43,8 @@ Een zorgkantoor mag voor het toeleiden van de client de Bemiddelingspecificatie 
 
 | **Query ID** | **Beschrijving** | **Verplichte input** | **resultaat** | 
 |---|---|---|---| 
-| [**QBR-0005-ZKu**](/gql-query/zorgkantoor/QBR-0005-ZKu.graphql) | Op basis van de bemiddelingsspecificatieID, eigen identificatie en toewijzingingangsdatum en toewijzingendatum, de (overlappende) Bemiddelingspecificatie(s), Bemiddeling, Client, Dossierhouder, CoordinatorZorgThuis, Contactpersoon en Contactgegevens raadplegen | `bemiddelingspecificatieID`,  `uzoviCode`, `toewijzingIngangsdatum`, `vaststellingMoment`, `dagVaststellingMoment`, `toewijzingEinddatum` | Bemiddelingspecificatie /  Bemiddeling /  Client /  Dossierhouder /  Coordinator zorg thuis /  Contactgegevens | 
-| [**QBR-0006-ZKu**](/gql-query/zorgkantoor/QBR-0006-ZKu.graphql) | Op basis van de bemiddelingsspecificatieID, eigen identificatie en toewijzingingangsdatum, de (overlappende) Bemiddelingspecificatie(s), Bemiddeling, Client, Dossierhouder, CoordinatorZorgThuis, Contactpersoon en Contactgegevens raadplegen | `bemiddelingspecificatieID`,  `uzoviCode`, `toewijzingIngangsdatum`, `vaststellingMoment`, `dagVaststellingMoment` | Bemiddelingspecificatie /  Bemiddeling /  Client /  Dossierhouder /  Coordinator zorg thuis /  Contactgegevens |
+| [**QBR-0005-ZKu**.graphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgkantoor/QBR-0005-ZKu.graphql) | Op basis van de bemiddelingsspecificatieID, eigen identificatie en toewijzingingangsdatum en toewijzingendatum, de (overlappende) Bemiddelingspecificatie(s), Bemiddeling, Client, Dossierhouder, CoordinatorZorgThuis, Contactpersoon en Contactgegevens raadplegen | `bemiddelingspecificatieID`,  `uzoviCode`, `toewijzingIngangsdatum`, `vaststellingMoment`, `dagVaststellingMoment`, `toewijzingEinddatum` | Bemiddelingspecificatie /  Bemiddeling /  Client /  Dossierhouder /  Coordinator zorg thuis /  Contactgegevens | 
+| [**QBR-0006-ZKu**.graphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgkantoor/QBR-0006-ZKu.graphql) | Op basis van de bemiddelingsspecificatieID, eigen identificatie en toewijzingingangsdatum, de (overlappende) Bemiddelingspecificatie(s), Bemiddeling, Client, Dossierhouder, CoordinatorZorgThuis, Contactpersoon en Contactgegevens raadplegen | `bemiddelingspecificatieID`,  `uzoviCode`, `toewijzingIngangsdatum`, `vaststellingMoment`, `dagVaststellingMoment` | Bemiddelingspecificatie /  Bemiddeling /  Client /  Dossierhouder /  Coordinator zorg thuis /  Contactgegevens |
 
 ## **Proces raadplegen**
 
@@ -119,12 +119,10 @@ stateDiagram
 | 2. | Zijn  **`bemiddelingspecificatieID`** en `toewijzingIngangsdatum`bekend? <br/> - **Ja** →  Ga verder naar stap 4. <br/> - **Nee** → Ga naar stap 3.   | 
 | 3. | Gebruik eerst query-template `QBR-0004-ZKu` (zie beschrijving [`UCBR-0004-raadplegen`](UCBR-0004-raadplegen.md)) | 
 | 4. | Heeft de `bmemiddelingspecificatie` (inmiddels) een `toewijzingEinddatum`? <br/> - **Ja** →  Ga verder naar stap 6 <br/> - **Nee** → Ga naar stap 5.  | 
-| 5. | Gebruik query-template [`QBR-0006-ZKu.graphql`](/gql-query/zorgkantoor/QBR-0006-ZKu.graphql) en vul de verplichte parameters: <br/> - `bemiddelingspecificatieID`; <br/> - `instelling`; <br/> - `toewijzingIngangsdatum`; <br/> - `vaststellingMoment`; <br/> - `dagVaststellingMoment`.  |
-| 6. | Gebruik query-template [`QBR-0005-ZKu.graphql`](/gql-query/zorgkantoor/QBR-0005-ZKu.graphql) en vul de verplichte parameters: <br/> - `bemiddelingspecificatieID`; <br/> - `instelling`; <br/> - `toewijzingIngangsdatum`; <br/> - `vaststellingMoment`; <br/> - `dagVaststellingMoment`; <br/> - `toewijzingEinddatum`.  | 
+| 5. | Gebruik query-template [`QBR-0006-ZKu.graphql`graphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgkantoor/QBR-0006-ZKu.graphql) en vul de verplichte parameters: <br/> - `bemiddelingspecificatieID`; <br/> - `instelling`; <br/> - `toewijzingIngangsdatum`; <br/> - `vaststellingMoment`; <br/> - `dagVaststellingMoment`.  |
+| 6. | Gebruik query-template [`QBR-0005-ZKu.graphql`graphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgkantoor/QBR-0005-ZKu.graphql) en vul de verplichte parameters: <br/> - `bemiddelingspecificatieID`; <br/> - `instelling`; <br/> - `toewijzingIngangsdatum`; <br/> - `vaststellingMoment`; <br/> - `dagVaststellingMoment`; <br/> - `toewijzingEinddatum`.  | 
 | 7. | Het Zorgkantoor stuurt Graphql-request + Access-token naar het Policy Enforcement Point (PEP) |
-| 8. | De PEP voert de [toegangscontrole](UCBR-0002_3-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Bemiddelingsregister. |
+| 8. | De PEP voert de [toegangscontrole](../toegangscontrole/UCBR-0002_3-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Bemiddelingsregister. |
 | 9. | Het Zorgkantoor ontvangt response van de PEP (bij ongeldig verzoek) of vanuit het Bemiddelingsregister (resource) |
 | 10. | *Einde proces* | 
 
----
-Ga naar beschrijving van de bijbehorende [toegangscontrole](UCBR-0005_6-toegangscontrole.md)  |  Terug naar [Raadplegen](/raadplegen/README.md)

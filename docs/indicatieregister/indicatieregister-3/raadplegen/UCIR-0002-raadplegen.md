@@ -39,7 +39,7 @@ Een zorgaanbieder met een toewijzing voor het leveren van zorg aan een cliënt m
 
 | **Query ID** | **Beschrijving** | **Verplichte input** | **resultaat** | 
 |---|---|---|---|
-| [QIR-0002-ZA](/gql-query/zorgaanbieder/QIR-0002-ZA.graphql) |  Op basis van de (opgehaalde) wlzIndicatieID en eigen identificatie, de bijbehorende WlzIndicatie raadplegen inclusief cliëntgegevens | `wlzIndicatieID` | Alle klassen/nodes |
+| [QIR-0002-ZA.graphql](https://github.com/iStandaarden/iWlz-indicatie/tree/Indicatieregister-3/gql-query/zorgaanbieder/QIR-0002-ZA.graphql) |  Op basis van de (opgehaalde) wlzIndicatieID en eigen identificatie, de bijbehorende WlzIndicatie raadplegen inclusief cliëntgegevens | `wlzIndicatieID` | Alle klassen/nodes |
 
 
 ## **Proces raadplegen**
@@ -98,13 +98,11 @@ stateDiagram
 | 2. | Is de **```wlzIndicatieID```** bekend? <br/> - **Ja** →  Ga verder naar stap 6 <br/> - **Nee** → Wacht op notificatie [NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGAANBIEDER](https://github.com/iStandaarden/iWlz-bemiddeling/blob/Bemiddelingsregister-1/notificaties/nieuwe_bemiddelingspecificatie_zorgaanbieder.md)  | 
 | 4. | Notificatie is ontvangen | 
 | 5. | Gebruik de informatie uit de notificatie voor het raadplegen van het Bemiddeingsregister en wlzIndicatieID |
-| 6. | De **Zorgaanbieder** vult de verplichte **```wlzIndicatieID```** in query-template [QIR-0002-ZA.graphql](/gql-query/zorgaanbieder/QIR-0002-ZA.graphql) en initieert een raadpleging van de Wlz-indicatie in het Indicatieregister. | 
+| 6. | De **Zorgaanbieder** vult de verplichte **```wlzIndicatieID```** in query-template [QIR-0002-ZA.graphqlgraphql](https://github.com/iStandaarden/iWlz-indicatie/tree/Indicatieregister-3/gql-query/zorgaanbieder/QIR-0002-ZA.graphql) en initieert een raadpleging van de Wlz-indicatie in het Indicatieregister. | 
 | 7. | De **Zorgaanbieder** stuurt Graphql-request + Access-token naar het Policy Enforcement Point (PEP) |
-| 8. | De PEP voert de [toegangscontrole](UCIR-0002-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Indicatieregister. |
+| 8. | De PEP voert de [toegangscontrole](../toegangscontrole/UCIR-0002-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Indicatieregister. |
 | 9. | De zorgaanbieder ontvangt response van de PEP (bij ongeldig verzoek) of vanuit het Indicatieregister (resource) |
 | 10. | *Einde proces* | 
 
 
----
 
-Ga naar [toegangscontrole](UCIR-0002-toegangscontrole.md) -- Terug naar [Raadplegen](/raadplegen/README.md)

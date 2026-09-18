@@ -12,7 +12,7 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van de ze be
 
 ### **Action**
 - **Type:** `raadplegen` (read)
-- **Omschrijving:** Uitvoeren van GraphQL-query [`QBR-0008-ZKn.graphql`](/gql-query/zorgkantoor/QBR-0008-ZKn.graphql) op het bemiddelingsregister door een zorgkantoor.
+- **Omschrijving:** Uitvoeren van GraphQL-query [`QBR-0008-ZKn.graphql`graphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1/gql-query/zorgkantoor/QBR-0008-ZKn.graphql) op het bemiddelingsregister door een zorgkantoor.
 
 
 ### **Resource**
@@ -36,7 +36,7 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van de ze be
 
 ### Resultaat
 
-> Toegang tot het Bemiddelingsregister via query [`QBR-0008-ZKn.graphql`](/gql-query/zorgkantoor/QBR-0008-ZKn.graphql)) is **alleen toegestaan** als:
+> Toegang tot het Bemiddelingsregister via query [`QBR-0008-ZKn.graphql`graphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1/gql-query/zorgkantoor/QBR-0008-ZKn.graphql)) is **alleen toegestaan** als:
 >
 > - Parameter **`overdrachtID`** is meegegeven in de query;
 > - Parameter **`overdrachtDatum`** is aanwezig in de query;
@@ -131,5 +131,4 @@ nvt
 ```
 
 
----
-Ga naar [UC beschrijving raadplegen](UCBR-0008-raadplegen.md) -- Terug naar [Raadplegen](/raadplegen/README.md)
+

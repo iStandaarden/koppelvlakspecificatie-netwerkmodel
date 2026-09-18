@@ -12,7 +12,7 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van de ze be
 
 ### **Action**
 - **Type:** `raadplegen` (read)
-- **Omschrijving:** Uitvoeren van GraphQL-query [`QBR-0004-ZK.graphql`](/gql-query/zorgkantoor/QBR-0004-ZKu.graphql) op het bemiddelingsregister door een zorgkantoor.
+- **Omschrijving:** Uitvoeren van GraphQL-query [`QBR-0004-ZK.graphql`graphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1/gql-query/zorgkantoor/QBR-0004-ZKu.graphql) op het bemiddelingsregister door een zorgkantoor.
 
 
 ### **Resource**
@@ -33,7 +33,7 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van de ze be
 
 ### Resultaat
 
-> Toegang tot het Bemiddelingsregister via query [`QBR-0004-ZKu.graphql`](/gql-query/zorgkantoor/QBR-0004-ZKu.graphql) is **alleen toegestaan** als:
+> Toegang tot het Bemiddelingsregister via query [`QBR-0004-ZKu.graphql`graphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1/gql-query/zorgkantoor/QBR-0004-ZKu.graphql) is **alleen toegestaan** als:
 >
 > - Parameter **`bemiddelingspecificatieID`** is meegegeven in de query
 > - Parameter **`uzovicode`** is meegegeven in de query
@@ -124,5 +124,4 @@ nvt
 ```
 
 
----
-Ga naar [UC beschrijving raadplegen](UCBR-0004-raadplegen.md) -- Terug naar [Raadplegen](/raadplegen/README.md)
+

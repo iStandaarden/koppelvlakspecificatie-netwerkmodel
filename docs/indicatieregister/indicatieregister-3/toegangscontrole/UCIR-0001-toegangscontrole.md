@@ -108,5 +108,3 @@ niet van toepassing
 ```
 
 
----
-Ga naar [UC beschrijving raadplegen](UCIR-0001-raadplegen.md) -- Terug naar [Raadplegen](/raadplegen/README.md)

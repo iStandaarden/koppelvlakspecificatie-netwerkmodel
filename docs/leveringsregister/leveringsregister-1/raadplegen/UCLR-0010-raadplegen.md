@@ -43,7 +43,7 @@ Het zorgkantoor mag de behandelingperiode (en overige gegevens) raadplegen.
 
 | **Query ID** | **Beschrijving** | **Verplichte input** | **resultaat** |
 |---|---|---|---|
-| [**QLR-0010-ZK**](/gql-query/zorgkantoor/QLR-0010-ZK.graphql) | Op basis van de (ontvangen) behandelingperiodeID en eigen identificatie, de behandelingperiode en overig toegestane informatie raadplegen | `behandelingperiodeID`; `bemiddelingspecificatieID` |  Behandelingperiode / Leveringperiode / Levering /  Client / Uitstelperiode / Afstel |
+| [**QLR-0010-ZK**.graphql](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/zorgkantoor/QLR-0010-ZK.graphql) | Op basis van de (ontvangen) behandelingperiodeID en eigen identificatie, de behandelingperiode en overig toegestane informatie raadplegen | `behandelingperiodeID`; `bemiddelingspecificatieID` |  Behandelingperiode / Leveringperiode / Levering /  Client / Uitstelperiode / Afstel |
 
 ## **Proces raadplegen**
 
@@ -90,16 +90,13 @@ stateDiagram
 | # | Toelichting |
 | --: | :-- |
 | 1. | *Start* raadplegen Leveringsregister | 
-| 2. | Zijn het **`behandelingperiodeID`** en **`bemiddelingspecificatieID`** bekend? <br/><ol><li> - **Ja** →  Ga verder naar stap 6 <br/><li> - **Nee** → Wacht op notificatie [**`NIEUWE_BEHANDELINGPERIODE_ZORGKANTOOR`** of **`GEWIJZIGDE_BEHANDELINGPERIODE_ZORGKANTOOR`**](/notificaties/)  | 
+| 2. | Zijn het **`behandelingperiodeID`** en **`bemiddelingspecificatieID`** bekend? <br/><ol><li> - **Ja** →  Ga verder naar stap 6 <br/><li> - **Nee** → Wacht op notificatie [**`NIEUWE_BEHANDELINGPERIODE_ZORGKANTOOR`** of **`GEWIJZIGDE_BEHANDELINGPERIODE_ZORGKANTOOR`**](../notificaties/)  | 
 | 4. | Notificatie is ontvangen | 
 | 5. | Gebruik de informatie uit de notificatie voor het raadplegen van het leveringsregister |
-| 6. | Het zorgkantoor vult de verplichte **`behandelingperiodeID`** en **`bemiddelingspecificatieID`** in query-template [QLR-0010-ZK.graphql](/gql-query/zorgkantoor/QLR-0010-ZK.graphql) en initieert een raadpleging van de leveringperiode in het Leveringsregister. | 
+| 6. | Het zorgkantoor vult de verplichte **`behandelingperiodeID`** en **`bemiddelingspecificatieID`** in query-template [QLR-0010-ZK.graphqlgraphql](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/zorgkantoor/QLR-0010-ZK.graphql) en initieert een raadpleging van de leveringperiode in het Leveringsregister. | 
 | 7. | Het zorgkantoor stuurt Graphql-request + Access-token naar het Policy Enforcement Point (PEP) |
-| 8. | De PEP voert de [toegangscontrole](UCLR-0010-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Leveringsregister. |
+| 8. | De PEP voert de [toegangscontrole](../toegangscontrole/UCLR-0010-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Leveringsregister. |
 | 9. | Het zorgkantoor ontvangt response van de PEP (bij ongeldig verzoek) of vanuit het Leveringsregister (resource) |
 | 10. | *Einde proces* | 
 
 
----
-
-Ga naar beschrijving van de bijbehorende [toegangscontrole](UCLR-0010-toegangscontrole.md) | Terug naar [Raadplegen](/raadplegen/README.md)

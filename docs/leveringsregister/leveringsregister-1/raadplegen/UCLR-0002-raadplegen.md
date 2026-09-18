@@ -38,11 +38,11 @@ Een aanbieder mag VerzoekAanbieder en Verzoek raadplegen nadat deze aanbieder is
 
 |**Query ID** | **Beschrijving** | **Verplichte input** | **Resultaat** | 
 | --- | ---- | --- | ---- |
-| [QLR-0002-ZA](/gql-query/aanbieder/QLR-0002-ZA.graphql) | Op basis van de (ontvangen) verzoekAanbiederID en eigen identiteit, het VerzoekAanbieder, Verzoek, Levering en Client raadplegen| `verzoekAanbiederID`, `agbcode` | VerzoekAanbieder, Verzoek, Levering, Client | 
+| [QLR-0002-ZA.graphql](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/aanbieder/QLR-0002-ZA.graphql) | Op basis van de (ontvangen) verzoekAanbiederID en eigen identiteit, het VerzoekAanbieder, Verzoek, Levering en Client raadplegen| `verzoekAanbiederID`, `agbcode` | VerzoekAanbieder, Verzoek, Levering, Client | 
 
 ## Proces raadplegen
 
-Een aanbieder wordt opgenomen in VerzoekAanbieder bij een Verzoek. De aanbieder ontvangt hiervoor een notificatie [NIEUW_VERZOEKAANBIEDER_AANBIEDER](/notificaties/aanbieder/nieuw_verzoekaanbieder_aanbieder.md). Op basis van deze notificatie kan de aanbieder de informatie in het Leveringsregister raadplegen.
+Een aanbieder wordt opgenomen in VerzoekAanbieder bij een Verzoek. De aanbieder ontvangt hiervoor een notificatie [NIEUW_VERZOEKAANBIEDER_AANBIEDER](../notificaties/aanbieder/nieuw_verzoekaanbieder_aanbieder.md). Op basis van deze notificatie kan de aanbieder de informatie in het Leveringsregister raadplegen.
 
 ### Schematisch:
 
@@ -88,11 +88,9 @@ stateDiagram
 | 2. | Is `verzoekAanbiederID` bekend?<br/> - **Ja** -> Ga verder naar stap 5 <br/> - **Nee** -> Wacht op notificatie [NIEUW_VERZOEKAANBIEDER_AANBIEDER]/notificaties/aanbieder/nieuw_verzoekaanbieder_aanbieder.md | 
 | 3. | Notificatie is ontvangen |
 | 4. | Gebruik de informatie uit de notificatie voor het raadplegen van het Leveringsregister |
-| 5. | De aanbieder vult `verzoekAanbiederID` in query-template [QLR-0002-ZA](/gql-query/aanbieder/QLR-0002-ZA.graphql) en initieert een raadpleging |
+| 5. | De aanbieder vult `verzoekAanbiederID` in query-template [QLR-0002-ZA.graphql](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/aanbieder/QLR-0002-ZA.graphql) en initieert een raadpleging |
 | 6. | De **aanbieder** stuurt Graphql-request + Acces-token naar het Policy Enforcement Point (PEP) |
-| 7. | De PEP voert de [toegangscontrole](/raadplegen/aanbieder/UCLR-0002-toegangscontrole.md) uit en stuurt bij toegang het request door naar het leveringsregister. |
+| 7. | De PEP voert de [toegangscontrole](../toegangscontrole/UCLR-0002-toegangscontrole.md) uit en stuurt bij toegang het request door naar het leveringsregister. |
 | 8. | De aanbieder ontvangt response van de PEP (bij ongeldig verzoek) of vanuit het Leveringsregister (resource). |
 | 9. | *Einde proces* | 
 
----
-Ga naar beschrijving van de bijbehorende [toegangscontrole](/raadplegen/aanbieder/UCLR-0002-toegangscontrole.md) | Terug naar [Raadplegen](/raadplegen/README.md)

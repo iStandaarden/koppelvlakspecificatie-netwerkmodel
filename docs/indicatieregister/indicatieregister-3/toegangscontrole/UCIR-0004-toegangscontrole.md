@@ -12,7 +12,7 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van de ze be
 
 ### **Action**
 - **Type:** `raadplegen` (read)
-- **Omschrijving:** Uitvoeren van GraphQL-query [`QIR-0004-ZKu.graphql`](/gql-query/zorgkantoor/QIR-0004-ZKu.graphql) op het Indicatieregister door een zorgkantoor
+- **Omschrijving:** Uitvoeren van GraphQL-query [`QIR-0004-ZKu.graphql`graphql](https://github.com/iStandaarden/iWlz-indicatie/tree/Indicatieregister-3/gql-query/zorgkantoor/QIR-0004-ZKu.graphql) op het Indicatieregister door een zorgkantoor
 
 
 ### **Resource**
@@ -35,7 +35,7 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van de ze be
 
 ### Resultaat
 
-> Toegang tot het Indicatieregister via query [`QIR-0004-ZKu.graphql`](/gql-query/zorgkantoor/QIR-0004-ZKu.graphql) is **alleen toegestaan** als:
+> Toegang tot het Indicatieregister via query [`QIR-0004-ZKu.graphql`graphql](https://github.com/iStandaarden/iWlz-indicatie/tree/Indicatieregister-3/gql-query/zorgkantoor/QIR-0004-ZKu.graphql) is **alleen toegestaan** als:
 >
 > - Parameter **`wlzIndicatieID`** is meegegeven in de query
 > - De access-token bevat een geldige **`uzovicode`**
@@ -149,7 +149,3 @@ query Bemiddeling(
       }
     }
 }
-```
-
----
-Ga naar [UC beschrijving raadplegen](UCIR-0004-raadplegen.md) -- Terug naar [Raadplegen](/raadplegen/README.md)

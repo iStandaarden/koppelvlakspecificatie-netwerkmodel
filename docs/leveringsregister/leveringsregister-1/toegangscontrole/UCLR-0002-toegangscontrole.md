@@ -12,7 +12,7 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van deze bes
 
 ### Action
 - **Type:** `raadplegen` (read)
-- **Omschrijving:** Uitvoeren van GraphQL-query [QLR-0002-ZA.graphql](/gql-query/aanbieder/QLR-0002-ZA.graphql) op het Leveringsregister door een aanbieder.
+- **Omschrijving:** Uitvoeren van GraphQL-query [QLR-0002-ZA.graphqlgraphql](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/aanbieder/QLR-0002-ZA.graphql) op het Leveringsregister door een aanbieder.
 
 ### Resource
 - **Type:** `Leveringsregister`
@@ -29,7 +29,7 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van deze bes
     - De in de query meegegeven `agbcode` komt overeen met de `agbcode` in de acces-token
 
 ### Resultaat
-> Toegang tot het Leveringsregister via query [QLR-0002-ZA](/gql-query/aanbieder/QLR-0002-ZA.graphql) is **alleen toegestaan** als:
+> Toegang tot het Leveringsregister via query [QLR-0002-ZA.graphql](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/aanbieder/QLR-0002-ZA.graphql) is **alleen toegestaan** als:
 > - Parameter `verzoekAanbiederID`is meegegeven in de query;
 > - Parameter `agbcode` is meegegeven in de query;
 > - De acces-token bevat een geldige `agbcode`;
@@ -114,6 +114,3 @@ stateDiagram
 nvt
 
 ```
-----
-
-Ga naar [UC beschrijving raadplegen](/raadplegen/aanbieder/UCLR-0002-raadplegen.md) -- Terug naar [Raadplegen](/raadplegen/README.md)

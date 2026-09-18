@@ -101,10 +101,8 @@ stateDiagram
 | 3.   | Gebruik eerst query-template `QBR-0005_6-ZK` (zie beschrijving [UCBR-0005_6-raadplegen](https://github.com/iStandaarden/iWlz-bemiddeling/blob/Bemiddelingsregister-1/raadplegen/zorgkantoor/UCBR-0005_6-raadplegen.md)) |
 | 4.   |  Gebruik query-template `QLR-00009-ZK` en vul de verplichte parameters:  <br> - `bemiddelingspecificatieID`;  |
 | 5.   | Het zorgkantoor stuurt GraphQL-request + Acces-token naar het Policy Enforcement Point (PEP).  |
-| 6.   | De PEP voert de [toegangscontrole](/raadplegen/zorgkantoor/UCLR-0009-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Leveringsgregister. |
+| 6.   | De PEP voert de [toegangscontrole](../toegangscontrole/UCLR-0009-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Leveringsgregister. |
 | 7.   | Het zorgkantoor ontvangt response van de PEP (bij ongeldig verzoek) of vanuit het Leveringsregister (resource).|
 | 8.   | *Einde proces* |
 
- ---
-
-Ga naar beschrijving van de bijbehorende [toegangscontrole](/raadplegen/zorgkantoor/UCLR-0009-toegangscontrole.md)  |  Terug naar [Raadplegen](/raadplegen/README.md)
+ (../toegangscontrole/UCLR-0009-toegangscontrole.md)

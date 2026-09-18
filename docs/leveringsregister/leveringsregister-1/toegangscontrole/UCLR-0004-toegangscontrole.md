@@ -15,7 +15,7 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van deze bes
 
 ### Action
 - **Type:** `raadplegen` (read)
-- **Omschrijving:** Uitvoeren van GraphQL-query [QLR-0004-ZK](/gql-query/zorgkantoor/QLR-0004-ZK.graphql) op het Leveringsregister door een zorgkantoor.
+- **Omschrijving:** Uitvoeren van GraphQL-query [QLR-0004-Zk.graphql](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/zorgkantoor/QLR-0004-ZK.graphql) op het Leveringsregister door een zorgkantoor.
 
 ### Resource 
 - **Type:** `Leveringsregister`
@@ -135,10 +135,7 @@ query PIPValidatie (
     }
   }
 }
-```
 
----
-Ga naar [UC beschrijving raadplegen](/raadplegen/zorgkantoor/UCLR-0006-raadplegen.md) -- Terug naar [Raadplegen](/raadplegen/README.md)
 
  
 

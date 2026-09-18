@@ -40,7 +40,7 @@ Het CIZ mag voor het beoordelen van recht op Wlz de entiteit Bemiddeling in het 
 
 | **Query ID** | **Beschrijving** | **Verplichte input** | **resultaat** |
 |---|---|---|---|
-| [**QBR-0010-CIZ**](/gql-query/ciz/QBR-0010-CIZ.graphql) | Op basis van de wlzIndicatieID de betrokken zorgkantoren raadplegen. | `wlzIndicatieID` | Bemiddeling.verantwoordelijkZorgkantoor  |
+| [**QBR-0010-CIZ**.graphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/ciz/QBR-0010-CIZ.graphql) | Op basis van de wlzIndicatieID de betrokken zorgkantoren raadplegen. | `wlzIndicatieID` | Bemiddeling.verantwoordelijkZorgkantoor  |
 
 ## **Proces raadplegen**
 
@@ -84,13 +84,10 @@ stateDiagram
 | # | Toelichting |
 | --: | :-- |
 | 1. | *Start* raadplegen Bemiddelingsregister | 
-| 6. | Het CIZ vult de verplichte **`wlzIndicatieID`** in query-template [QBR-0010-CIZ.graphql](/gql-query/ciz/QBR-0010-CIZ.graphql) en initieert een raadpleging van het Bemiddelingsregister. | 
+| 6. | Het CIZ vult de verplichte **`wlzIndicatieID`** in query-template [QBR-0010-CIZ.graphqlgraphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/ciz/QBR-0010-CIZ.graphql) en initieert een raadpleging van het Bemiddelingsregister. | 
 | 7. | Het CIZ stuurt Graphql-request + Access-token naar het Policy Enforcement Point (PEP) |
-| 8. | De PEP voert de [toegangscontrole](UCBR-0010-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Bemiddelingsregister. |
+| 8. | De PEP voert de [toegangscontrole](../toegangscontrole/UCBR-0010-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Bemiddelingsregister. |
 | 9. | Het CIZ ontvangt response van de PEP (bij ongeldig verzoek) of vanuit het Bemiddelingsregister (resource) |
 | 10. | *Einde proces* | 
 
 
----
-
-Ga naar beschrijving van de bijbehorende [toegangscontrole](UCBR-0010-toegangscontrole.md) | Terug naar [Raadplegen](/raadplegen/README.md)

@@ -16,7 +16,7 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van de ze be
 
 ### **Action**
 - **Type:** `raadplegen` (read)
-- **Omschrijving:** Uitvoeren van GraphQL-query [`QLR-0007-ZK.graphql`](/gql-query/zorgkantoor/QLR-0007-ZK.graphql) op het Leveringsregister door een zorgkantoor
+- **Omschrijving:** Uitvoeren van GraphQL-query [`QLR-0007-ZK.graphql`graphql](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/zorgkantoor/QLR-0007-ZK.graphql) op het Leveringsregister door een zorgkantoor
 
 
 ### **Resource**
@@ -41,7 +41,7 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van de ze be
 
 ### Resultaat
 
-> Toegang tot het Leveringsregister via query [`QLR-0007-ZK.graphql`](/gql-query/zorgkantoor/QLR-0007-ZK.graphql) is **alleen toegestaan** als:
+> Toegang tot het Leveringsregister via query [`QLR-0007-ZK.graphql`graphql](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/zorgkantoor/QLR-0007-ZK.graphql) is **alleen toegestaan** als:
 >
 > - Parameter **`uitstelperiodeID`** **en**  **`bemiddelingspecificatieID`** zijn meegegeven in de query
 > - De access-token bevat een geldige **`uzovicode`**
@@ -149,7 +149,3 @@ query PIPValidatie (
     }
   }
 }
-```
-
----
-Ga naar [UC beschrijving raadplegen](/raadplegen/zorgkantoor/UCLR-0007-raadplegen.md) -- Terug naar [Raadplegen](/raadplegen/README.md)

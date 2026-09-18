@@ -40,11 +40,11 @@ Het zorgkantoor mag de toewijzing raadplegen.
 
 | **Query ID** | **Beschrijving** | **Verplichte input** | **resultaat** |
 |---|---|---|---|
-| [**QBR-0004-ZKu**](/gql-query/zorgkantoor/QBR-0004-ZKu.graphql) | Op basis van de (ontvangen) bemiddelingspecificatieID en eigen identificatie, de Bemiddelingspecificatie, Bemiddeling en Cliënt gegevens raadplegen | `bemiddelingspecificatieID`, `uzoviCode` | Bemiddelingspecificatie /  Bemiddeling /  Client |
+| [**QBR-0004-ZKu**.graphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgkantoor/QBR-0004-ZKu.graphql) | Op basis van de (ontvangen) bemiddelingspecificatieID en eigen identificatie, de Bemiddelingspecificatie, Bemiddeling en Cliënt gegevens raadplegen | `bemiddelingspecificatieID`, `uzoviCode` | Bemiddelingspecificatie /  Bemiddeling /  Client |
 
 ## **Proces raadplegen**
 
-Een zorgaanbieder wordt bij de zorg van een client betrokken door het zorgkantoor. Het zorgkantoor registreert een bemiddelingspecificatie (toewijzing) voor het leveren van zorg door de zorgaanbieder. Als de zorgaanbieder contract heeft bij een zorgkantoor uit een andere regio (bovenregionaal) dan het verantwoordelijke zorgkantoor, ontvangt dat bovenregionale zorgkantoor de notificatie [`NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGKANTOOR](/notificaties/nieuwe_bemiddelingspecificatie_zorgkantoor.md). Op basis van deze notificatie kan het zorgkantoor de informatie in het bemiddelingsregister raadplegen. 
+Een zorgaanbieder wordt bij de zorg van een client betrokken door het zorgkantoor. Het zorgkantoor registreert een bemiddelingspecificatie (toewijzing) voor het leveren van zorg door de zorgaanbieder. Als de zorgaanbieder contract heeft bij een zorgkantoor uit een andere regio (bovenregionaal) dan het verantwoordelijke zorgkantoor, ontvangt dat bovenregionale zorgkantoor de notificatie [`NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGKANTOOR](../notificaties/nieuwe_bemiddelingspecificatie_zorgkantoor.md). Op basis van deze notificatie kan het zorgkantoor de informatie in het bemiddelingsregister raadplegen. 
 
 > [!NOTE]
 > Voor een volledige beeld moeten er altijd 2 bevragingen worden uitgevoerd.
@@ -101,16 +101,12 @@ stateDiagram
 | # | Toelichting |
 | --: | :-- |
 | 1. | *Start* raadplegen **eigen** bemiddelingspecificatie | 
-| 2. | Is de **`bemiddelingspecificatieID`** bekend? <br/> - **Ja** →  Ga verder naar stap 6 <br/> - **Nee** → Wacht op notificatie [**`NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGKANTOOR`**](/notificaties/nieuwe_bemiddelingspecificatie_zorgkantoor.md)  | 
+| 2. | Is de **`bemiddelingspecificatieID`** bekend? <br/> - **Ja** →  Ga verder naar stap 6 <br/> - **Nee** → Wacht op notificatie [**`NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGKANTOOR`**](../notificaties/nieuwe_bemiddelingspecificatie_zorgkantoor.md)  | 
 | 4. | Notificatie is ontvangen | 
 | 5. | Gebruik de informatie uit de notificatie voor het raadplegen van het bemiddelingsregister |
-| 6. | Het zorgkantoor vult de verplichte **`bemiddelingspecificatieID`** in query-template [QBR-0004-ZKu.graphql](/gql-query/zorgkantoor/QBR-0004-ZKu.graphql) en initieert een raadpleging van de bemiddelingspecificatie in het Bemiddelingsregister. | 
+| 6. | Het zorgkantoor vult de verplichte **`bemiddelingspecificatieID`** in query-template [QBR-0004-ZKu.graphqlgraphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgkantoor/QBR-0004-ZKu.graphql) en initieert een raadpleging van de bemiddelingspecificatie in het Bemiddelingsregister. | 
 | 7. | Het zorgkantoor stuurt Graphql-request + Access-token naar het Policy Enforcement Point (PEP) |
-| 8. | De PEP voert de [toegangscontrole](UCBR-0004-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Bemiddelingsregister. |
+| 8. | De PEP voert de [toegangscontrole](../toegangscontrole/UCBR-0004-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Bemiddelingsregister. |
 | 9. | Het zorgkantoor ontvangt response van de PEP (bij ongeldig verzoek) of vanuit het Bemiddelingsregister (resource) |
 | 10. | *Einde proces* | 
 
-
----
-
-Ga naar beschrijving van de bijbehorende [toegangscontrole](UCBR-0004-toegangscontrole.md) | Ga naar [UCBR-0005_6-raadplegen](UCBR-0005_6-raadplegen.md) voor de beschrijving van het raadplegen van de overlappende toewijzingen |  Terug naar [Raadplegen](/raadplegen/README.md)

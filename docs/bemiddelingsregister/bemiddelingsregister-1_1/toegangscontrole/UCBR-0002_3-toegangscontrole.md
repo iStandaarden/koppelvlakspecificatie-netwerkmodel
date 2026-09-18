@@ -12,7 +12,7 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van de ze be
 
 ### **Action**
 - **Type:** `raadplegen` (read)
-- **Omschrijving:** Uitvoeren van GraphQL-query [`QBR-0002-ZA.graphql`](/gql-query/zorgaanbieder/QBR-0002-ZA.graphql) of [`QBR-0003-ZA.graphql`](/gql-query/zorgaanbieder/QBR-0003-ZA.graphql) (wanneer de eigen `bemiddelingspecificatie` een einddatum heeft) op het bemiddelingsregister door een zorgaanbieder. 
+- **Omschrijving:** Uitvoeren van GraphQL-query [`QBR-0002-ZA.graphql`graphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgaanbieder/QBR-0002-ZA.graphql) of [`QBR-0003-ZA.graphql`graphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgaanbieder/QBR-0003-ZA.graphql) (wanneer de eigen `bemiddelingspecificatie` een einddatum heeft) op het bemiddelingsregister door een zorgaanbieder. 
 
 
 ### **Resource**
@@ -44,7 +44,7 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van de ze be
 
 ### Resultaat
 
-> Toegang tot het Bemiddelingsregister via query [`QBR-0002-ZA.graphql`](/gql-query/zorgaanbieder/QBR-0002-ZA.graphql) of [`QBR-0003-ZA.graphql`](/gql-query/zorgaanbieder/QBR-0003-ZA.graphql) is **alleen toegestaan** als:
+> Toegang tot het Bemiddelingsregister via query [`QBR-0002-ZA.graphql`graphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgaanbieder/QBR-0002-ZA.graphql) of [`QBR-0003-ZA.graphql`graphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgaanbieder/QBR-0003-ZA.graphql) is **alleen toegestaan** als:
 >
 > - De relevante parameters aanwezig zijn per query;
 > - De access-token bevat een geldige **`agbcode`**
@@ -138,5 +138,4 @@ nvt
 ```
 
 
----
-Ga naar [UC beschrijving raadplegen](UCBR-0002_3-raadplegen.md) -- Terug naar [Raadplegen](/raadplegen/README.md)
+

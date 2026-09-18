@@ -41,7 +41,7 @@ Een aanbieder mag voor het leveren van zorg en ondersteuning aan een cliënt de 
 
 | **Query ID** | **Beschrijving** | **Verplichte input** | **resultaat** |
 |---|---|---|---|
-| [QLR-0001-ZA](/gql-query/aanbieder/QLR-0001-ZA.graphql) |Op basis van de bemiddelingspecificatieID van de informatieve toewijzing de Levering (en overige toegestane informatie) raadplegen, die hoort bij de informatieve toewijzing. |   `bemiddelingspecificatieIDInformatieve` | Levering / Leveringperiode / Behandelingperiode / Uitstelperiode / Afstel / Client | 
+| [QLR-0001-ZA.graphql](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/aanbieder/QLR-0001-ZA.graphql) |Op basis van de bemiddelingspecificatieID van de informatieve toewijzing de Levering (en overige toegestane informatie) raadplegen, die hoort bij de informatieve toewijzing. |   `bemiddelingspecificatieIDInformatieve` | Levering / Leveringperiode / Behandelingperiode / Uitstelperiode / Afstel / Client | 
 
 
 
@@ -100,9 +100,7 @@ stateDiagram
 | 3.   | Gebruik eerst query-template `QBR-0002_3-ZA` (zie beschrijving [UCBR-0002_3-raadplegen](https://github.com/iStandaarden/iWlz-bemiddeling/blob/Bemiddelingsregister-1/raadplegen/zorgaanbieder/UCBR-0002_3-raadplegen.md)). |
 | 4.   |  Gebruik query-template `QLR-0001-ZA` en vul de verplichte parameters:  <br> - `bemiddelingspecificatieIDInformatieve`;   |
 | 5.   | De zorgaanbieder stuurt GraphQL-request + Acces-token naar het Policy Enforcement Point (PEP). |
-| 6.   | De PEP voert de [toegangscontrole](/raadplegen/aanbieder/UCLR-0001-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Leveringsgregister.  |
+| 6.   | De PEP voert de [toegangscontrole](../toegangscontrole/UCLR-0001-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Leveringsgregister.  |
 | 7.   | De zorgaanbieder ontvangt response van de PEP (bij ongeldig verzoek) of vanuit het Leveringsregister (resource). |
 | 8.   | *Einde proces*  |
----
 
-Ga naar beschrijving van de bijbehorende [toegangscontrole](/raadplegen/aanbieder/UCLR-0001-toegangscontrole.md) | Terug naar [Raadplegen](/raadplegen/README.md)

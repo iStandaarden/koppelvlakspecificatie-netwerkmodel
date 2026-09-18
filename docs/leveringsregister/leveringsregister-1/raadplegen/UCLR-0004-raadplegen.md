@@ -85,12 +85,10 @@ stateDiagram
 | **#** | **Toelichting** |
 | --- | :--- |
 | 1. | *Start* |
-| 2. | Zijn het `verzoekID` en `bemiddelingspecificatieID` bekend? <br/><ol><li> - **Ja** -> Ga verder naar stap 4 <br/><li> - **Nee** -> Wacht op notificatie [NIEUW_VERZOEK_ZORGKANTOOR](/notificaties/zorgkantoor/nieuw_verzoek_zorgkantoor.md) 
-| 4. | Het zorgkantoor vult het verplichte `verzoekID` en `bemiddelingspecificatieID` in query-template [QLR-0004-ZK](/gql-query/zorgkantoor/QLR-0004-ZK.graphql) en initieert een raadpleging van het Verzoek in het Leveringsregister. |
+| 2. | Zijn het `verzoekID` en `bemiddelingspecificatieID` bekend? <br/><ol><li> - **Ja** -> Ga verder naar stap 4 <br/><li> - **Nee** -> Wacht op notificatie [NIEUW_VERZOEK_ZORGKANTOOR](../notificaties/zorgkantoor/nieuw_verzoek_zorgkantoor.md) 
+| 4. | Het zorgkantoor vult het verplichte `verzoekID` en `bemiddelingspecificatieID` in query-template [QLR-0004-Zk.graphql](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/zorgkantoor/QLR-0004-ZK.graphql) en initieert een raadpleging van het Verzoek in het Leveringsregister. |
 | 4. | Het zorgkantoor stuurt Graphql-request + Acces-token naar het Policy Enforcement Point (PEP) |
-| 5. | De PEP voert de [toegangscontrole](/raadplegen/zorgkantoor/UCLR-0004-toegangscontrole.md) uit en stuurt bij toegang het request door naar het leveringsregister.
+| 5. | De PEP voert de [toegangscontrole](../toegangscontrole/UCLR-0004-toegangscontrole.md) uit en stuurt bij toegang het request door naar het leveringsregister.
 | 6. | De aanbieder ontvangt response van de PEP (bij ongeldig verzoek) of vanuit het Leveringsregister (resource). |
 | 7. | *Einde proces* | 
 
----
-Ga naar beschrijving van de bijbehorende [toegangscontrole](/raadplegen/zorgkantoor/UCLR-0004-toegangscontrole.md) | Terug naar [Raadplegen](/raadplegen/README.md)

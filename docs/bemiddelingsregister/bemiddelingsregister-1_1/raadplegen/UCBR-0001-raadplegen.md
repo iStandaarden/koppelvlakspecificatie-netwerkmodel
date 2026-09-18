@@ -40,11 +40,11 @@ Een zorgaanbieder mag voor het leveren van zorg aan een cliënt de eigen toewijz
 
 | **Query ID** | **Beschrijving** | **Verplichte input** | **resultaat** |
 |---|---|---|---|
-| [**QBR-0001-ZA**](/gql-query/zorgaanbieder/QBR-0001-ZA.graphql) | Op basis van de (ontvangen) bemiddelingspecificatieID en eigen identificatie, de Bemiddelingspecificatie, Bemiddeling en Cliënt gegevens raadplegen | `bemiddelingspecificatieID`,  eigen `AGBcode` | Bemiddelingspecificatie /  Bemiddeling /  Client |
+| [**QBR-0001-ZA**.graphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgaanbieder/QBR-0001-ZA.graphql) | Op basis van de (ontvangen) bemiddelingspecificatieID en eigen identificatie, de Bemiddelingspecificatie, Bemiddeling en Cliënt gegevens raadplegen | `bemiddelingspecificatieID`,  eigen `AGBcode` | Bemiddelingspecificatie /  Bemiddeling /  Client |
 
 ## **Proces raadplegen**
 
-Een zorgaanbieder wordt bij de zorg van een client betrokken door het zorgkantoor. Het zorgkantoor registreert een bemiddelingspecificatie (toewijzing) voor het leveren van zorg door de zorgaanbieder. De zorgaanbieder ontvangt hiervan een notificatie [```NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGAANBIEDER```](/notificaties/nieuwe_bemiddelingspecificatie_zorgaanbieder.md). Op basis van deze notificatie kan de zorgaanbieder de informatie in het bemiddelingsregister raadplegen. 
+Een zorgaanbieder wordt bij de zorg van een client betrokken door het zorgkantoor. Het zorgkantoor registreert een bemiddelingspecificatie (toewijzing) voor het leveren van zorg door de zorgaanbieder. De zorgaanbieder ontvangt hiervan een notificatie [```NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGAANBIEDER```](../notificaties/nieuwe_bemiddelingspecificatie_zorgaanbieder.md). Op basis van deze notificatie kan de zorgaanbieder de informatie in het bemiddelingsregister raadplegen. 
 
 > [!NOTE]
 > Voor een volledige beeld moeten er altijd 2 bevragingen worden uitgevoerd.
@@ -101,16 +101,14 @@ stateDiagram
 | # | Toelichting |
 | --: | :-- |
 | 1. | *Start* raadplegen **eigen** bemiddelingspecificatie | 
-| 2. | Is de **```bemiddelingspecificatie```** bekend? <br/> - **Ja** →  Ga verder naar stap 6 <br/> - **Nee** → Wacht op notificatie [**`NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGAANBIEDER`**](/notificaties/nieuwe_bemiddelingspecificatie_zorgaanbieder.md)  | 
+| 2. | Is de **```bemiddelingspecificatie```** bekend? <br/> - **Ja** →  Ga verder naar stap 6 <br/> - **Nee** → Wacht op notificatie [**`NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGAANBIEDER`**](../notificaties/nieuwe_bemiddelingspecificatie_zorgaanbieder.md)  | 
 | 4. | Notificatie is ontvangen | 
 | 5. | Gebruik de informatie uit de notificatie voor het raadplegen van het bemiddelingsregister |
-| 6. | De **Zorgaanbieder** vult de verplichte **`bemiddelingspecificatieID`** in query-template [QBR-0001-ZA.graphql](/gql-query/zorgaanbieder/QBR-0001-ZA.graphql) en initieert een raadpleging van de bemiddelingspecificatie in het Bemiddelingsregister. | 
+| 6. | De **Zorgaanbieder** vult de verplichte **`bemiddelingspecificatieID`** in query-template [QBR-0001-ZA.graphqlgraphql](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1/gql-query/zorgaanbieder/QBR-0001-ZA.graphql) en initieert een raadpleging van de bemiddelingspecificatie in het Bemiddelingsregister. | 
 | 7. | De **Zorgaanbieder** stuurt Graphql-request + Access-token naar het Policy Enforcement Point (PEP) |
-| 8. | De PEP voert de [toegangscontrole](UCBR-0001-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Bemiddelingsregister. |
+| 8. | De PEP voert de [toegangscontrole](../toegangscontrole/UCBR-0001-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Bemiddelingsregister. |
 | 9. | De zorgaanbieder ontvangt response van de PEP (bij ongeldig verzoek) of vanuit het Bemiddelingsregister (resource) |
 | 10. | *Einde proces* | 
 
 
----
 
-Ga naar beschrijving van de bijbehorende [toegangscontrole](UCBR-0001-toegangscontrole.md) | Ga naar [UCBR-0002_3-raadplegen](UCBR-0002_3-raadplegen.md) voor de beschrijving van het raadplegen van de overlappende toewijzingen |  Terug naar [Raadplegen](/raadplegen/README.md)

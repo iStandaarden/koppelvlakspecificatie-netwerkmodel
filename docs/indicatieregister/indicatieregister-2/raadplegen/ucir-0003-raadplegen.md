@@ -40,7 +40,7 @@ Een zorgkantoor mag voor het toeleiden van een cliënt de Wlz-indicatie raadpleg
 
 | **Query ID** | **Beschrijving** | **Verplichte input** | **resultaat** | 
 |---|---|---|---|
-| [QIR-0003-ZKn](/gql-query/zorgkantoor/QIR-0003-ZKn.graphql) |  Op basis van de (opgehaalde) wlzIndicatieID en eigen identificatie, de bijbehorende WlzIndicatie raadplegen inclusief cliëntgegevens | `wlzIndicatieID` | Alle klassen/nodes |
+| [QIR-0003-ZKn.graphql](https://github.com/iStandaarden/iWlz-indicatie/tree/Indicatieregister-2/gql-query/zorgkantoor/QIR-0003-ZKn.graphql) |  Op basis van de (opgehaalde) wlzIndicatieID en eigen identificatie, de bijbehorende WlzIndicatie raadplegen inclusief cliëntgegevens | `wlzIndicatieID` | Alle klassen/nodes |
 
 
 ## **Proces raadplegen**
@@ -104,13 +104,11 @@ stateDiagram
 | 2. | Is de **```wlzIndicatieID```** bekend? <br/> - **Ja** →  Ga verder naar stap 6 <br/> - **Nee** → Wacht op notificatie **`NIEUWE_OVERDRACHT_ZORGKANTOOR`** | 
 | 4. | Notificatie is ontvangen | 
 | 5. | Gebruik de informatie uit de notificatie voor het raadplegen van het Bemiddeingsregister en wlzIndicatieID |
-| 6. | Het **Zorgkantoor** vult de verplichte **```wlzIndicatieID```** in query-template [QIR-0003-ZKn.graphql](/gql-query/zorgkantoor/QIR-0003-ZKn.graphql) en initieert een raadpleging van de Wlz-indicatie in het Indicatieregister. | 
+| 6. | Het **Zorgkantoor** vult de verplichte **```wlzIndicatieID```** in query-template [QIR-0003-ZKn.graphqlgraphql](https://github.com/iStandaarden/iWlz-indicatie/tree/Indicatieregister-2/gql-query/zorgkantoor/QIR-0003-ZKn.graphql) en initieert een raadpleging van de Wlz-indicatie in het Indicatieregister. | 
 | 7. | Het **Zorgkantoor** stuurt Graphql-request + Access-token naar het Policy Enforcement Point (PEP) |
-| 8. | De PEP voert de [toegangscontrole](UCIR-0003-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Indicatieregister. |
+| 8. | De PEP voert de [toegangscontrole](../toegangscontrole/UCIR-0003-toegangscontrole.md) uit en stuurt bij toegang het request door naar het Indicatieregister. |
 | 9. | Het Zorgkantoor ontvangt response van de PEP (bij ongeldig verzoek) of vanuit het Indicatieregister (data) |
 | 10. | *Einde proces* | 
 
 
----
 
-Ga naar [toegangscontrole](UCIR-0003-toegangscontrole.md) -- Terug naar [Raadplegen](/raadplegen/README.md)

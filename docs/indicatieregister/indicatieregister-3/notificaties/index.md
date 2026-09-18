@@ -10,13 +10,10 @@ Per notificatie is beschreven wat de aanleiding is voor het versturen van een no
 
 | Notificatie | Ontvanger | Documentatie | Type |
 | :-- | :-- | :-- | :-- |
-| [NIEUWE_INDICATIE_ZORGKANTOOR](/notificaties/nieuwe_indicatie_zorgkantoor.md) | Zorgkantoor | Notificatie aan het zorgkantoor als het CIZ een nieuwe Wlz-indicatie heeft geregistreerd voor een cliënt die in de regio van dit zorgkantoor woont. | VERPLICHT |
-| [VERVALLEN_INDICATIE_ZORGKANTOOR](/notificaties/vervallen_indicatie_zorgkantoor.md) | Zorgkantoor | Notificatie aan het zorgkantoor als het CIZ een nieuwe vervaldatum heeft geregistreerd, of een vervaldatum heeft gewijzigd of verwijderd, bij een Wlz-indicatie waarvoor dit zorgkantoor verantwoordelijk is, was of wordt. | VERPLICHT| 
+| [NIEUWE_INDICATIE_ZORGKANTOOR](./nieuwe_indicatie_zorgkantoor.md) | Zorgkantoor | Notificatie aan het zorgkantoor als het CIZ een nieuwe Wlz-indicatie heeft geregistreerd voor een cliënt die in de regio van dit zorgkantoor woont. | VERPLICHT |
+| [VERVALLEN_INDICATIE_ZORGKANTOOR](./vervallen_indicatie_zorgkantoor.md) | Zorgkantoor | Notificatie aan het zorgkantoor als het CIZ een nieuwe vervaldatum heeft geregistreerd, of een vervaldatum heeft gewijzigd of verwijderd, bij een Wlz-indicatie waarvoor dit zorgkantoor verantwoordelijk is, was of wordt. | VERPLICHT| 
 
 
 
-## Meer informatie
-Meer informatie over notificeren in het [Afsprakenstelsel iWlz](https://wlz.atlassian.net/wiki/x/5AlgAQ?atlOrigin=eyJpIjoiNzMyN2E3MjM3YjQwNGQ4MmFkZDgwNWY0ZmE0MDIzMGEiLCJwIjoiYyJ9): [link](https://wlz.atlassian.net/wiki/x/5AlgAQ?atlOrigin=eyJpIjoiNzMyN2E3MjM3YjQwNGQ4MmFkZDgwNWY0ZmE0MDIzMGEiLCJwIjoiYyJ9)
-
----
-Terug naar [HOME](/README.md)
+## Meer informatie over de dienst Notificeren
+Meer informatie over notificeren in het [Afsprakenstelsel iWlz Netwerkmodel > Applicatie > Diensten > Notificeren en Melden](https://istandaarden.github.io/Afsprakenstelsel-iWlz/current/applicatie/diensten/notificeren-en-melden/)

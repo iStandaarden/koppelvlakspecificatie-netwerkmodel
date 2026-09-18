@@ -51,7 +51,7 @@ opstellen:- in VerzoekAanbieder
   - [Instructie](#instructie)
   - [Type](#type)
   - [Inhoud notificatie](#inhoud-notificatie)
-- [Overige notificaties Leveringsregister](#overige-notificaties-leveringsregister)
+
 
 
 ## Documentatie
@@ -88,5 +88,4 @@ Het type notificatie is:
 | ../recordID 	| VerzoekAanbieder/{verzoekAanbiederID} 	| `recordID: "VerzoekAanbieder/76f17bb6-31b3-4042-9417-6e6bb101ce30"` 	|
 | | | `}]` |
 
-# Overige notificaties Leveringsregister
-De overige notificaties van het Leveringsregister staan [hier](/notificaties/README.md)
+
