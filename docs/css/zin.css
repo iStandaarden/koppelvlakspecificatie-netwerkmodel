@@ -3,6 +3,9 @@
   --md-primary-fg-color--light: #06950a;
   --md-primary-fg-color--dark:  #06950a;
 }
+a {
+  text-decoration: underline;
+}
 
 .mermaid svg {
   max-width: 100% !important;
