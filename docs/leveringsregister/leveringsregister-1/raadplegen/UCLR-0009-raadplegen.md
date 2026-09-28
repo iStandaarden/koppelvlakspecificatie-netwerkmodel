@@ -32,7 +32,7 @@ flowchart LR
 ### Autorisatie:
 Een zorgkantoor mag de Levering (en de overige gegevens) raadplegen.
 * Volledige autorisatieregel: [LRA0004](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/leveringsregister-1/regels/autorisatieregel/lra0004/)
-* Autorisatiematrix: [LRA0004](/iWlz-levering/raadplegen/autorisatiematrix_leveringsregister.md)
+* Autorisatiematrix: [LRA0004](/iWlz-levering/raadplegen/autorisatiematrix.md)
 
 ### Trigger:
 * Een zorgkantoor mag voor toeleiden de levering (en overige informatie) raadplegen die horen bij de (informatieve) toewijzingen van andere zorgkantoren. 

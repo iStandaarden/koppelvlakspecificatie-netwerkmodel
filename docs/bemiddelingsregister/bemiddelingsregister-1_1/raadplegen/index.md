@@ -1,11 +1,7 @@
 # Raadplegen Bemiddelingsregister
 
 
-Het raadplegen van het Bemiddelingsregister is gebonden aan voorwaarden. De raadpleger moet bevoegd zijn én het vastgestelde raadpleegpatroon volgen. Dit patroon is essentieel voor het valideren van de toestemming. 
-
-Als het patroon niet wordt gevolgd — bijvoorbeeld door ontbrekende autorisatie, onjuiste of incomplete input, of het opvragen van ongeoorloofde gegevens — wordt de toegang geweigerd of het resultaat beperkt.
-
-Use-cases beschrijven hoe een deelnemer het register correct raadpleegt. Per use-case zijn er toegangscontroles beschreven zodat de verbinding met de bijbehorende autorisatie en de benodigde policy gemaakt kan worden. 
+De use-cases voor het raadplegen van het Bemiddelingsregister per rol en bijbehorende beschrijving van de toegangscontrole door de PDP. 
 
 ```mermaid
 ---
@@ -16,36 +12,25 @@ config:
 ---
 flowchart LR
  subgraph s1["PDP"]
-          T["toegangscontrole"]
+          P["toegangscontrole"]
  end
- subgraph s2["Raadplegen"]
-          R["Use-case"]
-          
+ subgraph s2["Bemiddelingsregister"]
+          B["Resource"]
   end
     A["Raadpleger"] --> R
-    R --> T
-    T --> Rs["Register"]
-    R@{ shape: terminal}
-    T@{ shape: terminal}
+    R["Use-case<br>Raadplegen"] --> P
+    P --> B
+    B@{ shape: terminal}
+    P@{ shape: terminal}
     A@{ shape: rounded}
-    Rs@{ shape: rounded}
+    R@{ shape: rounded}
     
 ```
 
+!!! info
+    Ga naar [Leeswijzer](../../../leeswijzer/index.md) voor de algemene toelichting over het onderdeel Raadplegen.
 
-
-Meer informatie over de structuur van het raadplegen en het valideren ervan is te lezen in het [Afsprakenstelsel iWlz - Raadplegen](https://wlz.atlassian.net/wiki/x/KgpgAQ)
-
-## Casuistiek
-Casuïstiek is bedoeld om te laten zien hoe registatie in de verschillende registers plaatsvindt en hoe het proces van notificeren en raadplegen verloopt. De casuïstiek is [hier](../raadplegen/casuistiek) te vinden.
-
-## Autorisatieregels en autorisatiematrix
-De toegang tot gegevens is vastgelegd doormiddel van **Autorisatieregels** en de **Autorisatiematrix**. De [autorisatieregels](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/bemiddelingsregister-1/regels/autorisatieregel/) zijn te vinden in het Informatiemodel Bemiddelingsregister (via [hier](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/bemiddelingsregister-1/regels/autorisatieregel/)) en de [autorisatiematrix](../autorisatiematrix_bemiddelingsregister.md) is [hier](../autorisatiematrix_bemiddelingsregister.md) te vinden.
-
-
-## Use cases raadplegen Bemiddelingsregister
-
-De use cases voor het raadplegen van het Bemiddelingsregister per rol en bijbehorende beschrijving van de toegangscontrole door de PDP[^1]. 
+## Use-cases
 
 Kies een use-case voor de beschrijving van het raadplegen of controleren van de toegang van die raadpleging.
 
@@ -67,13 +52,11 @@ Kies een use-case voor de beschrijving van het raadplegen of controleren van de 
 | Doel | toelichting | raadplegen | toegangscontrole |
 | :-- |:-- | :-- | :-- |
 | Toewijzing als uitvoerend (bovenregionaal) zorgkantoor (na notificatie) | **Als** (bovenregionaal) zorgkantoor dat een contract heeft met een zorgaanbieder die betrokken is bij het leveren van zorg, **wil ik** de bemiddelingsspecificatie (toewijzing) van die aanbieder kunnen raadplegen, **zodat** ik inzicht heb in de zorg die door deze aanbieder geleverd moet worden. | [UCBR-0004-raadplegen](./UCBR-0004-raadplegen.md) | [UCBR-0004-toegangscontrole](../toegangscontrole/UCBR-0004-toegangscontrole.md) |
-| Complete overzicht als uitvoerend (bovenregionaal) zorgkantoor | **Als** (bovenregionaal) zorgkantoor dat een contract heeft met een zorgaanbieder die betrokken is bij het leveren van zorg, **wil ik** naast de toewijzing van de door mij gecontracteerde zorgaanbieder ook de toewijzing(en) van andere betrokken aanbieder(s) kunnen raadplegen, evenals de contactgegevens van de cliënt, diens contactpersoon en de regiehouder, **zodat** ik volledig inzicht heb in de betrokken partijen en de situatie van de cliënt. | [UCBR-0005_6-raadplegen](./UCBR-0005_6-raadplegen.md) | [UCBR-0005_6-toeganscontrole](/raadplegen/zorgkantoor/UCBR-0005_6-toegangscontrole.md) | 
+| Complete overzicht als uitvoerend (bovenregionaal) zorgkantoor | **Als** (bovenregionaal) zorgkantoor dat een contract heeft met een zorgaanbieder die betrokken is bij het leveren van zorg, **wil ik** naast de toewijzing van de door mij gecontracteerde zorgaanbieder ook de toewijzing(en) van andere betrokken aanbieder(s) kunnen raadplegen, evenals de contactgegevens van de cliënt, diens contactpersoon en de regiehouder, **zodat** ik volledig inzicht heb in de betrokken partijen en de situatie van de cliënt. | [UCBR-0005_6-raadplegen](./UCBR-0005_6-raadplegen.md) | [UCBR-0005_6-toegangscontrole](../toegangscontrole/UCBR-0005_6-toegangscontrole.md) | 
 | Dossieroverdracht (na notificatie) | **Als** (nieuw verantwoordelijk) zorgkantoor die een client krijgt overgedragen van een ander zorgkantoor, **wil ik** de overgedragen client en de toegewezen zorg aan de client raadplegen, **zodat** ik de verantwoordelijkheid over de client zorgvuldig kan overnemen. | [UCBR-0007-raadplegen](./UCBR-0007-raadplegen.md) | [UCBR-0007-toegangscontrole](../toegangscontrole/UCBR-0007-toegangscontrole.md) | 
 | Complete dossieroverdracht | **Als** (nieuwe verantwoordelijk) zorgkantoor dat een cliënt overgedragen krijgt van een ander zorgkantoor, **wil ik** naast de zorg ook de contactgegevens en regiehouder raadplegen, **zodat** ik inzage heb in het volledige overgedragen dossier  |  [UCBR-0008-raadplegen](./UCBR-0008-raadplegen.md) | [UCBR-0008-toegangscontrole](../toegangscontrole/UCBR-0008-toegangscontrole.md) |
 | Informatieve toewijzing als uitvoerend (bovenregionaal) zorgkantoor (na notificatie) | **Als** (bovenregionaal) uitvoerend zorgkantoor, **wil ik** de bemiddelingsspecificatie (toewijzing) raadplegen die niet van mijzelf is maar waar ik wel bij betrokken ben en ik een *informatieve* notificatie over ontvangen heb, **zodat** ik inzicht heb in de zorg die door deze aanbieder geleverd moet worden. | [UCBR-0012-raadplegen](./UCBR-0012-raadplegen.md) | [UCBR-0012-toegangscontrole](../toegangscontrole/UCBR-0012-toegangscontrole.md) |
 | Actuele Regiehouder informatie (na notificatie) | **Als** (bovenregionaal) uitvoerend zorgkantoor, **wil ik** de regiehouder informatie raadplegen, **zodat** ik een actueel inzicht heb in de zorg situatie van een client. | [UCBR-0013-raadplegen](./UCBR-0013-raadplegen.md) | [UCBR-0013-toegangscontrole](../toegangscontrole/UCBR-0013-toegangscontrole.md) |
+| Informatieve toewijzing als uitvoerend (bovenregionaal) zorgkantoor (na notificatie) | **Als** (bovenregionaal) uitvoerend zorgkantoor, **wil ik** de bemiddelingsspecificatie (toewijzing) raadplegen die niet van mijzelf is maar waar ik wel bij betrokken ben en ik een *informatieve* notificatie over ontvangen heb, **zodat** ik inzicht heb in de zorg die door deze aanbieder geleverd moet worden. | [UCBR-0012-raadplegen](./UCBR-0012-raadplegen.md) | [UCBR-0012-toegangscontrole](../toegangscontrole//UCBR-0012-toegangscontrole.md) |
+| Actuele Regiehouder informatie (na notificatie) | **Als** (bovenregionaal) uitvoerend zorgkantoor, **wil ik** de regiehouder informatie raadplegen, **zodat** ik een actueel inzicht heb in de zorg situatie van een client. | [UCBR-0013-raadplegen](./UCBR-0013-raadplegen.md) | [UCBR-0013-toegangscontrole](../toegangscontrole//UCBR-0013-toegangscontrole.md) |
 
-
-
-
-[^1]: PDP: Policy Decision Point. [Afsprakenstelsel iWlz - Raadplegen](https://wlz.atlassian.net/wiki/x/KgpgAQ)

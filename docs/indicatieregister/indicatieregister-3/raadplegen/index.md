@@ -1,20 +1,6 @@
-# Raadplegen Indicatieregister
+# Raadplegen Indicatieregister 3
 
-Het raadplegen van het Indicatieregister is gebonden aan voorwaarden. De raadpleger moet bevoegd zijn én het vastgestelde raadpleegpatroon volgen. Dit patroon is essentieel voor het valideren van de toestemming. 
-
-Als het patroon niet wordt gevolgd — bijvoorbeeld door ontbrekende autorisatie, onjuiste of incomplete input, of het opvragen van ongeoorloofde gegevens — wordt de toegang geweigerd of het resultaat beperkt.
-
-Use-cases beschrijven hoe een deelnemer het register correct raadpleegt.
-
-Meer informatie over de structuur van het raadplegen en het valideren ervan is te lezen in het [Afsprakenstelsel iWlz - Raadplegen](https://wlz.atlassian.net/wiki/x/KgpgAQ)
-
-## Autorisatieregels en autorisatiematrix
-De toegang tot gegevens is vastgelegd doormiddel van **Autorisatieregels** en de **Autorisatiematrix**. De [autorisatieregels](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/indicatieregister-2/regels/autorisatieregel/) zijn te vinden in het Informatiemodel Indicatieregister 2 (via [hier](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/indicatieregister-2/regels/autorisatieregel/)) en de [autorisatiematrix](/raadplegen/autorisatiematrix_indicatieregister.md) is [hier](/raadplegen/autorisatiematrix_indicatieregister.md) te vinden.
-
-
-## Use-cases raadplegen Indicatieregister
-
-De use-cases voor het raadplegen van het Indicatieregister per rol en bijbehorende beschrijving van de toegangscontrole door de PDP[^1]. 
+De use-cases voor het raadplegen van het Indicatieregister per rol en bijbehorende beschrijving van de toegangscontrole door de PDP. 
 
 ```mermaid
 ---
@@ -40,6 +26,10 @@ flowchart LR
     
 ```
 
+!!! info
+    Ga naar [Leeswijzer](../../../leeswijzer/index.md) voor de algemene toelichting over het onderdeel Raadplegen.
+
+## Use-cases
 Kies een use-case voor de beschrijving van het raadplegen of controleren van de toegang van die raadpleging.
 
 ### Zorgaanbieder
@@ -59,6 +49,6 @@ Kies een use-case voor de beschrijving van het raadplegen of controleren van de 
 | WlzIndicatieID opvragen | **Als** zorgkantoor dat door dossieroverdracht via het berichtenverkeer (ZK31) een client krijgt overgedragen, **wil ik** de WlzIndicatieID raadplegen van de client, **zodat** ik de client kan bemiddelen | [UCIR-0005-raadplegen](./UCIR-0005-raadplegen.md) | [UCIR-0005-toegangscontrole](../toegangscontrole/UCIR-0005-toegangscontrole.md) | 
 
 
-[^1]: PDP: Policy Decision Point. [Afsprakenstelsel iWlz - Raadplegen](https://wlz.atlassian.net/wiki/x/KgpgAQ)
+
 
 

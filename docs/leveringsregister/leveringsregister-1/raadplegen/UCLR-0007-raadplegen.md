@@ -32,7 +32,7 @@ flowchart LR
 ### Autorisatie:
 Het zorgkantoor mag de uitstelperiode (en overige gegevens) raadplegen. 
 - Volledige autorisatieregel: [LRA0002](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/leveringsregister-1/regels/autorisatieregel/lra0002) (verantwoordelijk zorgkantoor), [LRA0001](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/leveringsregister-1/regels/autorisatieregel/lra0001/) (uitvoerend zorgkantoor)
-- Autorisatiematrix: [LRA0001, LRA0002](/raadplegen/autorisatiematrix_leveringsregister.md)
+- Autorisatiematrix: [LRA0001, LRA0002](/raadplegen/autorisatiematrix.md)
 
 **Trigger:**
 - Een zorgkantoor wil de (actuele) uitstelperiode (en overige informatie) raadplegen waarvan het de notificatie heeft ontvangen.

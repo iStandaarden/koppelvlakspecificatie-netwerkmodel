@@ -1,15 +1,15 @@
-# VERVALLEN_INDICATIE_ZORGKANTOOR
+# VERWIJDERDE_VERVALLENGELDIGHEID_ZORGKANTOOR
 
 ## Documentatie
 
-Notificatie aan het zorgkantoor als het CIZ een nieuwe vervaldatum heeft geregistreerd, of een vervaldatum heeft gewijzigd of verwijderd, bij een Wlz-indicatie waarvoor dit zorgkantoor verantwoordelijk is, was of wordt.
+Notificatie aan het zorgkantoor als het CIZ een VervallenGeldigheid heeft verwijderd bij een Wlz-indicatie waarvoor dit zorgkantoor verantwoordelijk is, was of wordt.
 
-Het zorgkantoor is daarmee op de hoogte gesteld dat een Wlz-indicatie is vervallen. De notificatie bevat informatie waarmee dat zorgkantoor de Wlz-indicatie kan raadplegen.
+Het zorgkantoor is daarmee op de hoogte gesteld dat een VervallenGeldigheid is verwijderd. De notificatie bevat informatie waarmee dat zorgkantoor de Wlz-indicatie kan raadplegen.
 
 ## Aanleiding
 **De trigger voor de notificatie is:** 
 
-  > het registreren, wijzigen of verwijderen van de vervaldatum. 
+  > het verwijderen van VervallenGeldigheid bij een Wlz-indicatie. 
 
 ## Instructie
 **Stel notificatie op voor:** 
@@ -17,6 +17,8 @@ Het zorgkantoor is daarmee op de hoogte gesteld dat een Wlz-indicatie is vervall
 > - het zorgkantoor dat verantwoordelijk is voor de Wlz-indicatie
 > - het zorgkantoor dat verantwoordelijk is geweest voor de Wlz-indicatie
 > - het zorgkantoor dat door overdracht verantwoordelijk wordt voor de Wlz-indicatie
+> - het zorgkantoor dat uitvoerend is voor de Wlz-indicatie
+> - het zorgkantoor dat uitvoerend is geweest voor de Wlz-indicatie
 
 ## Type
 Het type-notificatie: 
@@ -52,11 +54,11 @@ stateDiagram
   verwerk --> [*]
   verzender:CIZ
   trigger:Trigger
-trigger:- Mutatie van
-trigger:- vervaldatum
+trigger:- Verwijderen van
+trigger:- VervallenGeldigheid
   opstellen:Stel notificatie op voor
 opstellen:- alle verantwoordelijke (huidig, verleden, toekomstig) zorgkantoren
-opstellen:- VERVALLEN_INDICATIE_ZORGKANTOOR
+opstellen:- VERWIJDERDE_VERVALLENGELDIGHEID_ZORGKANTOOR
   verstuur:Verstuur 
   verstuur: notificatie
   ontvanger:Verantwoordelijk zorgkantoor
@@ -77,15 +79,10 @@ opstellen:- VERVALLEN_INDICATIE_ZORGKANTOOR
 | ontvangerIDType | "UZOVI" | ```"ontvangerIDType": "UZOVI"``` |
 | ontvangerID | {uzovi-code ontvanger} | ```"ontvangerID": "5151"``` |
 | ontvangerKenmerk | NULL | |
-| eventType | "VERVALLEN_INDICATIE_ZORGKANTOOR" | ```"eventType": "VERVALLEN_INDICATIE_ZORGKANTOOR"``` |
+| eventType | "VERWIJDERDE_VERVALLENGELDIGHEID_ZORGKANTOOR" | ```"eventType": "VERWIJDERDE_VERVALLENGELDIGHEID_ZORGKANTOOR"``` |
 | subjectList |  | ```"subjectList": [{```|
-| ../subject | "WlzIndicatie/{wlzIndicatieID}" | "subject": "WlzIndicatie/ef88ce35-58fa-4e6d-ac7a-6e298dd211d6"|
-| ../recordID | "WlzIndicatie/{wlzIndicatieID}" | "recordID": "WlzIndicatie/ef88ce35-58fa-4e6d-ac7a-6e298dd211d6" |
-| | | ```}``` | 
+| ../subject | "WlzIndicatie/{wlzIndicatieID}" | ```"subject": "WlzIndicatie/ef88ce35-58fa-4e6d-ac7a-6e298dd211d6"``` |
+| ../recordID | "WlzIndicatie/{wlzIndicatieID}" | ```"recordID": "WlzIndicatie/ef88ce35-58fa-4e6d-ac7a-6e298dd211d6"``` |
+| | | ```}]``` | 
 
 
-
-
-
-## Meer informatie over Notificaties
-Meer informatie over notificeren in het [Afsprakenstelsel iWlz](https://wlz.atlassian.net/wiki/x/5AlgAQ?atlOrigin=eyJpIjoiNzMyN2E3MjM3YjQwNGQ4MmFkZDgwNWY0ZmE0MDIzMGEiLCJwIjoiYyJ9): [link](https://wlz.atlassian.net/wiki/x/5AlgAQ?atlOrigin=eyJpIjoiNzMyN2E3MjM3YjQwNGQ4MmFkZDgwNWY0ZmE0MDIzMGEiLCJwIjoiYyJ9)

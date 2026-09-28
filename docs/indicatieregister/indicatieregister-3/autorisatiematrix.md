@@ -1,11 +1,12 @@
-# Autorisatiematrix Indicatieregister 2
-_Indicatieregister 2 - versie 1.3: 24-06-2026_
+# Autorisatiematrix Indicatieregister 3
+*Indicatieregister 3 - versie 1.0 rc-2: 24-06-2026*
 
 In de autorisatiematrix is per autorisatieregel de toegang op attribuutniveau vastgelegd.
 
-[Informatiemodel Indicatieregister 2](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/indicatieregister-2/)
+[Informatiemodel Indicatieregister 3](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/indicatieregister-3/)
 
-| **ENTITEIT/ATTRIBUUT** 	| **[IRA0003](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/indicatieregister-2/regels/autorisatieregel/ira0003/)** 	| **[IRA0001](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/indicatieregister-2/regels/autorisatieregel/ira0001/)** 	| **[IRA0002](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/indicatieregister-2/regels/autorisatieregel/ira0002/)** 	| **[IRA0004](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/indicatieregister-2/regels/autorisatieregel/ira0004/)** 	|
+
+| **ENTITEIT/ATTRIBUUT** 	| **[IRA0003](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/indicatieregister-3/regels/autorisatieregel/ira0003/)** 	| **[IRA0001](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/indicatieregister-3/regels/autorisatieregel/ira0001/)** 	| **[IRA0002](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/indicatieregister-3/regels/autorisatieregel/ira0002/)** 	| **[IRA0004](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/indicatieregister-3/regels/autorisatieregel/ira0004/)** 	|
 |---:	|:---:	|:---:	|:---:	|:---:	|
 | **Raadpleger** 	| **Zorgaanbieder** 	| **Zorgkantoor** 	| **Zorgkantoor** 	| **Zorgkantoor** 	|
 | **Wlzindicatie** 	|  	|  	|  	|  	|
@@ -18,8 +19,15 @@ In de autorisatiematrix is per autorisatieregel de toegang op attribuutniveau va
 | einddatum 	| R 	| R 	| R 	| R 	|
 | meerzorg 	| R 	| R 	| R 	| R 	|
 | initieelVerantwoordelijkZorgkantoor 	| R 	| R 	| R 	| R 	|
-| vervaldatum 	| R 	| R 	| R 	| R 	|
+| _vervaldatum {@deprecated}_ 	| _R_ 	| _R_ 	| _R_ 	| _R_ 	|
 | commentaar 	| R 	| R 	| R 	| R 	|
+|  	|  	|  	|  	|  	|
+| **VervallenGeldigheid** 	|  	|  	|  	|  	|
+| vervallenGeldigheidID 	| R 	| R 	| R 	| R 	|
+| vervaldatum 	| R 	| R 	| R 	| R 	|
+| vaststellingmoment 	| R 	| R 	| R 	| R 	|
+| reden 	| R 	| R 	| R 	| R 	|
+| nieuwVerantwoordelijkZorgkantoor 	| R 	| R 	| R 	| R 	|
 |  	|  	|  	|  	|  	|
 | **Stoornis** 	|  	|  	|  	|  	|
 | stoornisID 	| R 	| R 	| R 	| R 	|
@@ -141,3 +149,4 @@ In de autorisatiematrix is per autorisatieregel de toegang op attribuutniveau va
 | emailadres 	| R 	| R 	| R 	| R 	|
 | ingangsdatum 	| R 	| R 	| R 	| R 	|
 | einddatum 	| R 	| R 	| R 	| R 	|
+

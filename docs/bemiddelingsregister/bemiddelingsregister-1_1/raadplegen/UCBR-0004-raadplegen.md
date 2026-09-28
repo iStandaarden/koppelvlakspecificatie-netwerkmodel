@@ -29,8 +29,8 @@ flowchart LR
 
 ### Autorisatie:
 Het zorgkantoor mag de toewijzing raadplegen. 
-- Volledige autorisatieregel: [BRA0006](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/bemiddelingsregister-1/regels/autorisatieregel/bra0006/)
-- Autorisatiematrix: [BRA0006](../autorisatiematrix_bemiddelingsregister.md)
+- Volledige autorisatieregel: [BRA0006](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/bemiddelingsregister-1.1regels/autorisatieregel/bra0006/)
+- Autorisatiematrix: [BRA0006](../autorisatiematrix.md)
 
 **Trigger:**
 - Een zorgkantoor wil de bemiddelingspecificatie raadplegen waarin het is geregistreerd als uitvoerend zorgkantoor.

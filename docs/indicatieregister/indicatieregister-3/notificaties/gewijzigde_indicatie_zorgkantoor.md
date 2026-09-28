@@ -1,0 +1,85 @@
+# GEWIJZIGDE_INDICATIE_ZORGKANTOOR
+
+## Documentatie
+
+Notificatie aan het zorgkantoor als het CIZ een wijziging heeft doorgevoerd in een Wlz-indicatie waarvoor dit zorgkantoor verantwoordelijk is, was of wordt.
+De wijziging betreft een of meer van de entiteiten WlzIndicatie en GeindiceerdZorgzwaartepakket.
+
+Het zorgkantoor is daarmee op de hoogte gesteld van de aanwezigheid van een gewijzigde Wlz-indicatie waarvoor dat zorgkantoor verantwoordelijk is, is geweest of door overdracht verantwoordelijk wordt. De notificatie bevat informatie waarmee dat zorgkantoor de Wlz-indicatie kan raadplegen.
+
+## Aanleiding
+**De trigger voor de notificatie is:** 
+
+> het wijzigen van een Wlz indicatie in het Indicatieregister
+
+## Instructie
+**Stel notificatie op voor:** 
+> - het zorgkantoor dat verantwoordelijk is voor de Wlz-indicatie;
+> - het zorgkantoor dat verantwoordelijk is geweest voor de Wlz-indicatie;
+> - het zorgkantoor dat door overdracht verantwoordelijk wordt voor de Wlz-indicatie.
+
+## Type
+Het type-notificatie: 
+> VERPLICHT
+
+## Schematisch
+
+```mermaid
+---
+config:
+  theme: neutral
+  look: classic
+---
+stateDiagram
+  direction LR
+  state verzender {
+    direction TB
+    trigger --> opstellen
+    opstellen --> verstuur
+    trigger
+    opstellen
+    verstuur
+  }
+  state ontvanger {
+    direction TB
+    ontvang --> verwerk
+    ontvang
+    verwerk
+  }
+  [*] --> trigger
+  verstuur --> ontvang
+  verwerk --> [*]
+  verzender:CIZ
+  trigger:Trigger
+trigger:- Wijzigen van
+trigger:- Wlz Indicatie
+  opstellen:Stel notificatie op voor
+opstellen:- alle verantwoordelijke (huidige, verleden, toekomstig)zorgkantoren
+opstellen:- GEWIJZIGDE_INDICATIE_ZORGKANTOOR
+  verstuur:Verstuur 
+  verstuur: notificatie
+  ontvanger: Verantwoordelijk zorgkantoor
+  ontvang:Ontvang 
+  ontvang:notificatie
+  verwerk:Verwerk 
+  verwerk:notificatie
+
+```
+
+
+## Inhoud van de notificatie
+
+| Variabele | Waarde | Voorbeeld | 
+| :-- | :-- | :-- |
+| timestamp | {timestamp} | ```"timestamp": "2024-07-02T00:00:00.000Z"``` | 
+| afzenderIDType | "KVK" | ```"afzenderIDType": "KVK"``` |
+| afzenderID | "62253778" | ```"afzenderID": "62253778"``` |
+| ontvangerIDType | "UZOVI" | ```"ontvangerIDType": "UZOVI"``` |
+| ontvangerID | {uzovi-code ontvanger} | ```"ontvangerID": "5151"``` |
+| ontvangerKenmerk | NULL | |
+| eventType | "GEWIJZIGDE_INDICATIE_ZORGKANTOOR" | ```"eventType": "GEWIJZIGDE_INDICATIE_ZORGKANTOOR"``` |
+| subjectList |  | ```"subjectList": [{```|
+| ../subject | "WlzIndicatie/{wlzIndicatieID}" | ```"subject": "WlzIndicatie/ef88ce35-58fa-4e6d-ac7a-6e298dd211d6"``` |
+| ../recordID | "WlzIndicatie/{wlzIndicatieID}" | ```"recordID": "WlzIndicatie/ef88ce35-58fa-4e6d-ac7a-6e298dd211d6"``` |
+| | | ```}]``` | 
+

@@ -29,7 +29,7 @@ flowchart LR
 ### Autorisatie:
 Een zorgaanbieder met een toewijzing voor het leveren van zorg aan een cliënt mag de bijbehorende Wlz-indicatie van de cliënt raadplegen.
 - Volledige autorisatieregel: [IRA0003-informatiemodel](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/indicatieregister-2/regels/autorisatieregel/ira0003/)
-- Autorisatiematrix: [IRA0003](https://github.com/iStandaarden/iWlz-Autorisatiematrix/blob/main/autorisatiematrix_indicatieregister.md)
+- Autorisatiematrix: [IRA0003](https://github.com/iStandaarden/iWlz-Autorisatiematrix/blob/main/autorisatiematrix.md)
 
 **Trigger:**
 - De zorgaanbieder wil de Wlz-indicatie raadplegen ter ondersteuning van het leveren van zorg aan een cliënt.

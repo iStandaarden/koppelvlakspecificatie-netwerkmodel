@@ -29,8 +29,8 @@ flowchart LR
 
 ### Autorisatie:
 Het zorgkantoor mag de overdracht raadplegen. 
-- Volledige autorisatieregel: [BRA0010](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/bemiddelingsregister-1/regels/autorisatieregel/bra0010/)
-- Autorisatiematrix: [BRA0010](../autorisatiematrix_bemiddelingsregister.md)
+- Volledige autorisatieregel: [BRA0010](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/bemiddelingsregister-1.1regels/autorisatieregel/bra0010/)
+- Autorisatiematrix: [BRA0010](../autorisatiematrix.md)
 
 **Trigger:**
 - Een zorgkantoor wil de overdracht waarin het is geregistreerd als verantwoordelijk zorgkantoor.

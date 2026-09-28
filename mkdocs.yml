@@ -120,22 +120,25 @@ nav:
   - Leeswijzer:
       - leeswijzer/index.md
       - Raadplegen: leeswijzer/raadplegen.md
+      - Notificeren: leeswijzer/notificeren.md
   - Indicatieregister:
       - indicatieregister/index.md
       - Indicatieregister 2: 
           - indicatieregister/indicatieregister-2/index.md
           - Raadplegen: 
               - indicatieregister/indicatieregister-2/raadplegen/index.md
-              - ucir-0001: indicatieregister/indicatieregister-2/raadplegen/ucir-0001-raadplegen.md
-              - ucir-0002: indicatieregister/indicatieregister-2/raadplegen/ucir-0002-raadplegen.md
-              - ucir-0003: indicatieregister/indicatieregister-2/raadplegen/ucir-0003-raadplegen.md
-              - ucir-0004: indicatieregister/indicatieregister-2/raadplegen/ucir-0004-raadplegen.md
-              - ucir-0005: indicatieregister/indicatieregister-2/raadplegen/ucir-0005-raadplegen.md
+              - UCIR-0001: indicatieregister/indicatieregister-2/raadplegen/UCIR-0001-raadplegen.md
+              - UCIR-0002: indicatieregister/indicatieregister-2/raadplegen/UCIR-0002-raadplegen.md
+              - UCIR-0003: indicatieregister/indicatieregister-2/raadplegen/UCIR-0003-raadplegen.md
+              - UCIR-0004: indicatieregister/indicatieregister-2/raadplegen/UCIR-0004-raadplegen.md
+              - UCIR-0005: indicatieregister/indicatieregister-2/raadplegen/UCIR-0005-raadplegen.md
           - Toegangscontrole:
-              - ucir-0001: indicatieregister/indicatieregister-2/toegangscontrole/UCIR-0001-toegangscontrole.md
-              - ucir-0002: indicatieregister/indicatieregister-2/toegangscontrole/UCIR-0002-toegangscontrole.md
-              - ucir-0003: indicatieregister/indicatieregister-2/toegangscontrole/UCIR-0003-toegangscontrole.md
-              - ucir-0004: indicatieregister/indicatieregister-2/toegangscontrole/UCIR-0004-toegangscontrole.md
+              - indicatieregister/indicatieregister-2/toegangscontrole/index.md
+              - UCIR-0001: indicatieregister/indicatieregister-2/toegangscontrole/UCIR-0001-toegangscontrole.md
+              - UCIR-0002: indicatieregister/indicatieregister-2/toegangscontrole/UCIR-0002-toegangscontrole.md
+              - UCIR-0003: indicatieregister/indicatieregister-2/toegangscontrole/UCIR-0003-toegangscontrole.md
+              - UCIR-0004: indicatieregister/indicatieregister-2/toegangscontrole/UCIR-0004-toegangscontrole.md
+              - UCIR-0005: indicatieregister/indicatieregister-2/toegangscontrole/UCIR-0005-toegangscontrole.md
           - Notificaties:
               - indicatieregister/indicatieregister-2/notificaties/index.md
               - Nieuwe indicatie zorgkantoor: indicatieregister/indicatieregister-2/notificaties/nieuwe_indicatie_zorgkantoor.md
@@ -145,21 +148,27 @@ nav:
           - indicatieregister/indicatieregister-3/index.md
           - Raadplegen: 
               - indicatieregister/indicatieregister-3/raadplegen/index.md
-              - ucir-0001: indicatieregister/indicatieregister-3/raadplegen/UCIR-0001-raadplegen.md
-              - ucir-0002: indicatieregister/indicatieregister-3/raadplegen/UCIR-0002-raadplegen.md
-              - ucir-0003: indicatieregister/indicatieregister-3/raadplegen/UCIR-0003-raadplegen.md
-              - ucir-0004: indicatieregister/indicatieregister-3/raadplegen/UCIR-0004-raadplegen.md
-              - ucir-0005: indicatieregister/indicatieregister-3/raadplegen/UCIR-0005-raadplegen.md
+              - UCIR-0001: indicatieregister/indicatieregister-3/raadplegen/UCIR-0001-raadplegen.md
+              - UCIR-0002: indicatieregister/indicatieregister-3/raadplegen/UCIR-0002-raadplegen.md
+              - UCIR-0003: indicatieregister/indicatieregister-3/raadplegen/UCIR-0003-raadplegen.md
+              - UCIR-0004: indicatieregister/indicatieregister-3/raadplegen/UCIR-0004-raadplegen.md
+              - UCIR-0005: indicatieregister/indicatieregister-3/raadplegen/UCIR-0005-raadplegen.md
           - Toegangscontrole:
-              - ucir-0001: indicatieregister/indicatieregister-3/toegangscontrole/UCIR-0001-toegangscontrole.md
-              - ucir-0002: indicatieregister/indicatieregister-3/toegangscontrole/UCIR-0002-toegangscontrole.md
-              - ucir-0003: indicatieregister/indicatieregister-3/toegangscontrole/UCIR-0003-toegangscontrole.md
-              - ucir-0004: indicatieregister/indicatieregister-3/toegangscontrole/UCIR-0004-toegangscontrole.md
+              - indicatieregister/indicatieregister-3/toegangscontrole/index.md
+              - UCIR-0001: indicatieregister/indicatieregister-3/toegangscontrole/UCIR-0001-toegangscontrole.md
+              - UCIR-0002: indicatieregister/indicatieregister-3/toegangscontrole/UCIR-0002-toegangscontrole.md
+              - UCIR-0003: indicatieregister/indicatieregister-3/toegangscontrole/UCIR-0003-toegangscontrole.md
+              - UCIR-0004: indicatieregister/indicatieregister-3/toegangscontrole/UCIR-0004-toegangscontrole.md
+              - UCIR-0005: indicatieregister/indicatieregister-3/toegangscontrole/UCIR-0005-toegangscontrole.md
           - Notificaties:
               - indicatieregister/indicatieregister-3/notificaties/index.md
-              - indicatieregister/indicatieregister-3/notificaties/nieuwe_indicatie_zorgkantoor.md
-              - indicatieregister/indicatieregister-3/notificaties/vervallen_indicatie_zorgkantoor.md
-          - Autorisatiematrix: indicatieregister/indicatieregister-3/autorisatiematrix_indicatieregister.md
+              - Nieuwe indicatie zorgkantoor: indicatieregister/indicatieregister-3/notificaties/nieuwe_indicatie_zorgkantoor.md
+              - Gewijzigde indicatie zorgkantoor: indicatieregister/indicatieregister-3/notificaties/gewijzigde_indicatie_zorgkantoor.md
+              - Verwijderde indicatie zorgkantoor: indicatieregister/indicatieregister-3/notificaties/verwijderde_indicatie_zorgkantoor.md
+              - Nieuwe vervallengeldigheid zorgkantoor: indicatieregister/indicatieregister-3/notificaties/nieuwe_vervallengeldigheid_zorgkantoor.md
+              - Gewijzigde vervallengeldigheid zorgkantoor: indicatieregister/indicatieregister-3/notificaties/gewijzigde_vervallengeldigheid_zorgkantoor.md
+              - Verwijderde vervallengeldigheid zorgkantoor: indicatieregister/indicatieregister-3/notificaties/verwijderde_vervallengeldigheid_zorgkantoor.md
+          - Autorisatiematrix: indicatieregister/indicatieregister-3/autorisatiematrix.md
   - Bemiddelingsregister:
       - bemiddelingsregister/index.md
       - Bemiddelingsregister 1:
@@ -176,6 +185,7 @@ nav:
               - UCBR-0010: bemiddelingsregister/bemiddelingsregister-1/raadplegen/UCBR-0010-raadplegen.md
               - UCBR-0011: bemiddelingsregister/bemiddelingsregister-1/raadplegen/UCBR-0011-raadplegen.md
           - Toegangscontrole:
+              - bemiddelingsregister/bemiddelingsregister-1/toegangscontrole/index.md
               - UCBR-0001: bemiddelingsregister/bemiddelingsregister-1/toegangscontrole/UCBR-0001-toegangscontrole.md
               - UCBR-0002_3: bemiddelingsregister/bemiddelingsregister-1/toegangscontrole/UCBR-0002_3-toegangscontrole.md
               - UCBR-0004: bemiddelingsregister/bemiddelingsregister-1/toegangscontrole/UCBR-0004-toegangscontrole.md
@@ -185,7 +195,6 @@ nav:
               - UCBR-0009: bemiddelingsregister/bemiddelingsregister-1/toegangscontrole/UCBR-0009-toegangscontrole.md
               - UCBR-0010: bemiddelingsregister/bemiddelingsregister-1/toegangscontrole/UCBR-0010-toegangscontrole.md
               - UCBR-0011: bemiddelingsregister/bemiddelingsregister-1/toegangscontrole/UCBR-0011-toegangscontrole.md
-          - Autorisatiematrix: bemiddelingsregister/bemiddelingsregister-1/autorisatiematrix_bemiddelingsregister.md
           - Notificaties:
               - bemiddelingsregister/bemiddelingsregister-1/notificaties/index.md
               - Gewijzigde bemiddelingspecificatie zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1/notificaties/gewijzigde_bemiddelingspecificatie_zorgaanbieder.md
@@ -201,9 +210,10 @@ nav:
               - Verwijderde bemiddelingspecificatie zorgkantoor: bemiddelingsregister/bemiddelingsregister-1/notificaties/verwijderde_bemiddelingspecificatie_zorgkantoor.md
               - Verwijderde overdracht zorgkantoor: bemiddelingsregister/bemiddelingsregister-1/notificaties/verwijderde_overdracht_zorgkantoor.md
               - Verwijderde regiehouder zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1/notificaties/verwijderde_regiehouder_zorgaanbieder.md
+          - Autorisatiematrix: bemiddelingsregister/bemiddelingsregister-1/autorisatiematrix.md
       - Bemiddelingsregister 1.1:
-            - bemiddelingsregister/bemiddelingsregister-1_1/index.md
-            - Raadplegen:
+          - bemiddelingsregister/bemiddelingsregister-1_1/index.md
+          - Raadplegen:
               - bemiddelingsregister/bemiddelingsregister-1_1/raadplegen/index.md
               - UCBR-0001: bemiddelingsregister/bemiddelingsregister-1_1/raadplegen/UCBR-0001-raadplegen.md
               - UCBR-0002_3: bemiddelingsregister/bemiddelingsregister-1_1/raadplegen/UCBR-0002_3-raadplegen.md
@@ -214,7 +224,10 @@ nav:
               - UCBR-0009: bemiddelingsregister/bemiddelingsregister-1_1/raadplegen/UCBR-0009-raadplegen.md
               - UCBR-0010: bemiddelingsregister/bemiddelingsregister-1_1/raadplegen/UCBR-0010-raadplegen.md
               - UCBR-0011: bemiddelingsregister/bemiddelingsregister-1_1/raadplegen/UCBR-0011-raadplegen.md
-            - Toegangscontrole:
+              - UCBR-0012: bemiddelingsregister/bemiddelingsregister-1_1/raadplegen/UCBR-0012-raadplegen.md
+              - UCBR-0013: bemiddelingsregister/bemiddelingsregister-1_1/raadplegen/UCBR-0013-raadplegen.md
+          - Toegangscontrole:
+              - bemiddelingsregister/bemiddelingsregister-1_1/toegangscontrole/index.md
               - UCBR-0001: bemiddelingsregister/bemiddelingsregister-1_1/toegangscontrole/UCBR-0001-toegangscontrole.md
               - UCBR-0002_3: bemiddelingsregister/bemiddelingsregister-1_1/toegangscontrole/UCBR-0002_3-toegangscontrole.md
               - UCBR-0004: bemiddelingsregister/bemiddelingsregister-1_1/toegangscontrole/UCBR-0004-toegangscontrole.md
@@ -222,24 +235,32 @@ nav:
               - UCBR-0007: bemiddelingsregister/bemiddelingsregister-1_1/toegangscontrole/UCBR-0007-toegangscontrole.md
               - UCBR-0008: bemiddelingsregister/bemiddelingsregister-1_1/toegangscontrole/UCBR-0008-toegangscontrole.md
               - UCBR-0009: bemiddelingsregister/bemiddelingsregister-1_1/toegangscontrole/UCBR-0009-toegangscontrole.md
-              - UCBR-001₀: bemiddelingsregister/bemiddelingsregister-1_1/toegangscontrole/UCBR-001₀-toegangscontrole.md
-              - UCBR-₀₀₁₁: bemiddelingsregister/bemiddelingsregister-1_1/toegangscontrole/UCBR-₀₀₁₁-toegangscontrole.md
-            - Notificaties:
+              - UCBR-0010: bemiddelingsregister/bemiddelingsregister-1_1/toegangscontrole/UCBR-0010-toegangscontrole.md
+              - UCBR-0011: bemiddelingsregister/bemiddelingsregister-1_1/toegangscontrole/UCBR-0011-toegangscontrole.md
+              - UCBR-0012: bemiddelingsregister/bemiddelingsregister-1_1/toegangscontrole/UCBR-0012-toegangscontrole.md
+              - UCBR-0013: bemiddelingsregister/bemiddelingsregister-1_1/toegangscontrole/UCBR-0013-toegangscontrole.md
+          - Notificaties:
               - bemiddelingsregister/bemiddelingsregister-1_1/notificaties/index.md
               - Gewijzigde Bemiddelingspecificatie Zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/gewijzigde_bemiddelingspecificatie_zorgaanbieder.md
               - Gewijzigde Bemiddelingspecificatie Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/gewijzigde_bemiddelingspecificatie_zorgkantoor.md
               - Gewijzigde Overdracht Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/gewijzigde_overdracht_zorgkantoor.md
               - Gewijzigde Regiehouder Zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/gewijzigde_regiehouder_zorgaanbieder.md
+              - Gewijzigde Regiehouder Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/gewijzigde_regiehouder_zorgkantoor.md
               - Informatieve Bemiddelingspecificatie Zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/informatieve_bemiddelingspecificatie_zorgaanbieder.md
+              - Informatieve Gewijzigde Bemiddelingspecificatie Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/informatieve_gewijzigde_bemiddelingspecificatie_zorgkantoor.md
+              - Informatieve Nieuwe Bemiddelingspecificatie Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/informatieve_nieuwe_bemiddelingspecificatie_zorgkantoor.md
+              - Informatieve Verwijderde Bemiddelingspecificatie Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/informatieve_verwijderde_bemiddelingspecificatie_zorgkantoor.md
               - Nieuwe Bemiddelingspecificatie Zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/nieuwe_bemiddelingspecificatie_zorgaanbieder.md
               - Nieuwe Bemiddelingspecificatie Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/nieuwe_bemiddelingspecificatie_zorgkantoor.md
               - Nieuwe Overdracht Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/nieuwe_overdracht_zorgkantoor.md
               - Nieuwe Regiehouder Zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/nieuwe_regiehouder_zorgaanbieder.md
+              - NIeuwe Regiehouder Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/nieuwe_regiehouder_zorgkantoor.md
               - Verwijderde Bemiddelingspecificatie Zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/verwijderde_bemiddelingspecificatie_zorgaanbieder.md
               - Verwijderde Bemiddelingspecificatie Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/verwijderde_bemiddelingspecificatie_zorgkantoor.md
               - Verwijderde Overdracht Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/verwijderde_overdracht_zorgkantoor.md
               - Verwijderde Regiehouder Zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/verwijderde_regiehouder_zorgaanbieder.md
-            - Autorisatiematrix: bemiddelingsregister/bemiddelingsregister-1_1/autorisatiematrix_bemiddelingsregister.md
+              - Verwijderde Regiehouder Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/verwijderde_regiehouder_zorgkantoor.md
+          - Autorisatiematrix: bemiddelingsregister/bemiddelingsregister-1_1/autorisatiematrix.md
   - Leveringsregister:
       - leveringsregister/index.md
       - Leveringsregister 1:
@@ -279,6 +300,6 @@ nav:
               - Verwijderde behandelingperiode zorgkantoor: leveringsregister/leveringsregister-1/notificaties/verwijderde_behandelingperiode_zorgkantoor.md
               - Verwijderde leveringperiode zorgkantoor: leveringsregister/leveringsregister-1/notificaties/verwijderde_leveringperiode_zorgkantoor.md
               - Verwijderde uitstelperiode zorgkantoor: leveringsregister/leveringsregister-1/notificaties/verwijderde_uitstelperiode_zorgkantoor.md
-          - Autorisatiematrix: leveringsregister/leveringsregister-1/autorisatiematrix_leveringsregister.md
+          - Autorisatiematrix: leveringsregister/leveringsregister-1/autorisatiematrix.md
   - Generiek:
       - generiek/index.md

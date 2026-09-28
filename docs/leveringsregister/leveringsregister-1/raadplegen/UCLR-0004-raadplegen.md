@@ -32,7 +32,7 @@ flowchart LR
 ### Autorisatie:
 Een zorgkantoor mag voor het toeleiden van een cliënt het Verzoek raadplegen die hoort bij een bemiddelingspecificatie waarvoor het zorgkantoor verantwoordelijk is. 
 - Volledige autorisatieregel: [LRA0003](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/leveringsregister-1/regels/autorisatieregel/lra0003/)
-- Autorisatiematix: [LRA0003](/raadplegen/autorisatiematrix_leveringsregister.md)
+- Autorisatiematix: [LRA0003](/raadplegen/autorisatiematrix.md)
 
 ### Trigger: 
 - Het zorgkantoor wil het Verzoek raadplegen te ondersteuning van het toeleidingsproces van een cliënt.
