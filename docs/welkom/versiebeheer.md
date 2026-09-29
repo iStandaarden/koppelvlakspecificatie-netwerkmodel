@@ -4,6 +4,7 @@
 
 | Versie | Datum ingang | Status | 
 | :-- | :-- | :-- | 
+| [Versie 1.0.0](./release-notes.md#versie-100-29-09-2026) | 29-09-2026 | definitief |
 
 
 ## In Ontwikkeling (future)
