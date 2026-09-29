@@ -6926,46 +6926,17 @@
 <h1 id="informatieve_bemiddelingspecificatie_zorgaanbieder">INFORMATIEVE_BEMIDDELINGSPECIFICATIE_ZORGAANBIEDER<a class="headerlink" href="#informatieve_bemiddelingspecificatie_zorgaanbieder" title="Permanent link">¶</a></h1>
 <h2 id="documentatie">Documentatie<a class="headerlink" href="#documentatie" title="Permanent link">¶</a></h2>
 <p>Notificatie aan de zorgaanbieder die betrokken is bij de zorglevering aan een client waar er in de samenstelling van de zorglevering in de client een wijziging heeft plaatsgevonden. Dit kan een wijziging zijn in een overlappende bemiddelingspecificatie van een ander betrokken zorgaanbieder of de toevoeging van een nieuwe overlappende bemiddelingspecificatie (van een andere zorgaanbieder).</p>
-<blockquote>
-<p>[!IMPORTANT] </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <h2 id="implementatie-fasen">Implementatie fasen<a class="headerlink" href="#implementatie-fasen" title="Permanent link">¶</a></h2>
-<p>Deze Notificatie heeft een afhankelijkheid met de implementatie-fase van het bemiddelingsregister door de zorgkantoren. Er zijn 3 fasen:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Fase</th>
-<th style="text-align: left;">Bemiddelingsregister</th>
-<th style="text-align: left;">ZK33</th>
-<th style="text-align: left;">Silvester AW33</th>
-<th style="text-align: left;">Voor welke zorgaanbieders?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>1</strong></td>
-<td style="text-align: left;">Niet alle zorgkantoren hebben een bemiddelingsregister</td>
-<td style="text-align: left;">Ja</td>
-<td style="text-align: left;">Ja</td>
-<td style="text-align: left;">zorgaanbieders die horen bij verantwoordelijk zorgkantoor</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>2</strong></td>
-<td style="text-align: left;">Alle zorgkantoren hebben een bemiddelingsregister</td>
-<td style="text-align: left;">Nee</td>
-<td style="text-align: left;">Ja</td>
-<td style="text-align: left;">alle zorgaanbieders</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>3</strong></td>
-<td style="text-align: left;">Alle zorgkantoren hebben een bemiddelingsregister en alle zorgaanbieders zijn aangesloten op het bemiddelingsregister</td>
-<td style="text-align: left;">Nee</td>
-<td style="text-align: left;">Nee</td>
-<td style="text-align: left;"><em>geen</em> / <em>optioneel</em> / <em>alle zorgaanbieders</em></td>
-</tr>
-</tbody>
-</table>
-<p>Waar het nodig is de fasering mee te nemen zal dit hieronder worden aangegeven. </p>
-</blockquote>
+<p>Deze Notificatie heeft een afhankelijkheid met de implementatie-fase van het bemiddelingsregister door de zorgkantoren. Er zijn 3 fasen:  <br>
+| Fase      | Bemiddelingsregister      | ZK33  | Silvester AW33    | Voor welke zorgaanbieders? |
+| :------   | :-------------------- | :--   | :-- | :-- |
+| <strong>1</strong>     | Niet alle zorgkantoren hebben een bemiddelingsregister    | Ja    | Ja    | zorgaanbieders die horen bij verantwoordelijk zorgkantoor     |
+| <strong>2</strong>     | Alle zorgkantoren hebben een bemiddelingsregister         | Nee   | Ja    | alle zorgaanbieders   |
+| <strong>3</strong>     | Alle zorgkantoren hebben een bemiddelingsregister en alle zorgaanbieders zijn aangesloten op het bemiddelingsregister     | Nee   | Nee | <em>geen</em> / <em>optioneel</em> / <em>alle zorgaanbieders</em> |  <br>
+Waar het nodig is de fasering mee te nemen zal dit hieronder worden aangegeven. </p>
+</div>
 <h2 id="aanleiding">Aanleiding<a class="headerlink" href="#aanleiding" title="Permanent link">¶</a></h2>
 <p><strong>De trigger voor de notificatie is:</strong> </p>
 <blockquote>
@@ -7058,10 +7029,10 @@
 | BS3   | 01-01-2026   00:00    | 01-01-2026    |       | Nee   |  Nee  |       |
 | BS4   | 01-01-2024   00:00    | 01-01-2024    | <strong>31-05-2025</strong>    | Ja    | <strong>NEE</strong>   | Einddatum   &lt; Vaststellingsmoment A   |
 | BS5   | 01-10-2025   00:00    | 01-10-2025    |       | Ja    | Ja    |       |</p>
-<blockquote>
-<p>[!IMPORTANT]
-Let hierbij op de fasering. Als de ontvangende zorgaanbieder niet bij het verantwoordelijk zorgkantoor hoort dan is er in FASE 1 alsnog geen sprake van verzending.</p>
-</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Let hierbij op de fasering. Als de ontvangende zorgaanbieder niet bij het verantwoordelijk zorgkantoor hoort dan is er in FASE 1 alsnog geen sprake van verzending.</p>
+</div>
 <h2 id="type">Type<a class="headerlink" href="#type" title="Permanent link">¶</a></h2>
 <p>Het type-notificatie: </p>
 <blockquote>

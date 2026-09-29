@@ -6558,13 +6558,41 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#autorisatieregels-en-autorisatiematrix" class="md-nav__link">
+  <a href="#use-cases" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Autorisatieregels en autorisatiematrix
+        Use-cases
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Use-cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aanbieder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aanbieder
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zorgkantoor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zorgkantoor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -6656,16 +6684,14 @@
 
 
 <h1 id="raadplegen-leveringsregister">Raadplegen Leveringsregister<a class="headerlink" href="#raadplegen-leveringsregister" title="Permanent link">¶</a></h1>
-<blockquote>
-<p>[!Caution] 
-Release Candidate 1 - 29-01-2029
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Release Candidate 1 - 29-01-2029
 Hieronder staan de eerste beschrijvingen van de basis raadplegingen op het Leveringsregister.</p>
 <p>Waar mogelijk is er een raadpleeg use-case en toegangscontrole beschrijving beschikbaar. Waar dat nog ontbreekt volgen ze zo snel mogelijk maar dat is afhankelijk of de raadpleging technisch mogelijk is rekeninghoudend met de vereiste toegangscontrole. Dit kan leiden tot aanpassing van de query en aanpassing van het schema. Daar waar dit speelt is dat afzonderlijk aangegeven. </p>
-</blockquote>
-<p>Het raadplegen van het Leveringsregister is gebonden aan voorwaarden. De raadpleger moet bevoegd zijn én het vastgestelde raadpleegpatroon volgen. Dit patroon is essentieel voor het valideren van de toestemming.</p>
-<p>Als het patroon niet wordt gevolgd — bijvoorbeeld door ontbrekende autorisatie, onjuiste of incomplete input, of het opvragen van ongeoorloofde gegevens — wordt de toegang geweigerd of het resultaat beperkt.</p>
-<p>Uses-cases beschrijven hoe een deelnemer het register correct raadpleegt. Per use-case zijn er toegangscontroles beschreven zodat de verbinding met de bijbehorende autorisatie en de benodigde policy gemaakt kan worden.</p>
-<p></p><pre class="mermaid-zoom"><code>---
+</div>
+<p>De use-cases voor het raadplegen van het Leveringsregister per rol en bijbehorende beschrijving van de toegangscontrole door de PDP. </p>
+<pre class="mermaid-zoom"><code>---
 config:
   theme: mc
   look: classic
@@ -6673,25 +6699,24 @@ config:
 ---
 flowchart LR
  subgraph s1["PDP"]
-          T["toegangscontrole"]
+          P["toegangscontrole"]
  end
- subgraph s2["Raadplegen"]
-          R["Use-case"]
-
+ subgraph s2["Leveringsregister"]
+          B["Resource"]
   end
     A["Raadpleger"] --&gt; R
-    R --&gt; T
-    T --&gt; Rs["Register"]
-    R@{ shape: terminal}
-    T@{ shape: terminal}
+    R["Use-case&lt;br&gt;Raadplegen"] --&gt; P
+    P --&gt; B
+    B@{ shape: terminal}
+    P@{ shape: terminal}
     A@{ shape: rounded}
-    Rs@{ shape: rounded}
+    R@{ shape: rounded}
 </code></pre>
-Meer informatie over de structuur van het raadplegen en het valideren ervan is te lezen in het <a href="https://wlz.atlassian.net/wiki/spaces/IWLZAS/pages/23071274/Raadplegen">Afsprakenstelsel iWlz</a><p></p>
-<h2 id="autorisatieregels-en-autorisatiematrix">Autorisatieregels en autorisatiematrix<a class="headerlink" href="#autorisatieregels-en-autorisatiematrix" title="Permanent link">¶</a></h2>
-<p>De toegang tot gegevens is vastgelegd doormiddel van <strong>Autorisatieregels</strong> en de <strong>Autorisatiematrix</strong>. De <a href="https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/leveringsregister-1/regels/autorisatieregel/">autorisatieregels</a> zijn te vinden in het Informatiemodel leveringsregister (via <a href="https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/leveringsregister-1/regels/autorisatieregel/">hier</a>) en de <a href="/raadplegen/autorisatiematrix.md">autorisatiematrix</a> is <a href="/raadplegen/autorisatiematrix.md">hier</a> te vinden.</p>
-<h1 id="use-cases-raadplegen-leveringsregister">Use cases raadplegen Leveringsregister<a class="headerlink" href="#use-cases-raadplegen-leveringsregister" title="Permanent link">¶</a></h1>
-<p>De use-cases voor het raadplegen van het Leveringsregister per rol en bijbehorende beschrijving van de toegangscontrole door de PDP[^1].</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Ga naar <a href="../../../leeswijzer/">Leeswijzer</a> voor de algemene toelichting over het onderdeel Raadplegen.</p>
+</div>
+<h2 id="use-cases">Use-cases<a class="headerlink" href="#use-cases" title="Permanent link">¶</a></h2>
 <p>Kies een use-case voor de beschrijving van het raadplegen of controleren van de toegang van die raadpleging.</p>
 <h3 id="aanbieder">Aanbieder<a class="headerlink" href="#aanbieder" title="Permanent link">¶</a></h3>
 <table>
@@ -6708,7 +6733,7 @@ Meer informatie over de structuur van het raadplegen en het valideren ervan is t
 <td style="text-align: left;">Status levering andere aanbieder</td>
 <td style="text-align: left;"><strong>Als</strong> aanbieder <strong>wil ik</strong> voor het leveren van zorg of ondersteuning gegevens over de status van de levering van de zorg of ondersteuning raadplegen die horen bij de (informatieve) toewijzingen (bemiddelingspecificaties) van andere aanbieders <strong>zodat ik</strong> het volledige inzicht heb in de leveringen en levering beter kan afstemmen.</td>
 <td style="text-align: left;"><a href="UCLR-0001-raadplegen/">UCLR-0001-raadplegen</a> <em>(concept)</em></td>
-<td style="text-align: left;"><a href="/iWlz-levering/raadplegen/aanbieder/UCLR-0001-toegangscontrole.md">UCLR-0001-toegangscontrole</a> <em>(concept)</em></td>
+<td style="text-align: left;"><a href="../toegangscontrole/UCLR-0001-toegangscontrole/">UCLR-0001-toegangscontrole</a> <em>(concept)</em></td>
 </tr>
 <tr>
 <td style="text-align: left;">VerzoekAanbieder en Verzoek</td>
@@ -6757,7 +6782,7 @@ Meer informatie over de structuur van het raadplegen en het valideren ervan is t
 <td style="text-align: left;">Status Levering van informatieve bemiddelingspecificaties</td>
 <td style="text-align: left;"><strong>Als</strong>  uitvoerend zorgkantoor <strong>wil ik</strong> de status van de levering kunnen raadplegen horend bij een informatieve toewijzing (bemiddelingspecificaties), <strong>zodat ik</strong> inzicht heb in de leveringen die horen bij de (informatieve) toewijzingen van andere zorgaanbieders/zorgkantoren.</td>
 <td style="text-align: left;"><a href="UCLR-0009-raadplegen/">UCLR-0009-raadplegen</a> <em>(concept)</em></td>
-<td style="text-align: left;"><a href="/raadplegen/zorgkantoor/UCLR-0009-toegangscontrole.md">UCLR-0009-toegangscontole</a> <em>(concept)</em></td>
+<td style="text-align: left;"><a href="../toegangscontrole/UCLR-0009-toegangscontrole/">UCLR-0009-toegangscontole</a> <em>(concept)</em></td>
 </tr>
 <tr>
 <td style="text-align: left;">Status Behandelperiode</td>
@@ -6767,7 +6792,6 @@ Meer informatie over de structuur van het raadplegen en het valideren ervan is t
 </tr>
 </tbody>
 </table>
-<p>[^1]: PDP: Policy Decision Point. <a href="https://istandaarden.github.io/Afsprakenstelsel-iWlz/current/applicatie/nid_netwerkstelsel/#6-policy-decision-point-pdp">Afsprakenstelsel iWlz - Raadplegen</a></p>
 
 
 
@@ -6805,7 +6829,7 @@ Meer informatie over de structuur van het raadplegen en het valideren ervan is t
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Vorige: Index">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Vorige: Koppelvlakspecificatie Leveringsregister 1">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
@@ -6815,7 +6839,7 @@ Meer informatie over de structuur van het raadplegen en het valideren ervan is t
                 Vorige
               </span>
               <div class="md-ellipsis">
-                Index
+                Koppelvlakspecificatie Leveringsregister 1
               </div>
             </div>
           </a>

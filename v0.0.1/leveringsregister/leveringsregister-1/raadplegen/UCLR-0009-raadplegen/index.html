@@ -6870,10 +6870,10 @@
 
 
 <h1 id="use-cases-raadplegen-levering-van-een-informatieve-bemiddelingspecificaties-uclr-0009-zk">Use cases raadplegen Levering van een informatieve bemiddelingspecificaties (UCLR-0009-ZK)<a class="headerlink" href="#use-cases-raadplegen-levering-van-een-informatieve-bemiddelingspecificaties-uclr-0009-zk" title="Permanent link">¶</a></h1>
-<blockquote>
-<p>[!CAUTION] 
-Voor de controle op de toegang van deze query is er een PIP controle nodig. De toets of dit mogelijk met de huidige informatie mogelijk is, is moet nog plaatsvinden. De query kan nog wijzigen, wat effect kan hebben op het schema. </p>
-</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Voor de controle op de toegang van deze query is er een PIP controle nodig. De toets of dit mogelijk met de huidige informatie mogelijk is, is moet nog plaatsvinden. De query kan nog wijzigen, wat effect kan hebben op het schema.</p>
+</div>
 <pre class="mermaid-zoom"><code>---
 config:
   theme: mc
@@ -6899,7 +6899,7 @@ flowchart LR
 <h3 id="autorisatie">Autorisatie:<a class="headerlink" href="#autorisatie" title="Permanent link">¶</a></h3>
 <p>Een zorgkantoor mag de Levering (en de overige gegevens) raadplegen.
 * Volledige autorisatieregel: <a href="https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/leveringsregister-1/regels/autorisatieregel/lra0004/">LRA0004</a>
-* Autorisatiematrix: <a href="/iWlz-levering/raadplegen/autorisatiematrix.md">LRA0004</a></p>
+* Autorisatiematrix: <a href="../../autorisatiematrix/">LRA0004</a></p>
 <h3 id="trigger">Trigger:<a class="headerlink" href="#trigger" title="Permanent link">¶</a></h3>
 <ul>
 <li>Een zorgkantoor mag voor toeleiden de levering (en overige informatie) raadplegen die horen bij de (informatieve) toewijzingen van andere zorgkantoren. </li>
@@ -6916,7 +6916,7 @@ flowchart LR
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="/iWlz-levering/gql-query/zorgkantoor/QLR-0009-ZK.graphql">QLR-0009-ZK</a></td>
+<td style="text-align: left;"><a href="https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/zorgkantoor/QLR-0009-ZK.graphql">QLR-0009-ZK</a></td>
 <td style="text-align: left;">Op basis van de bemiddelingspecificatieID van de informatieve toewijzing de Levering (en overige toegestane informatie), raadplegen die hoort bij de informatieve toewijzing.</td>
 <td style="text-align: left;"><code>bemiddelingspecificatieID</code></td>
 <td style="text-align: left;">Levering / Client / Leveringperiode / Behandelingperiode / Uitstelperiode / Afstel</td>
@@ -6925,7 +6925,7 @@ flowchart LR
 </table>
 <h2 id="proces-raadplegen">Proces raadplegen<a class="headerlink" href="#proces-raadplegen" title="Permanent link">¶</a></h2>
 <p>Een zorgkantoor is (via een aanbieder) betrokken bij de zorg van een cliënt. 
-Met de aanvullende informatie uit de overlappende bemiddelingspecificatie (zie ook: <a href="https://github.com/iStandaarden/iWlz-bemiddeling/blob/Bemiddelingsregister-1/raadplegen/zorgkantoor/UCBR-0005_6-raadplegen.md">UCBR-0005_6-raadplegen</a>) kan dat zorgkantoor de status van de levering zien die horen bij de informatieve toewijzing(en).</p>
+Met de aanvullende informatie uit de overlappende bemiddelingspecificatie (zie ook: UCBR-0005_6-raadplegen) kan dat zorgkantoor de status van de levering zien die horen bij de informatieve toewijzing(en).</p>
 <p>Hiervoor is de informatieve <code>bemiddelingspecificatieID</code> nodig.</p>
 <h3 id="schematisch">Schematisch<a class="headerlink" href="#schematisch" title="Permanent link">¶</a></h3>
 <p></p><pre class="mermaid-zoom"><code>---

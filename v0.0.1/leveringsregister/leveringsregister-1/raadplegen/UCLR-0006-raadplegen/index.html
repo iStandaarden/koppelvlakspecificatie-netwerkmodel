@@ -6848,10 +6848,10 @@
 
 
 <h1 id="raadplegen-van-de-leveringperiode-door-het-zorgkantoor-uclr-0006">Raadplegen van de Leveringperiode door het zorgkantoor (UCLR-0006)<a class="headerlink" href="#raadplegen-van-de-leveringperiode-door-het-zorgkantoor-uclr-0006" title="Permanent link">¶</a></h1>
-<blockquote>
-<p>[!CAUTION] 
-Voor de controle op de toegang van deze query is er een PIP controle nodig. De toets of dit mogelijk met de huidige informatie mogelijk is, is moet nog plaatsvinden. De query kan nog wijzigen, wat effect kan hebben op het schema. </p>
-</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Voor de controle op de toegang van deze query is er een PIP controle nodig. De toets of dit mogelijk met de huidige informatie mogelijk is, is moet nog plaatsvinden. De query kan nog wijzigen, wat effect kan hebben op het schema.</p>
+</div>
 <pre class="mermaid-zoom"><code>---
 config:
   theme: mc
@@ -6877,7 +6877,7 @@ flowchart LR
 <h3 id="autorisatie">Autorisatie:<a class="headerlink" href="#autorisatie" title="Permanent link">¶</a></h3>
 <p>Het zorgkantoor mag de Leveringperiode (en overige gegevens) raadplegen. 
 - Volledige autorisatieregel: <a href="https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/leveringsregister-1/regels/autorisatieregel/lra0002">LRA0002</a> (verantwoordelijk zorgkantoor), <a href="https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/leveringsregister-1/regels/autorisatieregel/lra0001/">LRA0001</a> (uitvoerend zorgkantoor)
-- Autorisatiematrix: <a href="/raadplegen/autorisatiematrix.md">LRA0001, LRA0002</a></p>
+- Autorisatiematrix: <a href="../../autorisatiematrix/">LRA0001, LRA0002</a></p>
 <p><strong>Trigger:</strong>
 - Een zorgkantoor wil de (actuele) leveringperiode (en overige informatie) raadplegen waarvan het de notificatie heeft ontvangen.</p>
 <h2 id="query-template-beschrijving">Query-template beschrijving<a class="headerlink" href="#query-template-beschrijving" title="Permanent link">¶</a></h2>
@@ -6900,7 +6900,7 @@ flowchart LR
 </tbody>
 </table>
 <h2 id="proces-raadplegen"><strong>Proces raadplegen</strong><a class="headerlink" href="#proces-raadplegen" title="Permanent link">¶</a></h2>
-<p>Een zorgkantoor is (via een zorgaanbieder) betrokken bij de zorg van een client. Als de zorgaanbieder een leveringperiode registreert, aanpast of verwijdert, ontvangt het zorgkantoor daarvan een notificatie. (Ga naar het overzicht <a href="/notificaties#notificaties-aan-het-zorgkantoor">notificaties</a> om te bekijken welke dit zijn).</p>
+<p>Een zorgkantoor is (via een zorgaanbieder) betrokken bij de zorg van een client. Als de zorgaanbieder een leveringperiode registreert, aanpast of verwijdert, ontvangt het zorgkantoor daarvan een notificatie. (Ga naar het overzicht <a href="../../notificaties/">notificaties</a> om te bekijken welke dit zijn).</p>
 <p>Op basis van deze notificatie kan het zorgkantoor de informatie in het leveringsregister raadplegen. </p>
 <h3 id="schematisch">Schematisch:<a class="headerlink" href="#schematisch" title="Permanent link">¶</a></h3>
 <pre class="mermaid-zoom"><code>---
@@ -6947,7 +6947,7 @@ stateDiagram
 </tr>
 <tr>
 <td style="text-align: right;">2.</td>
-<td style="text-align: left;">Zijn het <strong><code>leveringperiodeID</code></strong> en <strong><code>bemiddelingspecificatieID</code></strong> bekend? <br><ol><li> - <strong>Ja</strong> →  Ga verder naar stap 6 <br></li><li> - <strong>Nee</strong> → Wacht op notificatie <a href="../notificaties/"><strong><code>NIEUWE_LEVERINGPERIODE_ZORGKANTOOR</code></strong> of <strong><code>GEWIJZIGDE_LEVERINGPERIODE_ZORGKANTOOR</code></strong></a></li></ol></td>
+<td style="text-align: left;">Zijn het <strong><code>leveringperiodeID</code></strong> en <strong><code>bemiddelingspecificatieID</code></strong> bekend? <br><ol><li> - <strong>Ja</strong> →  Ga verder naar stap 6 <br></li><li> - <strong>Nee</strong> → Wacht op notificatie <a href="../../notificaties/"><strong><code>NIEUWE_LEVERINGPERIODE_ZORGKANTOOR</code></strong> of <strong><code>GEWIJZIGDE_LEVERINGPERIODE_ZORGKANTOOR</code></strong></a></li></ol></td>
 </tr>
 <tr>
 <td style="text-align: right;">4.</td>

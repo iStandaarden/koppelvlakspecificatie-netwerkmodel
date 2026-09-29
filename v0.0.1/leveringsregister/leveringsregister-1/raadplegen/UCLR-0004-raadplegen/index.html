@@ -6836,10 +6836,10 @@
 
 
 <h1 id="raadplegen-verzoek-door-verantwoordelijk-zorgkantoor-ucl-0004-zk">Raadplegen Verzoek door verantwoordelijk zorgkantoor (UCL-0004-ZK)<a class="headerlink" href="#raadplegen-verzoek-door-verantwoordelijk-zorgkantoor-ucl-0004-zk" title="Permanent link">¶</a></h1>
-<blockquote>
-<p>[!CAUTION] 
-Voor de controle op de toegang van deze query is er een PIP controle nodig. De toets of dit mogelijk met de huidige informatie mogelijk is, is moet nog plaatsvinden. De query kan nog wijzigen, wat effect kan hebben op het schema. </p>
-</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Voor de controle op de toegang van deze query is er een PIP controle nodig. De toets of dit mogelijk met de huidige informatie mogelijk is, is moet nog plaatsvinden. De query kan nog wijzigen, wat effect kan hebben op het schema.</p>
+</div>
 <pre class="mermaid-zoom"><code>---
 config:
   theme: mc
@@ -6865,7 +6865,7 @@ flowchart LR
 <h3 id="autorisatie">Autorisatie:<a class="headerlink" href="#autorisatie" title="Permanent link">¶</a></h3>
 <p>Een zorgkantoor mag voor het toeleiden van een cliënt het Verzoek raadplegen die hoort bij een bemiddelingspecificatie waarvoor het zorgkantoor verantwoordelijk is. 
 - Volledige autorisatieregel: <a href="https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/leveringsregister-1/regels/autorisatieregel/lra0003/">LRA0003</a>
-- Autorisatiematix: <a href="/raadplegen/autorisatiematrix.md">LRA0003</a></p>
+- Autorisatiematix: <a href="../../autorisatiematrix/">LRA0003</a></p>
 <h3 id="trigger">Trigger:<a class="headerlink" href="#trigger" title="Permanent link">¶</a></h3>
 <ul>
 <li>Het zorgkantoor wil het Verzoek raadplegen te ondersteuning van het toeleidingsproces van een cliënt.</li>
@@ -6937,7 +6937,7 @@ stateDiagram
 </tr>
 <tr>
 <td>2.</td>
-<td style="text-align: left;">Zijn het <code>verzoekID</code> en <code>bemiddelingspecificatieID</code> bekend? <br><ol><li> - <strong>Ja</strong> -&gt; Ga verder naar stap 4 <br></li><li> - <strong>Nee</strong> -&gt; Wacht op notificatie <a href="../notificaties/zorgkantoor/nieuw_verzoek_zorgkantoor.md">NIEUW_VERZOEK_ZORGKANTOOR</a></li></ol></td>
+<td style="text-align: left;">Zijn het <code>verzoekID</code> en <code>bemiddelingspecificatieID</code> bekend? <br><ol><li> - <strong>Ja</strong> -&gt; Ga verder naar stap 4 <br></li><li> - <strong>Nee</strong> -&gt; Wacht op notificatie <a href="../../notificaties/nieuw_verzoek_zorgkantoor/">NIEUW_VERZOEK_ZORGKANTOOR</a></li></ol></td>
 </tr>
 <tr>
 <td>4.</td>
