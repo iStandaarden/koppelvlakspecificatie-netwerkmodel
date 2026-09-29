@@ -29,7 +29,7 @@ flowchart LR
 ### Autorisatie:
 Een aanbieder mag VerzoekAanbieder en Verzoek raadplegen nadat deze aanbieder is opgenomen in VerzoekAanbieder.
 - Volledige autorisatieregel: [LRA0006](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/leveringsregister-1/regels/autorisatieregel/lra0006/)
-- Autorisatiematrix: [LRA0006](/raadplegen/autorisatiematrix.md)
+- Autorisatiematrix: [LRA0006](../autorisatiematrix.md)
 
 ### Trigger:
 - Een aanbeider wil VerzoekAanbieder en Verzoek raadplegen waarin hij opgenomen is.
@@ -42,7 +42,7 @@ Een aanbieder mag VerzoekAanbieder en Verzoek raadplegen nadat deze aanbieder is
 
 ## Proces raadplegen
 
-Een aanbieder wordt opgenomen in VerzoekAanbieder bij een Verzoek. De aanbieder ontvangt hiervoor een notificatie [NIEUW_VERZOEKAANBIEDER_AANBIEDER](../notificaties/aanbieder/nieuw_verzoekaanbieder_aanbieder.md). Op basis van deze notificatie kan de aanbieder de informatie in het Leveringsregister raadplegen.
+Een aanbieder wordt opgenomen in VerzoekAanbieder bij een Verzoek. De aanbieder ontvangt hiervoor een notificatie [NIEUW_VERZOEKAANBIEDER_AANBIEDER](../notificaties/nieuw_verzoekaanbieder_aanbieder.md). Op basis van deze notificatie kan de aanbieder de informatie in het Leveringsregister raadplegen.
 
 ### Schematisch:
 

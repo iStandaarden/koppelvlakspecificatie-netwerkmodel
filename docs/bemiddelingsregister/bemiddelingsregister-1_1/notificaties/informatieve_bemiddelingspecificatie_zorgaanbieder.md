@@ -5,17 +5,15 @@
 Notificatie aan de zorgaanbieder die betrokken is bij de zorglevering aan een client waar er in de samenstelling van de zorglevering in de client een wijziging heeft plaatsgevonden. Dit kan een wijziging zijn in een overlappende bemiddelingspecificatie van een ander betrokken zorgaanbieder of de toevoeging van een nieuwe overlappende bemiddelingspecificatie (van een andere zorgaanbieder).
 
 
-> [!IMPORTANT] 
-> ## Implementatie fasen
-> Deze Notificatie heeft een afhankelijkheid met de implementatie-fase van het bemiddelingsregister door de zorgkantoren. Er zijn 3 fasen:
->
-> | Fase   	| Bemiddelingsregister   	| ZK33 	| Silvester AW33 	| Voor welke zorgaanbieders? |
-> | :------	| :--------------------	| :--	| :-- | :-- |
-> | **1** 	| Niet alle zorgkantoren hebben een bemiddelingsregister 	| Ja   	| Ja 	| zorgaanbieders die horen bij verantwoordelijk zorgkantoor 	|
-> | **2** 	| Alle zorgkantoren hebben een bemiddelingsregister     	| Nee  	| Ja 	| alle zorgaanbieders   |
-> | **3** 	| Alle zorgkantoren hebben een bemiddelingsregister en alle zorgaanbieders zijn aangesloten op het bemiddelingsregister    	| Nee  	| Nee | *geen* / *optioneel* / *alle zorgaanbieders* |
->
-> Waar het nodig is de fasering mee te nemen zal dit hieronder worden aangegeven. 
+!!! warning
+    ## Implementatie fasen
+    Deze Notificatie heeft een afhankelijkheid met de implementatie-fase van het bemiddelingsregister door de zorgkantoren. Er zijn 3 fasen:    
+    | Fase   	| Bemiddelingsregister   	| ZK33 	| Silvester AW33 	| Voor welke zorgaanbieders? |
+    | :------	| :--------------------	| :--	| :-- | :-- |
+    | **1** 	| Niet alle zorgkantoren hebben een bemiddelingsregister 	| Ja   	| Ja 	| zorgaanbieders die horen bij verantwoordelijk zorgkantoor 	|
+    | **2** 	| Alle zorgkantoren hebben een bemiddelingsregister     	| Nee  	| Ja 	| alle zorgaanbieders   |
+    | **3** 	| Alle zorgkantoren hebben een bemiddelingsregister en alle zorgaanbieders zijn aangesloten op het bemiddelingsregister    	| Nee  	| Nee | *geen* / *optioneel* / *alle zorgaanbieders* |    
+    Waar het nodig is de fasering mee te nemen zal dit hieronder worden aangegeven. 
 
 ## Aanleiding
 **De trigger voor de notificatie is:** 
@@ -88,8 +86,8 @@ Notificatie aan de zorgaanbieder die betrokken is bij de zorglevering aan een cl
 | BS4 	| 01-01-2024   00:00 	| 01-01-2024 	| **31-05-2025** 	| Ja 	| **NEE** 	| Einddatum   < Vaststellingsmoment A 	|
 | BS5 	| 01-10-2025   00:00 	| 01-10-2025 	|   	| Ja 	| Ja 	|   	|
 
-> [!IMPORTANT]
-> Let hierbij op de fasering. Als de ontvangende zorgaanbieder niet bij het verantwoordelijk zorgkantoor hoort dan is er in FASE 1 alsnog geen sprake van verzending.
+!!! warning
+    Let hierbij op de fasering. Als de ontvangende zorgaanbieder niet bij het verantwoordelijk zorgkantoor hoort dan is er in FASE 1 alsnog geen sprake van verzending.
 
 
 ## Type

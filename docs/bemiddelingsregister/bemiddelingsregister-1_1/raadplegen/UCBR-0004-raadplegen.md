@@ -46,9 +46,9 @@ Het zorgkantoor mag de toewijzing raadplegen.
 
 Een zorgaanbieder wordt bij de zorg van een client betrokken door het zorgkantoor. Het zorgkantoor registreert een bemiddelingspecificatie (toewijzing) voor het leveren van zorg door de zorgaanbieder. Als de zorgaanbieder contract heeft bij een zorgkantoor uit een andere regio (bovenregionaal) dan het verantwoordelijke zorgkantoor, ontvangt dat bovenregionale zorgkantoor de notificatie [`NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGKANTOOR](../notificaties/nieuwe_bemiddelingspecificatie_zorgkantoor.md). Op basis van deze notificatie kan het zorgkantoor de informatie in het bemiddelingsregister raadplegen. 
 
-> [!NOTE]
-> Voor een volledige beeld moeten er altijd 2 bevragingen worden uitgevoerd.
-> Te beginnen met de hier beschreven raadpleging, voor het ophalen van de eigen toewijzing periode. Vervolgens één van de twee andere queries voor de overlappende zorgtoewijzingen. Die use-case is beschreven in [UCBR-0005_6-raadplegen](UCBR-0005_6-raadplegen.md).
+!!! info
+    Voor een volledige beeld moeten er altijd 2 bevragingen worden uitgevoerd.
+    Te beginnen met de hier beschreven raadpleging, voor het ophalen van de eigen toewijzing periode. Vervolgens één van de twee andere queries voor de overlappende zorgtoewijzingen. Die use-case is beschreven in [UCBR-0005_6-raadplegen](UCBR-0005_6-raadplegen.md).
 
 ### Schematisch:
 

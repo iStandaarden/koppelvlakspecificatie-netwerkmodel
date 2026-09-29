@@ -46,8 +46,8 @@ Het zorgkantoor mag de overdracht raadplegen.
 
 Het zorgkantoor wil na overdracht van een client het volledige dossier raadplegen om de verantwoordelijkheid zorgvuldig over te kunnen nemen. 
 
-> [!NOTE]
-> Voor het ophalen van de `overdrachtDatum` zie dan de use-case is beschreven in [UCBR-0007-raadplegen](UCBR-0007-raadplegen.md).
+!!! info
+    Voor het ophalen van de `overdrachtDatum` zie dan de use-case is beschreven in [UCBR-0007-raadplegen](UCBR-0007-raadplegen.md).
 
 ### Schematisch:
 

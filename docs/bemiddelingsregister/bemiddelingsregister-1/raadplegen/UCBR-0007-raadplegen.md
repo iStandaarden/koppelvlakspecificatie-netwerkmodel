@@ -46,9 +46,9 @@ Het zorgkantoor mag de overdracht raadplegen.
 
 Een zorgkantoor ontvangt van een ander zorgkantoor dat verantwoordelijk is voor de bemiddeling van zorg aan een client de notificatie [`NIEUWE_OVERDRACHT_ZORGKANTOOR](../notificaties/nieuwe_overdracht_zorgkantoor.md). Op basis van deze notificatie kan het zorgkantoor de informatie in het bemiddelingsregister raadplegen. 
 
-> [!NOTE]
-> Voor een volledige beeld moeten er **altijd** 2 bevragingen worden uitgevoerd.
-> Met de hier beschreven raadpleging kan de overdrachtDatum worden gelezen. Vervolgens kan de tweede query worden uitgevoerd voor het raadplegen van de Client contactgegevens de contactpersonen en de regiehouder. Die use-case is beschreven in [UCBR-0008-raadplegen](UCBR-0008-raadplegen.md).
+!!! info
+    Voor een volledige beeld moeten er **altijd** 2 bevragingen worden uitgevoerd.
+    Met de hier beschreven raadpleging kan de overdrachtDatum worden gelezen. Vervolgens kan de tweede query worden uitgevoerd voor het raadplegen van de Client contactgegevens de contactpersonen en de regiehouder. Die use-case is beschreven in [UCBR-0008-raadplegen](UCBR-0008-raadplegen.md).
 
 ### Schematisch:
 

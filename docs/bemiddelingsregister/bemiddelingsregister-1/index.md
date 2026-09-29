@@ -23,5 +23,5 @@
 
 
 ### Overige
-  - Informatiemodel iWlz Bemiddelingsregister 1.1: [naar informatiemodel](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/bemiddelingsregister-1.1/) 
+  - Informatiemodel iWlz Bemiddelingsregister 1: [naar informatiemodel](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/bemiddelingsregister-1/) 
 

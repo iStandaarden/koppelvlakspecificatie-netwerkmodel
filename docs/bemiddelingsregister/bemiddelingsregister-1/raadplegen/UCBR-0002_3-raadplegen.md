@@ -49,8 +49,8 @@ Een zorgaanbieder mag voor het leveren van zorg aan een cliënt de eigen toewijz
 Een zorgaanbieder is bij de zorg van een client betrokken door het zorgkantoor. Hiervoor heeft die zorgaanbieder een (eigen) bemiddelingsspecificatie voor het leveren van zorg (zie ook: [UCBR-0001-raadplegen](UCBR-0001-raadplegen.md)). Met de aanvullende informatie uit de eigen bemiddelingsspecificatie mag de aanbieder ook de bemiddelingspecificaties van de andere betrokken zorgaanbieders raadplegen. Hiervoor zijn naast de eigen `bemiddelingspecificatieID` en de eigen `Agbcode`,  ook de `toewijzingIngangsdatum` en het `vaststellingMoment` nodig en de `toewijzingEinddatum` zodra de eigen bemiddelingspecificatie een `toewijzingEinddatum` heeft. Deze informatie is nodig om de overlap met de andere bemiddelingsspecificaties met de eigen bemiddelingspecificatie te bepalen.  
 
 
-> [!NOTE]
-> Volg [UCBR-0001-raadplegen](UCBR-0001-raadplegen.md) voor het raadplegen van de `toewijzingIngangsdatum` en de `toewijzingEinddatum`.
+!!! info
+    Volg [UCBR-0001-raadplegen](./UCBR-0001-raadplegen.md) voor het raadplegen van de `toewijzingIngangsdatum` en de `toewijzingEinddatum`.
 
 ### Schematisch: 
 

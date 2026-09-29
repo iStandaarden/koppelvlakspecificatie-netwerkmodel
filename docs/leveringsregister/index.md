@@ -8,4 +8,4 @@ Het Leveringsregister is in beheer bij de (zorg)aanbieder en is onderdeel van he
 ## Beschikbare Documentatie en status
 | Release             | Status | Koppelvlakspecificatie | Informatiemodel |
 | :------------------ | :----- | :--------------------- | :-------------- |
-| **Leveringsregister 1** | In Ontwikkeling | [Documentatie](./leveringsregister-1/) / [GraphQL](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/) | [iWlz Leveringsregister 1](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/leveringsregister-1/) |
+| **Leveringsregister 1** | In Ontwikkeling | [Documentatie](./leveringsregister-1/index.md) / [GraphQL](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/) | [iWlz Leveringsregister 1](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/leveringsregister-1/) |

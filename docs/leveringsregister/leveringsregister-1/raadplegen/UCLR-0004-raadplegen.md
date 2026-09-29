@@ -1,7 +1,7 @@
 # Raadplegen Verzoek door verantwoordelijk zorgkantoor (UCL-0004-ZK)
 
-> [!CAUTION] 
-> Voor de controle op de toegang van deze query is er een PIP controle nodig. De toets of dit mogelijk met de huidige informatie mogelijk is, is moet nog plaatsvinden. De query kan nog wijzigen, wat effect kan hebben op het schema. 
+!!! warning
+    Voor de controle op de toegang van deze query is er een PIP controle nodig. De toets of dit mogelijk met de huidige informatie mogelijk is, is moet nog plaatsvinden. De query kan nog wijzigen, wat effect kan hebben op het schema.
 
 ```mermaid
 ---
@@ -32,7 +32,7 @@ flowchart LR
 ### Autorisatie:
 Een zorgkantoor mag voor het toeleiden van een cliënt het Verzoek raadplegen die hoort bij een bemiddelingspecificatie waarvoor het zorgkantoor verantwoordelijk is. 
 - Volledige autorisatieregel: [LRA0003](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/leveringsregister-1/regels/autorisatieregel/lra0003/)
-- Autorisatiematix: [LRA0003](/raadplegen/autorisatiematrix.md)
+- Autorisatiematix: [LRA0003](../autorisatiematrix.md)
 
 ### Trigger: 
 - Het zorgkantoor wil het Verzoek raadplegen te ondersteuning van het toeleidingsproces van een cliënt.
@@ -85,7 +85,7 @@ stateDiagram
 | **#** | **Toelichting** |
 | --- | :--- |
 | 1. | *Start* |
-| 2. | Zijn het `verzoekID` en `bemiddelingspecificatieID` bekend? <br/><ol><li> - **Ja** -> Ga verder naar stap 4 <br/><li> - **Nee** -> Wacht op notificatie [NIEUW_VERZOEK_ZORGKANTOOR](../notificaties/zorgkantoor/nieuw_verzoek_zorgkantoor.md) 
+| 2. | Zijn het `verzoekID` en `bemiddelingspecificatieID` bekend? <br/><ol><li> - **Ja** -> Ga verder naar stap 4 <br/><li> - **Nee** -> Wacht op notificatie [NIEUW_VERZOEK_ZORGKANTOOR](../notificaties/nieuw_verzoek_zorgkantoor.md) 
 | 4. | Het zorgkantoor vult het verplichte `verzoekID` en `bemiddelingspecificatieID` in query-template [QLR-0004-Zk.graphql](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/zorgkantoor/QLR-0004-ZK.graphql) en initieert een raadpleging van het Verzoek in het Leveringsregister. |
 | 4. | Het zorgkantoor stuurt Graphql-request + Acces-token naar het Policy Enforcement Point (PEP) |
 | 5. | De PEP voert de [toegangscontrole](../toegangscontrole/UCLR-0004-toegangscontrole.md) uit en stuurt bij toegang het request door naar het leveringsregister.

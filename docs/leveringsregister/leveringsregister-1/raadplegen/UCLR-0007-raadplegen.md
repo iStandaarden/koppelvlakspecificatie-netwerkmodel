@@ -1,6 +1,6 @@
 # Raadplegen van de Uitstelperiode door het zorgkantoor (UCLR-0007) 
-> [!CAUTION] 
-> Voor de controle op de toegang van deze query is er een PIP controle nodig. De toets of dit mogelijk met de huidige informatie mogelijk is, is moet nog plaatsvinden. De query kan nog wijzigen, wat effect kan hebben op het schema. 
+!!! warning
+    Voor de controle op de toegang van deze query is er een PIP controle nodig. De toets of dit mogelijk met de huidige informatie mogelijk is, is moet nog plaatsvinden. De query kan nog wijzigen, wat effect kan hebben op het schema.
 
 ```mermaid
 ---
@@ -32,7 +32,7 @@ flowchart LR
 ### Autorisatie:
 Het zorgkantoor mag de uitstelperiode (en overige gegevens) raadplegen. 
 - Volledige autorisatieregel: [LRA0002](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/leveringsregister-1/regels/autorisatieregel/lra0002) (verantwoordelijk zorgkantoor), [LRA0001](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/leveringsregister-1/regels/autorisatieregel/lra0001/) (uitvoerend zorgkantoor)
-- Autorisatiematrix: [LRA0001, LRA0002](/raadplegen/autorisatiematrix.md)
+- Autorisatiematrix: [LRA0001, LRA0002](../autorisatiematrix.md)
 
 **Trigger:**
 - Een zorgkantoor wil de (actuele) uitstelperiode (en overige informatie) raadplegen waarvan het de notificatie heeft ontvangen.
@@ -46,7 +46,7 @@ Het zorgkantoor mag de uitstelperiode (en overige gegevens) raadplegen.
 
 ## **Proces raadplegen**
 
-Een zorgkantoor is (via een zorgaanbieder) betrokken bij de zorg van een client. Als de zorgaanbieder een uitstelperiode registreert, aanpast of verwijdert, ontvangt het zorgkantoor daarvan een notificatie. (Ga naar het overzicht [notificaties](/notificaties#notificaties-aan-het-zorgkantoor) om te bekijken welke dit zijn).
+Een zorgkantoor is (via een zorgaanbieder) betrokken bij de zorg van een client. Als de zorgaanbieder een uitstelperiode registreert, aanpast of verwijdert, ontvangt het zorgkantoor daarvan een notificatie. (Ga naar het overzicht [notificaties](../notificaties/index.md) om te bekijken welke dit zijn).
 
 Op basis van deze notificatie kan het zorgkantoor de informatie in het leveringsregister raadplegen. 
 
@@ -89,7 +89,7 @@ stateDiagram
 | # | Toelichting |
 | --: | :-- |
 | 1. | *Start* raadplegen Leveringsregister | 
-| 2. | Zijn het **`uitstelperiodeID`** en **`bemiddelingspecificatieID`** bekend? <br/><ol><li> - **Ja** →  Ga verder naar stap 6 <br/><li> - **Nee** → Wacht op notificatie [**`NIEUWE_UITSTELPERIODE_ZORGKANTOOR`** of **`GEWIJZIGDE_UITSTELPERIODE_ZORGKANTOOR`**](../notificaties/)  | 
+| 2. | Zijn het **`uitstelperiodeID`** en **`bemiddelingspecificatieID`** bekend? <br/><ol><li> - **Ja** →  Ga verder naar stap 6 <br/><li> - **Nee** → Wacht op notificatie [**`NIEUWE_UITSTELPERIODE_ZORGKANTOOR`** of **`GEWIJZIGDE_UITSTELPERIODE_ZORGKANTOOR`**](../notificaties/index.md)  | 
 | 4. | Notificatie is ontvangen | 
 | 5. | Gebruik de informatie uit de notificatie voor het raadplegen van het leveringsregister |
 | 6. | Het zorgkantoor vult de verplichte **`uitstelperiodeID`** en **`bemiddelingspecificatieID`** in query-template [QLR-0007-ZK.graphqlgraphql](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/zorgkantoor/QLR-0007-ZK.graphql) en initieert een raadpleging van de uitstelperiode in het Leveringsregister. | 

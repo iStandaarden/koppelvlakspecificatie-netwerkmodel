@@ -46,9 +46,9 @@ Een zorgaanbieder mag voor het leveren van zorg aan een cliënt de eigen toewijz
 
 Een zorgaanbieder wordt bij de zorg van een client betrokken door het zorgkantoor. Het zorgkantoor registreert een bemiddelingspecificatie (toewijzing) voor het leveren van zorg door de zorgaanbieder. De zorgaanbieder ontvangt hiervan een notificatie [```NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGAANBIEDER```](../notificaties/nieuwe_bemiddelingspecificatie_zorgaanbieder.md). Op basis van deze notificatie kan de zorgaanbieder de informatie in het bemiddelingsregister raadplegen. 
 
-> [!NOTE]
-> Voor een volledige beeld moeten er altijd 2 bevragingen worden uitgevoerd.
-> Te beginnen met de hier beschreven raadpleging. Voor het ophalen van de eigen toewijzing periode en vervolgens één van de twee andere queries voor de overlappende zorgtoewijzingen. Die use-case is beschreven in [UCBR-0002_3-raadplegen](UCBR-0002_3-raadplegen.md).
+!!! info
+    Voor een volledige beeld moeten er altijd 2 bevragingen worden uitgevoerd.
+    Te beginnen met de hier beschreven raadpleging. Voor het ophalen van de eigen toewijzing periode en vervolgens één van de twee andere queries voor de overlappende zorgtoewijzingen. Die use-case is beschreven in [UCBR-0002_3-raadplegen](UCBR-0002_3-raadplegen.md).
 
 ### Schematisch:
 

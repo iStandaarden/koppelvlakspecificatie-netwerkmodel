@@ -1,7 +1,7 @@
 # Use cases raadplegen Levering van een informatieve bemiddelingspecificaties (UCLR-0009-ZK)
 
-> [!CAUTION] 
-> Voor de controle op de toegang van deze query is er een PIP controle nodig. De toets of dit mogelijk met de huidige informatie mogelijk is, is moet nog plaatsvinden. De query kan nog wijzigen, wat effect kan hebben op het schema. 
+!!! warning
+    Voor de controle op de toegang van deze query is er een PIP controle nodig. De toets of dit mogelijk met de huidige informatie mogelijk is, is moet nog plaatsvinden. De query kan nog wijzigen, wat effect kan hebben op het schema.
 
 ```mermaid
 ---
@@ -32,7 +32,7 @@ flowchart LR
 ### Autorisatie:
 Een zorgkantoor mag de Levering (en de overige gegevens) raadplegen.
 * Volledige autorisatieregel: [LRA0004](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/leveringsregister-1/regels/autorisatieregel/lra0004/)
-* Autorisatiematrix: [LRA0004](/iWlz-levering/raadplegen/autorisatiematrix.md)
+* Autorisatiematrix: [LRA0004](../autorisatiematrix.md)
 
 ### Trigger:
 * Een zorgkantoor mag voor toeleiden de levering (en overige informatie) raadplegen die horen bij de (informatieve) toewijzingen van andere zorgkantoren. 
@@ -41,13 +41,13 @@ Een zorgkantoor mag de Levering (en de overige gegevens) raadplegen.
 
 |Query ID | Beschrijving | Verplichte input | Resultaat |
 | :--- | :--- | :--- | :--- |
-| [QLR-0009-ZK](/iWlz-levering/gql-query/zorgkantoor/QLR-0009-ZK.graphql) | Op basis van de bemiddelingspecificatieID van de informatieve toewijzing de Levering (en overige toegestane informatie), raadplegen die hoort bij de informatieve toewijzing. | `bemiddelingspecificatieID` | Levering / Client / Leveringperiode / Behandelingperiode / Uitstelperiode / Afstel | 
+| [QLR-0009-ZK](https://github.com/iStandaarden/iWlz-levering/tree/Leveringsregister-1/gql-query/zorgkantoor/QLR-0009-ZK.graphql) | Op basis van de bemiddelingspecificatieID van de informatieve toewijzing de Levering (en overige toegestane informatie), raadplegen die hoort bij de informatieve toewijzing. | `bemiddelingspecificatieID` | Levering / Client / Leveringperiode / Behandelingperiode / Uitstelperiode / Afstel | 
 
 
 ## Proces raadplegen
 
 Een zorgkantoor is (via een aanbieder) betrokken bij de zorg van een cliënt. 
-Met de aanvullende informatie uit de overlappende bemiddelingspecificatie (zie ook: [UCBR-0005_6-raadplegen](https://github.com/iStandaarden/iWlz-bemiddeling/blob/Bemiddelingsregister-1/raadplegen/zorgkantoor/UCBR-0005_6-raadplegen.md)) kan dat zorgkantoor de status van de levering zien die horen bij de informatieve toewijzing(en).
+Met de aanvullende informatie uit de overlappende bemiddelingspecificatie (zie ook: UCBR-0005_6-raadplegen) kan dat zorgkantoor de status van de levering zien die horen bij de informatieve toewijzing(en).
 
 Hiervoor is de informatieve `bemiddelingspecificatieID` nodig.
 

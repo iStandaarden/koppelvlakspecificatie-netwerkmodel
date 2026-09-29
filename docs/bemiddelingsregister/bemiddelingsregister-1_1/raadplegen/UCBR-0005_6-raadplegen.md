@@ -50,8 +50,8 @@ Een zorgkantoor mag voor het toeleiden van de client de Bemiddelingspecificatie 
 
 Een zorgaanbieder wordt bij de zorg van een client betrokken door het zorgkantoor. Het zorgkantoor registreert een bemiddelingspecificatie (toewijzing) voor het leveren van zorg door de zorgaanbieder. Als de zorgaanbieder contract heeft bij een zorgkantoor uit een andere regio (bovenregionaal) dan het verantwoordelijke zorgkantoor, heeft dat zorgkantoor een (eigen) bemiddelingsspecificatie voor het leveren van zorg (zie ook: [UCBR-0004-raadplegen](UCBR-0004-raadplegen.md)). Met de aanvullende informatie uit de eigen bemiddelingsspecificatie mag dat zorgkantoor ook de bemiddelingspecificaties van de andere betrokken zorgaanbieders raadplegen. Hiervoor zijn naast de eigen `bemiddelingspecificatieID` en de eigen `uzoviCode`,  ook de `toewijzingIngangsdatum` en het `vaststellingMoment` nodig en de `toewijzingEinddatum` zodra de eigen bemiddelingspecificatie een `toewijzingEinddatum` heeft. Deze informatie is nodig om de periode-overlap met de andere bemiddelingsspecificaties met de eigen bemiddelingspecificatie te bepalen.  
 
-> [!NOTE]
-> Zie [UCBR-0004-raadplegen](UCBR-0004-raadplegen.md) voor het raadplegen van de `toewijzingIngangsdatum` en de `toewijzingEinddatum`.
+!!! info
+    Zie [UCBR-0004-raadplegen](./UCBR-0004-raadplegen.md) voor het raadplegen van de `toewijzingIngangsdatum` en de `toewijzingEinddatum`.
 
 ### Schematisch: 
 
