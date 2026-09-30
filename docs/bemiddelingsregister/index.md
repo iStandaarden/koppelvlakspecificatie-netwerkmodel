@@ -12,4 +12,3 @@ De documentatie is specifiek voor het Bemiddelingsregister. Voor de algemene toe
 | :------------------ | :----- | :--------------------- | :-------------- |
 | **Bemiddelingsregister 1**| **Lopend** | [Documentatie](./bemiddelingsregister-1/index.md) / [GraphQL](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1/) | [iWlz Bemiddelingsregister 1](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/bemiddelingsregister-1/) |
 | Bemiddelingsregister 1.1 | In Ontwikkeling | [Documentatie](./bemiddelingsregister-1_1/index.md) / [GraphQL](https://github.com/iStandaarden/iWlz-bemiddeling/tree/Bemiddelingsregister-1_1) | [iWlz Bemiddelingsregister 1.1](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/bemiddelingsregister-1.1/) |
-

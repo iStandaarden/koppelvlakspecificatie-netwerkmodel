@@ -38,7 +38,9 @@ De koppelvlak-specificatie maken onderdeel uit van de **iStandaard iWlz**. De an
   - [Informatiemodel iStandaarden](https://informatiemodel.istandaarden.nl/)
 
 
+
 ## Meer informatie
   - Portaal voor iStandaarden in de Zorg en Ondersteuning: [homepagina iStandaarden](https://www.istandaarden.nl)
+  - Aanvullende Documentatie Netwerkmodel iWlz: [homepage GitHub documentatie](https://istandaarden.github.io)
 
 
