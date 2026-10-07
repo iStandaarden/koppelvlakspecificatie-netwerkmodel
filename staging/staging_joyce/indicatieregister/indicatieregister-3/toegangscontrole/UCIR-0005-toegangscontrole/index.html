@@ -6925,7 +6925,7 @@ stateDiagram
 | --: | :-- |
 | 1. |Ontvangst GraphQL-request + access-token door <strong>PEP</strong> |
 | 2. |De <strong>PEP</strong> valideert de access-token en geeft na goedkeur het request door aan de PDP |
-| 3. |De <strong>PDP</strong> controleert op:<ol><li>Of het request voldoet aan de template en er geen ongeoorloofde gegevens worden opgevraagd.</li><li> Aanwezigheid van de verplichte parameters in het request;</li></ol>Is aan alle voorwaarden voldaan?<br> - <strong>Ja</strong> → Toegang tot de resource: stap 4<br>- <strong>Nee</strong> → geen toegang tot de resource - <em>Einde proces (geen toegang.)</em> |<br>
+| 3. |De <strong>PDP</strong> controleert op:<br><ol><li>Of het request voldoet aan de template en er geen ongeoorloofde gegevens worden opgevraagd.</li><li> Aanwezigheid van de verplichte parameters in het request;</li></ol>Is aan alle voorwaarden voldaan?<br> - <strong>Ja</strong> → Toegang tot de resource: stap 4<br>- <strong>Nee</strong> → geen toegang tot de resource - <em>Einde proces (geen toegang.)</em> |<br>
 | 4. | Het zorgkantoor krijgt toegang tot alle entiteiten die bij de Wlz-indicatie horen. |
 | 5. | <em>Einde</em> |<p></p>
 <p><strong>Controle query PIP:</strong>
