@@ -90,7 +90,7 @@ stateDiagram
 | --: | :-- |
 | 1. |Ontvangst GraphQL-request + access-token door **PEP** |
 | 2. |De **PEP** valideert de access-token en geeft na goedkeur het request door aan de PDP |
-| 3. |De **PDP** controleert op:<ol><li>Of het request voldoet aan de template en er geen ongeoorloofde gegevens worden opgevraagd.<li> Aanwezigheid van de verplichte parameters in het request;</ol>Is aan alle voorwaarden voldaan?<br/> - **Ja** → Toegang tot de resource: stap 4<br/>- **Nee** → geen toegang tot de resource - *Einde proces (geen toegang.)* |  
+| 3. |De **PDP** controleert op:</br><ol><li>Of het request voldoet aan de template en er geen ongeoorloofde gegevens worden opgevraagd.<li> Aanwezigheid van de verplichte parameters in het request;</ol>Is aan alle voorwaarden voldaan?<br/> - **Ja** → Toegang tot de resource: stap 4<br/>- **Nee** → geen toegang tot de resource - *Einde proces (geen toegang.)* |  
 | 4. | Het zorgkantoor krijgt toegang tot alle entiteiten die bij de Wlz-indicatie horen. |
 | 5. | *Einde* |
 
