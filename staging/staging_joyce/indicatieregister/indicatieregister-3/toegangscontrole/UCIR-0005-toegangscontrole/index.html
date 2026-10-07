@@ -6859,7 +6859,7 @@
 <h3 id="context">Context<a class="headerlink" href="#context" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>Query-parameters vereist:</strong> Het <code>bsn</code>, <code>besluitnummer</code>, <code>afgiftedatum</code> en <code>ingangsdatum</code> moeten zijn meegegeven in de query. </li>
-<li><strong>Toegangsvoorwaarde:</strong> Er is alleen toegang als aan de alle volgende voorwaarden is voldaan:<ul>
+<li><strong>Toegangsvoorwaarde:</strong> Er is alleen toegang als aan alle volgende voorwaarden is voldaan:<ul>
 <li>De vereiste parameters zijn aanwezig in de query;</li>
 <li>De acces-token bevat een geldige <code>uzovicode</code>van het zorgkantoor</li>
 </ul>
@@ -6870,7 +6870,7 @@
 <p>Toegang tot het Indicatieregister via query ['QIR-0005-ZKn.graphql<code>graphql](https://github.com/iStandaarden/iWlz-indicatie/tree/Indicatieregister-3/gql-query/zorgkantoor/QIR-0005-ZKn.graphql) is **alleen toegestaan** als:
 - de relevante parameters aanwezig zijn in de query;
 - de acces-token bevat een geldige</code>uzovicode`;</p>
-<p>Indien aan deze voorwaarden is voldaan, mogen alle bijbehorende GraphQL-nodes worden opgevraagd confrom de structuur van de query-template.</p>
+<p>Indien aan deze voorwaarden is voldaan, mogen alle bijbehorende GraphQL-nodes worden opgevraagd conform de structuur van de query-template.</p>
 </blockquote>
 <h1 id="toegangscontrole-flows-zorgkantoor-nieuw-verantwoordelijk-qir-0005-zkngraphql">Toegangscontrole-flows Zorgkantoor nieuw verantwoordelijk: QIR-0005-ZKn.graphql<a class="headerlink" href="#toegangscontrole-flows-zorgkantoor-nieuw-verantwoordelijk-qir-0005-zkngraphql" title="Permanent link">¶</a></h1>
 <p>Beschrijving van het autorisatieprocces door de PEP.</p>
@@ -6926,7 +6926,7 @@ stateDiagram
 | 1. |Ontvangst GraphQL-request + access-token door <strong>PEP</strong> |
 | 2. |De <strong>PEP</strong> valideert de access-token en geeft na goedkeur het request door aan de PDP |
 | 3. |De <strong>PDP</strong> controleert op:<ol><li>Of het request voldoet aan de template en er geen ongeoorloofde gegevens worden opgevraagd.</li><li> Aanwezigheid van de verplichte parameters in het request;</li></ol>Is aan alle voorwaarden voldaan?<br> - <strong>Ja</strong> → Toegang tot de resource: stap 4<br>- <strong>Nee</strong> → geen toegang tot de resource - <em>Einde proces (geen toegang.)</em> |<br>
-| 4. | Het zorgkantoor krijgt toegang tot alle entiteiten die bij de Wlz-indicatie horen.
+| 4. | Het zorgkantoor krijgt toegang tot alle entiteiten die bij de Wlz-indicatie horen. |
 | 5. | <em>Einde</em> |<p></p>
 <p><strong>Controle query PIP:</strong>
 </p><div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>niet van toepassing
