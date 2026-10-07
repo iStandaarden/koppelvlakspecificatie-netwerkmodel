@@ -86,6 +86,7 @@ stateDiagram
   style indienen fill:#BBDEFB,color:none
 
 ```
+
 | # | Toelichting |
 | --: | :-- |
 | 1. |Ontvangst GraphQL-request + access-token door **PEP** |
