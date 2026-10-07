@@ -27,7 +27,9 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van deze bes
     - De acces-token bevat een geldige `uzovicode`van het zorgkantoor
     
 ### Resultaat 
+
 > Toegang tot het Indicatieregister via query ['QIR-0005-ZKn.graphql`graphql](https://github.com/iStandaarden/iWlz-indicatie/tree/Indicatieregister-3/gql-query/zorgkantoor/QIR-0005-ZKn.graphql) is **alleen toegestaan** als:
+>
 >- de relevante parameters aanwezig zijn in de query;
 >- de acces-token bevat een geldige `uzovicode`;
 >
