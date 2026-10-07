@@ -22,7 +22,7 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van deze bes
 
 ### Context
 - **Query-parameters vereist:** Het `bsn`, `besluitnummer`, `afgiftedatum` en `ingangsdatum` moeten zijn meegegeven in de query. 
-- **Toegangsvoorwaarde:** Er is alleen toegang als aan de alle volgende voorwaarden is voldaan:
+- **Toegangsvoorwaarde:** Er is alleen toegang als aan alle volgende voorwaarden is voldaan:
     - De vereiste parameters zijn aanwezig in de query;
     - De acces-token bevat een geldige `uzovicode`van het zorgkantoor
     
@@ -31,7 +31,7 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van deze bes
 >- de relevante parameters aanwezig zijn in de query;
 >- de acces-token bevat een geldige `uzovicode`;
 >
-> Indien aan deze voorwaarden is voldaan, mogen alle bijbehorende GraphQL-nodes worden opgevraagd confrom de structuur van de query-template.
+> Indien aan deze voorwaarden is voldaan, mogen alle bijbehorende GraphQL-nodes worden opgevraagd conform de structuur van de query-template.
 
 # Toegangscontrole-flows Zorgkantoor nieuw verantwoordelijk: QIR-0005-ZKn.graphql
 
@@ -91,7 +91,7 @@ stateDiagram
 | 1. |Ontvangst GraphQL-request + access-token door **PEP** |
 | 2. |De **PEP** valideert de access-token en geeft na goedkeur het request door aan de PDP |
 | 3. |De **PDP** controleert op:<ol><li>Of het request voldoet aan de template en er geen ongeoorloofde gegevens worden opgevraagd.<li> Aanwezigheid van de verplichte parameters in het request;</ol>Is aan alle voorwaarden voldaan?<br/> - **Ja** → Toegang tot de resource: stap 4<br/>- **Nee** → geen toegang tot de resource - *Einde proces (geen toegang.)* |  
-| 4. | Het zorgkantoor krijgt toegang tot alle entiteiten die bij de Wlz-indicatie horen.
+| 4. | Het zorgkantoor krijgt toegang tot alle entiteiten die bij de Wlz-indicatie horen. |
 | 5. | *Einde* |
 
 **Controle query PIP:**
