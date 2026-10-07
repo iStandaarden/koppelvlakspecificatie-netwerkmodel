@@ -6920,14 +6920,37 @@ stateDiagram
   style error fill:#D50000
   style access,Query,resource fill:#00C853
   style indienen fill:#BBDEFB,color:none
-</code></pre>
-| # | Toelichting |
-| --: | :-- |
-| 1. |Ontvangst GraphQL-request + access-token door <strong>PEP</strong> |
-| 2. |De <strong>PEP</strong> valideert de access-token en geeft na goedkeur het request door aan de PDP |
-| 3. |De <strong>PDP</strong> controleert op:<br><ol><li>Of het request voldoet aan de template en er geen ongeoorloofde gegevens worden opgevraagd.</li><li> Aanwezigheid van de verplichte parameters in het request;</li></ol>Is aan alle voorwaarden voldaan?<br> - <strong>Ja</strong> → Toegang tot de resource: stap 4<br>- <strong>Nee</strong> → geen toegang tot de resource - <em>Einde proces (geen toegang.)</em> |<br>
-| 4. | Het zorgkantoor krijgt toegang tot alle entiteiten die bij de Wlz-indicatie horen. |
-| 5. | <em>Einde</em> |<p></p>
+</code></pre><p></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">#</th>
+<th style="text-align: left;">Toelichting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1.</td>
+<td style="text-align: left;">Ontvangst GraphQL-request + access-token door <strong>PEP</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">2.</td>
+<td style="text-align: left;">De <strong>PEP</strong> valideert de access-token en geeft na goedkeur het request door aan de PDP</td>
+</tr>
+<tr>
+<td style="text-align: right;">3.</td>
+<td style="text-align: left;">De <strong>PDP</strong> controleert op:<br><ol><li>Of het request voldoet aan de template en er geen ongeoorloofde gegevens worden opgevraagd.</li><li> Aanwezigheid van de verplichte parameters in het request;</li></ol>Is aan alle voorwaarden voldaan?<br> - <strong>Ja</strong> → Toegang tot de resource: stap 4<br>- <strong>Nee</strong> → geen toegang tot de resource - <em>Einde proces (geen toegang.)</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">4.</td>
+<td style="text-align: left;">Het zorgkantoor krijgt toegang tot alle entiteiten die bij de Wlz-indicatie horen.</td>
+</tr>
+<tr>
+<td style="text-align: right;">5.</td>
+<td style="text-align: left;"><em>Einde</em></td>
+</tr>
+</tbody>
+</table>
 <p><strong>Controle query PIP:</strong>
 </p><div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>niet van toepassing
 </span></code></pre></div><p></p>
