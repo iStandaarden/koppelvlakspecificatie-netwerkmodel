@@ -59,8 +59,9 @@ stateDiagram
     state check01 <<choice>>
     checkInput01 --> check01
 
-    check01 --> access:ja
     check01 --> error:nee
+    check01 --> access:ja
+    
     error
     access
     }
