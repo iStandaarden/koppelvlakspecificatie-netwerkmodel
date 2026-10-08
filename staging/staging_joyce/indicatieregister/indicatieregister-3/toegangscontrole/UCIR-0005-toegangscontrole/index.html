@@ -6895,8 +6895,9 @@ stateDiagram
     state check01 &lt;&lt;choice&gt;&gt;
     checkInput01 --&gt; check01
 
-    check01 --&gt; access:ja
     check01 --&gt; error:nee
+    check01 --&gt; access:ja
+
     error
     access
     }
