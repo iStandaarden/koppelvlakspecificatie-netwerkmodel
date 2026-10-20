@@ -504,7 +504,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0001-raadplegen.md">
+<a class="md-nav__link" href="../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0001-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -516,7 +516,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0002-raadplegen.md">
+<a class="md-nav__link" href="../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0002-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -528,7 +528,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0003-raadplegen.md">
+<a class="md-nav__link" href="../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0003-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -540,7 +540,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0004-raadplegen.md">
+<a class="md-nav__link" href="../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0004-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -552,7 +552,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0005-raadplegen.md">
+<a class="md-nav__link" href="../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0005-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -2392,7 +2392,8 @@
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_5_2_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../leveringsregister/leveringsregister-1/toegangscontrole/">
 <span class="md-ellipsis">
     
   
@@ -2401,8 +2402,11 @@
 
     
   </span>
+</a>
+<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
+</div>
 <nav aria-expanded="false" aria-labelledby="__nav_5_2_3_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_5_2_3">
 <span class="md-nav__icon md-icon"></span>
@@ -2833,37 +2837,8 @@
 <h1 id="raadplegen">Raadplegen<a class="headerlink" href="#raadplegen" title="Permanent link">¶</a></h1>
 <p>De dienst <strong>Raadplegen</strong> wordt aangeboden door de bronhouders aan (toekomstige) afnemer zodat de afnemers instaat worden gesteld relevante informatie in te zien.</p>
 <p>Hier worden alleen de onderdelen beschreven die voortkomen uit de koppelvlak-specificatie. 
-</p><pre class="mermaid-zoom"><code>---
-config:
-  theme: neutral
----
-flowchart RL
-    Client(["💻 Client"])
 
-    subgraph Pipeline["Verwerking van het raadpleegverzoek"]
-        direction RL
-        GQ["GraphQL-query"]
-        OPA["🛡️Toegangscontrole"]
-        GS["GraphQL-schema &lt;br/&gt;Register"]
-        GQ --&gt; OPA --&gt; GS 
-    end
-
-    DB[("🗄️ Bronhouder Register")]
-    IB["Informatiebehoefte"]
-    Client --&gt; IB
-    IB --&gt; GQ
-    GS --&gt; DB
-
-    classDef graphql fill:#f5e6f2,stroke:#E10098,stroke-width:2px,color:#333;
-    classDef opa fill:#e6e8eb,stroke:#5b6470,stroke-width:2px,color:#333;
-    classDef client fill:#f5f5f5,stroke:#333,stroke-width:2px,color:#333;
-    classDef db fill:#d9d9d9,stroke:#555,stroke-width:2px,color:#333;
-
-    class GQ,GS graphql;
-    class OPA opa;
-    class Client,IB client;
-    class DB db;</code></pre>
-Figuur 1 - Vereenvoudigde weergave van raadplegen<p></p>
+Figuur 1 - Vereenvoudigde weergave van raadplegen</p>
 <h3 id="informatiebehoefte-raadpleeg-usecases">Informatiebehoefte - Raadpleeg usecases<a class="headerlink" href="#informatiebehoefte-raadpleeg-usecases" title="Permanent link">¶</a></h3>
 <p>Het raadplegen van het register is gebonden aan voorwaarden. De raadpleger moet bevoegd zijn én het vastgestelde raadpleegpatroon volgen. Dit patroon is essentieel voor het valideren van de toestemming.</p>
 <p>Als dat patroon niet wordt gevolgd — bijvoorbeeld door ontbrekende autorisatie, onjuiste of incomplete input, het opvragen van ongeoorloofde gegevens — wordt de toegang geweigerd of het resultaat beperkt.</p>

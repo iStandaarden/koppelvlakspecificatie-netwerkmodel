@@ -34,7 +34,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#raadplegen-van-wlzindicatieid-door-nieuw-verantwoordelijk-zorgkantoor-via-zk31-UCIR-0005">
+<a class="md-skip" href="#raadplegen-van-wlzindicatieid-door-nieuw-verantwoordelijk-zorgkantoor-via-zk31-ucir-0005">
           Ga naar inhoud
         </a>
 </div>
@@ -430,7 +430,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0001-raadplegen.md">
+<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0001-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -442,7 +442,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0002-raadplegen.md">
+<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0002-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -454,7 +454,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0003-raadplegen.md">
+<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0003-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -466,7 +466,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0004-raadplegen.md">
+<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0004-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -478,7 +478,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0005-raadplegen.md">
+<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0005-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -2387,7 +2387,8 @@
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_5_2_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../../leveringsregister/leveringsregister-1/toegangscontrole/">
 <span class="md-ellipsis">
     
   
@@ -2396,8 +2397,11 @@
 
     
   </span>
+</a>
+<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
+</div>
 <nav aria-expanded="false" aria-labelledby="__nav_5_2_3_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_5_2_3">
 <span class="md-nav__icon md-icon"></span>
@@ -2845,21 +2849,8 @@
 </ol>
 </nav>
 <article class="md-content__inner md-typeset">
-<h1 id="raadplegen-van-wlzindicatieid-door-nieuw-verantwoordelijk-zorgkantoor-via-zk31-UCIR-0005">Raadplegen van WlzIndicatieID door nieuw verantwoordelijk Zorgkantoor via ZK31 (UCIR-0005)<a class="headerlink" href="#raadplegen-van-wlzindicatieid-door-nieuw-verantwoordelijk-zorgkantoor-via-zk31-UCIR-0005" title="Permanent link">¶</a></h1>
-<pre class="mermaid-zoom"><code>---
-config:
-  theme: mc
-  look: classic
-  layout: elk
----
-flowchart LR
- subgraph s1["Indicatieregister"]
-          B["Raadplegen WlzIndicatieID"]
-  end
-    A["Nieuw verantwoordelijk&lt;br&gt;Zorgkantoor&lt;/br&gt;via ZK31"] --&gt; B
-    B@{ shape: terminal}
-    A@{ shape: rounded}
-    style s1 fill:#FFF9C4,stroke:#FFF9C4</code></pre>
+<h1 id="raadplegen-van-wlzindicatieid-door-nieuw-verantwoordelijk-zorgkantoor-via-zk31-ucir-0005">Raadplegen van WlzIndicatieID door nieuw verantwoordelijk Zorgkantoor via ZK31 (UCIR-0005)<a class="headerlink" href="#raadplegen-van-wlzindicatieid-door-nieuw-verantwoordelijk-zorgkantoor-via-zk31-ucir-0005" title="Permanent link">¶</a></h1>
+<p></p>
 <h2 id="use-case-beschrijving"><strong>Use Case Beschrijving</strong><a class="headerlink" href="#use-case-beschrijving" title="Permanent link">¶</a></h2>
 <p><strong>Titel:</strong> Raadplegen van Wlz-indicatie door een Zorgkantoor<br/>
 <strong>Actoren:</strong> Zorgkantoor dat verantwoordelijk wordt door dossieroverdracht van een client  </p>
@@ -2897,46 +2888,7 @@ flowchart LR
 <p>Een zorgkantoor wordt door dossieroverdracht via een ZK31 verantwoordelijk voor de client en mag dan de Wlz indicatie van die client raadplegen in het Indicatieregister. Hiervoor en voor de verdere afhandeling van de dossieroverdracht heeft dat zorgkantoor de <code>wlzIndicatieID</code> nodig. (WlzIndicatieID is een verplichte waarde voor het kunnen registreren van een Bemiddeling). </p>
 <p>Dit gegeven zit niet in de ZK31. Daarvoor is het nodig dat het zorgkantoor op basis van informatie uit de ZK31 het gegeven kan opvragen.</p>
 <p><strong>schematisch:</strong></p>
-<pre class="mermaid-zoom"><code>---
-config:
-  theme: neutral
-  look: classic
----
-stateDiagram
-    [*] --&gt; raadplegen
-    state idAvailable &lt;&lt;choice&gt;&gt;
-
-    raadplegen --&gt; idAvailable
-    idAvailable --&gt; notifyWait: nee
-    state register {
-    notifyWait --&gt; notifyReceive
-    notifyReceive --&gt; haalData
-    }
-    state chooseQuery &lt;&lt;choice&gt;&gt;
-    idAvailable --&gt; chooseQuery: ja
-    haalData --&gt; chooseQuery
-    chooseQuery --&gt; inputQuery
-    inputQuery --&gt; Query
-    Query --&gt; PEP 
-    PEP --&gt; [*]: geen toegang
-    PEP --&gt; resource: toegang
-    resource --&gt; [*]
-
-    raadplegen: 1.Raadplegen wlzIndicatieID
-    register: Berichtenverkeer
-    idAvailable: 2.verplichte parameters bekend?
-    notifyWait: 3.Wacht op ZK31
-    notifyReceive: 4.ZK31 ontvangen
-    haalData: 5.Gebruik verplichte velden ZK31
-    inputQuery: 6.Gebruik ontvangen parameters uit ZK31 
-    Query: 7.Gebruik query QIR-0005-ZKn
-    PEP: 8.Toegangscontrole PEP
-    resource: Indicatieregister
-
-  style notifyWait fill:#FFD600
-  style raadplegen fill:#BBDEFB,color:none
-  style notifyReceive,haalData,inputQuery fill:#C8E6C9
-  style Query fill:#00C853</code></pre>
+<p></p>
 <table>
 <thead>
 <tr>

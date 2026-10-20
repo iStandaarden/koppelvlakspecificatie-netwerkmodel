@@ -430,7 +430,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0001-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0001-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -442,7 +442,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0002-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0002-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -454,7 +454,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0003-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0003-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -466,7 +466,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0004-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0004-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -478,7 +478,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0005-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0005-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -2400,7 +2400,8 @@
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_5_2_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../toegangscontrole/">
 <span class="md-ellipsis">
     
   
@@ -2409,8 +2410,11 @@
 
     
   </span>
+</a>
+<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
+</div>
 <nav aria-expanded="false" aria-labelledby="__nav_5_2_3_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_5_2_3">
 <span class="md-nav__icon md-icon"></span>
@@ -2876,20 +2880,7 @@
 <p class="admonition-title">Warning</p>
 <p>Voor de controle op de toegang van deze query is er een PIP controle nodig. De toets of dit mogelijk met de huidige informatie mogelijk is, is moet nog plaatsvinden. De query kan nog wijzigen, wat effect kan hebben op het schema.</p>
 </div>
-<pre class="mermaid-zoom"><code>---
-config:
-  theme: mc
-  look: classic
-  layout: elk
----
-flowchart LR
- subgraph s1["Leveringsregister"]
-          B["Raadplegen Uitstelperiode"]
-  end
-    A["Zorgkantoor"] --&gt; B
-    B@{ shape: terminal}
-    A@{ shape: rounded}
-    style s1 fill:#FFF9C4,stroke:#FFF9C4</code></pre>
+<p></p>
 <h2 id="use-case-beschrijving"><strong>Use Case Beschrijving</strong><a class="headerlink" href="#use-case-beschrijving" title="Permanent link">¶</a></h2>
 <p><strong>Titel:</strong> Raadplegen van de uitstelperiode (na notificatie) door het zorgkantoor<br/>
 <strong>Actoren:</strong> Zorgkantoor die betrokken is bij de levering van zorg aan een client.  </p>
@@ -2927,36 +2918,7 @@ flowchart LR
 <p>Een zorgkantoor is (via een zorgaanbieder) betrokken bij de zorg van een client. Als de zorgaanbieder een uitstelperiode registreert, aanpast of verwijdert, ontvangt het zorgkantoor daarvan een notificatie. (Ga naar het overzicht <a href="../../notificaties/">notificaties</a> om te bekijken welke dit zijn).</p>
 <p>Op basis van deze notificatie kan het zorgkantoor de informatie in het leveringsregister raadplegen. </p>
 <h3 id="schematisch">Schematisch:<a class="headerlink" href="#schematisch" title="Permanent link">¶</a></h3>
-<pre class="mermaid-zoom"><code>---
-config:
-  theme: neutral
-  look: classic
----
-stateDiagram
-  direction TB
-  [*] --&gt; raadplegen
-  idAvailable --&gt; notifyWait:nee
-  idAvailable --&gt; QBR0001ZAiq:ja
-  notifyWait --&gt; notifyReceive
-  notifyReceive --&gt; QBR0001ZAiq
-  QBR0001ZAiq --&gt; QBR0001ZA
-  QBR0001ZA --&gt; PEP
-  PEP --&gt; [*]:geen toegang
-  PEP --&gt; resource:toegang
-  resource --&gt; [*]
-  raadplegen --&gt; idAvailable
-  raadplegen:Raadplegen Leveringsregister voor (actuele) status uitstelperiode
-  idAvailable:uitstelperiodeID en bemiddelingspecificatieID bekend?
-  notifyWait:Wacht op notificatie
-  QBR0001ZAiq:Gebruik uitstelperiodeID en bemiddelingspecificatieID
-  notifyReceive:notificatie NIEUWE_UITSTELPERIODE_ZORGKANTOOR of GEWIJZIGDE_UITSTELPERIODE_ZORGKANTOOR ontvangen
-  QBR0001ZA:Gebruik template QLR-0007-ZK
-  PEP:Toegangscontrole PEP
-  style raadplegen fill:#BBDEFB,color:none
-  style notifyWait fill:#FFD600
-  style notifyReceive fill:#C8E6C9
-  style QBR0001ZA fill:#00C853
-</code></pre>
+<p></p>
 <table>
 <thead>
 <tr>

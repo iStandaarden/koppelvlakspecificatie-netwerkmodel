@@ -430,7 +430,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0001-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0001-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -442,7 +442,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0002-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0002-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -454,7 +454,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0003-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0003-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -466,7 +466,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0004-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0004-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -478,7 +478,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0005-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0005-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -2400,7 +2400,8 @@
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_5_2_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../../leveringsregister/leveringsregister-1/toegangscontrole/">
 <span class="md-ellipsis">
     
   
@@ -2409,8 +2410,11 @@
 
     
   </span>
+</a>
+<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
+</div>
 <nav aria-expanded="false" aria-labelledby="__nav_5_2_3_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_5_2_3">
 <span class="md-nav__icon md-icon"></span>
@@ -2872,20 +2876,7 @@
 </nav>
 <article class="md-content__inner md-typeset">
 <h1 id="raadplegen-van-het-zorgkantoor-betrokken-bij-de-wlz-indicatie-ucbr-0010">Raadplegen van het zorgkantoor betrokken bij de Wlz Indicatie (UCBR-0010)<a class="headerlink" href="#raadplegen-van-het-zorgkantoor-betrokken-bij-de-wlz-indicatie-ucbr-0010" title="Permanent link">¶</a></h1>
-<pre class="mermaid-zoom"><code>---
-config:
-  theme: mc
-  look: classic
-  layout: elk
----
-flowchart LR
- subgraph s1["Bemiddelingsregister"]
-          B["Raadplegen Bemiddeling"]
-  end
-    A["CIZ"] --&gt; B
-    B@{ shape: terminal}
-    A@{ shape: rounded}
-    style s1 fill:#FFF9C4,stroke:#FFF9C4</code></pre>
+<p></p>
 <h2 id="use-case-beschrijving"><strong>Use Case Beschrijving</strong><a class="headerlink" href="#use-case-beschrijving" title="Permanent link">¶</a></h2>
 <p><strong>Titel:</strong> Raadplegen van het zorgkantoor betrokken bij de Wlz Indicatie door CIZ<br/>
 <strong>Actoren:</strong> Het CIZ verantwoordelijk voor het op de hoogte stellen van het zorgkantoor dat betrokken is (geweest) bij een gewijzigde Wlz Indicatie.</p>
@@ -2922,34 +2913,7 @@ flowchart LR
 <h2 id="proces-raadplegen"><strong>Proces raadplegen</strong><a class="headerlink" href="#proces-raadplegen" title="Permanent link">¶</a></h2>
 <p>Door verhuizingen van de client kan het verantwoordelijk zorgkantoor gewijzigd zijn en niet meer het initieel verantwoordelijk zorgkantoor zijn. Het CIZ raadpleegt op basis van de wlzIndicatieID in het Bemiddelingregister de betrokken verantwoordelijk zorgkantoren. </p>
 <h3 id="schematisch">Schematisch:<a class="headerlink" href="#schematisch" title="Permanent link">¶</a></h3>
-<pre class="mermaid-zoom"><code>---
-config:
-  theme: neutral
-  look: classic
----
-stateDiagram
-  direction TB
-
-  [*] --&gt; raadplegen
-  raadplegen --&gt;  QBR0010CIZiq
-  QBR0010CIZiq --&gt; QBR0010CIZ
-  QBR0010CIZ --&gt; PEP
-  PEP --&gt; [*]:geen toegang
-  PEP --&gt; resource:toegang
-  resource --&gt; [*]
-
-
-
-  PEP:Toegangscontrole PEP
-  raadplegen: Raadplegen Bemiddelingsregister voor verantwoordelijk zorgkantoor
-  QBR0010CIZiq: Gebruik wlzIndicatieID
-  QBR0010CIZ: Gebruik template QBR-0010-CIZ
-
-  style notifyWait fill:#FFD600
-  style raadplegen fill:#BBDEFB,color:none
-  style QBR0010CIZiq fill:#C8E6C9
-  style QBR0010CIZ fill:#00C853
-</code></pre>
+<p></p>
 <table>
 <thead>
 <tr>

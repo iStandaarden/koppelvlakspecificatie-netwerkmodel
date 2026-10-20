@@ -5,7 +5,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://istandaarden.github.io/koppelvlakspecificatie-netwerkmodel/indicatieregister/indicatieregister-2/raadplegen/" rel="canonical"/>
 <link href="../" rel="prev"/>
-<link href="../toegangscontrole/" rel="next"/>
+<link href="UCIR-0001-raadplegen/" rel="next"/>
 <link href="../../../assets/graphql-custom.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.7" name="generator"/>
 <title>Raadplegen Indicatieregister 2 - Koppelvlakspecificatie Netwerkmodel</title>
@@ -430,7 +430,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="UCIR-0001-raadplegen.md">
+<a class="md-nav__link" href="UCIR-0001-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -442,7 +442,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="UCIR-0002-raadplegen.md">
+<a class="md-nav__link" href="UCIR-0002-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -454,7 +454,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="UCIR-0003-raadplegen.md">
+<a class="md-nav__link" href="UCIR-0003-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -466,7 +466,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="UCIR-0004-raadplegen.md">
+<a class="md-nav__link" href="UCIR-0004-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -478,7 +478,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="UCIR-0005-raadplegen.md">
+<a class="md-nav__link" href="UCIR-0005-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -2318,7 +2318,8 @@
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_5_2_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../leveringsregister/leveringsregister-1/toegangscontrole/">
 <span class="md-ellipsis">
     
   
@@ -2327,8 +2328,11 @@
 
     
   </span>
+</a>
+<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
+</div>
 <nav aria-expanded="false" aria-labelledby="__nav_5_2_3_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_5_2_3">
 <span class="md-nav__icon md-icon"></span>
@@ -2760,27 +2764,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="raadplegen-indicatieregister-2">Raadplegen Indicatieregister 2<a class="headerlink" href="#raadplegen-indicatieregister-2" title="Permanent link">¶</a></h1>
 <p>De use-cases voor het raadplegen van het Indicatieregister per rol en bijbehorende beschrijving van de toegangscontrole door de PDP. </p>
-<pre class="mermaid-zoom"><code>---
-config:
-  theme: mc
-  look: classic
-  layout: elk
----
-flowchart LR
- subgraph s1["PDP"]
-          P["toegangscontrole"]
- end
- subgraph s2["Indicatieregister"]
-          B["Resource"]
-  end
-    A["Raadpleger"] --&gt; R
-    R["Use-case&lt;br&gt;Raadplegen"] --&gt; P
-    P --&gt; B
-    B@{ shape: terminal}
-    P@{ shape: terminal}
-    A@{ shape: rounded}
-    R@{ shape: rounded}
-</code></pre>
+<p></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Ga naar <a href="../../../leeswijzer/">Leeswijzer</a> voor de algemene toelichting over het onderdeel Raadplegen.</p>
@@ -2801,7 +2785,7 @@ flowchart LR
 <tr>
 <td style="text-align: left;">Wlz Indicatie raadplegen</td>
 <td style="text-align: left;"><strong>Als</strong> zorgaanbieder die betrokken is bij het leveren van zorg, <strong>wil ik</strong> de Wlz Indicatie raadplegen van de client waar ik een bemiddelingsspecificatie heb, <strong>zodat</strong> ik inzicht heb in de geïndiceerde zorg</td>
-<td style="text-align: left;"><a href="./UCIR-0002-raadplegen.md">UCIR-0002-raadplegen</a></td>
+<td style="text-align: left;"><a href="UCIR-0002-raadplegen/">UCIR-0002-raadplegen</a></td>
 <td style="text-align: left;"><a href="../toegangscontrole/UCIR-0002-toegangscontrole/">UCIR-0002-toegangscontrole</a></td>
 </tr>
 </tbody>
@@ -2820,25 +2804,25 @@ flowchart LR
 <tr>
 <td style="text-align: left;">Wlz Indicatie raadplegen door <strong>Initieel</strong> verantwoordelijk zorgkantoor</td>
 <td style="text-align: left;"><strong>Als</strong> zorgkantoor dat initieel verantwoordelijk is voor de client en zorgt voor de bemiddeling van zorg, <strong>wil ik</strong> de Wlz Indicatie raadplegen van de client, <strong>zodat</strong> ik inzicht heb in de geïndiceerde zorg.</td>
-<td style="text-align: left;"><a href="./UCIR-0001-raadplegen.md">UCIR-0001-raadplegen</a></td>
+<td style="text-align: left;"><a href="UCIR-0001-raadplegen/">UCIR-0001-raadplegen</a></td>
 <td style="text-align: left;"><a href="../toegangscontrole/UCIR-0001-toegangscontrole/">UCIR-0001-toegangscontrole</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">Wlz Indicatie raadplegen na dossieroverdracht</td>
 <td style="text-align: left;"><strong>Als</strong> zorgkantoor dat de client krijgt overgedragen van het huidige verantwoordelijk zorgkantoor , <strong>wil ik</strong> de Wlz Indicatie raadplegen van de client, <strong>zodat</strong> ik inzicht heb in de geïndiceerde zorg.</td>
-<td style="text-align: left;"><a href="./UCIR-0003-raadplegen.md">UCIR-0003-raadplegen</a></td>
+<td style="text-align: left;"><a href="UCIR-0003-raadplegen/">UCIR-0003-raadplegen</a></td>
 <td style="text-align: left;"><a href="../toegangscontrole/UCIR-0003-toegangscontrole/">UCIR-0003-toegangscontrole</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">Wlz Indicatie raadplegen bovenregionaal betrokken</td>
 <td style="text-align: left;"><strong>Als</strong> zorgkantoor dat bovenregionaal betrokken is bij de uitvoering van zorg , <strong>wil ik</strong> de Wlz Indicatie raadplegen van de client, <strong>zodat</strong> ik inzicht heb in de geïndiceerde zorg.</td>
-<td style="text-align: left;"><a href="./UCIR-0004-raadplegen.md">UCIR-0004-raadplegen</a></td>
+<td style="text-align: left;"><a href="UCIR-0004-raadplegen/">UCIR-0004-raadplegen</a></td>
 <td style="text-align: left;"><a href="../toegangscontrole/UCIR-0004-toegangscontrole/">UCIR-0004-toegangscontrole</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">WlzIndicatieID opvragen</td>
 <td style="text-align: left;"><strong>Als</strong> zorgkantoor dat door dossieroverdracht via het berichtenverkeer (ZK31) een client krijgt overgedragen, <strong>wil ik</strong> de WlzIndicatieID raadplegen van de client, <strong>zodat</strong> ik de client kan bemiddelen</td>
-<td style="text-align: left;"><a href="./UCIR-0005-raadplegen.md">UCIR-0005-raadplegen</a></td>
+<td style="text-align: left;"><a href="UCIR-0005-raadplegen/">UCIR-0005-raadplegen</a></td>
 <td style="text-align: left;"><a href="../toegangscontrole/UCIR-0005-toegangscontrole/">UCIR-0005-toegangscontrole</a></td>
 </tr>
 </tbody>
@@ -2874,13 +2858,13 @@ flowchart LR
               </div>
 </div>
 </a>
-<a aria-label="Volgende: Toegangscontrole" class="md-footer__link md-footer__link--next" href="../toegangscontrole/">
+<a aria-label="Volgende: UCIR-0001" class="md-footer__link md-footer__link--next" href="UCIR-0001-raadplegen/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Volgende
               </span>
 <div class="md-ellipsis">
-                Toegangscontrole
+                UCIR-0001
               </div>
 </div>
 <div class="md-footer__button md-icon">

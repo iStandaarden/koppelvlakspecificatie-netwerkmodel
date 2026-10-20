@@ -430,7 +430,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0001-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0001-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -442,7 +442,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0002-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0002-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -454,7 +454,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0003-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0003-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -466,7 +466,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0004-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0004-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -478,7 +478,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0005-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0005-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -2400,7 +2400,8 @@
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_5_2_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../../leveringsregister/leveringsregister-1/toegangscontrole/">
 <span class="md-ellipsis">
     
   
@@ -2409,8 +2410,11 @@
 
     
   </span>
+</a>
+<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
+</div>
 <nav aria-expanded="false" aria-labelledby="__nav_5_2_3_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_5_2_3">
 <span class="md-nav__icon md-icon"></span>
@@ -2872,20 +2876,7 @@
 </nav>
 <article class="md-content__inner md-typeset">
 <h1 id="raadplegen-van-de-overdracht-door-het-nieuw-verantwoordelijk-zorgkantoor-inclusief-contactgegevens-en-regiehouder-ucbr-0008">Raadplegen van de Overdracht door het nieuw verantwoordelijk zorgkantoor inclusief contactgegevens en regiehouder (UCBR-0008)<a class="headerlink" href="#raadplegen-van-de-overdracht-door-het-nieuw-verantwoordelijk-zorgkantoor-inclusief-contactgegevens-en-regiehouder-ucbr-0008" title="Permanent link">¶</a></h1>
-<pre class="mermaid-zoom"><code>---
-config:
-  theme: mc
-  look: classic
-  layout: elk
----
-flowchart LR
- subgraph s1["Bemiddelingsregister"]
-          B["Raadplegen Overdracht - volledig dossier"]
-  end
-    A["Zorgkantoor&lt;br&gt;(nieuw verantwoordelijk)"] --&gt; B
-    B@{ shape: terminal}
-    A@{ shape: rounded}
-    style s1 fill:#FFF9C4,stroke:#FFF9C4</code></pre>
+<p></p>
 <h2 id="use-case-beschrijving"><strong>Use Case Beschrijving</strong><a class="headerlink" href="#use-case-beschrijving" title="Permanent link">¶</a></h2>
 <p><strong>Titel:</strong> Raadplegen van het dossier van de overgedragen client en de toegewezen zorg aan de, zodat ik de verantwoordelijkheid over de client zorgvuldig kan overnemen.<br/>
 <strong>Actoren:</strong> Zorgkantoor dat door dossier overdracht verantwoordelijk wordt voor de zorgbemiddeling van de overgedragen client.  </p>
@@ -2926,47 +2917,7 @@ flowchart LR
 <p>Voor het ophalen van de <code>overdrachtDatum</code> zie dan de use-case is beschreven in <a href="../UCBR-0007-raadplegen/">UCBR-0007-raadplegen</a>.</p>
 </div>
 <h3 id="schematisch">Schematisch:<a class="headerlink" href="#schematisch" title="Permanent link">¶</a></h3>
-<pre class="mermaid-zoom"><code>---
-config:
-  theme: neutral
-  look: classic
----
-stateDiagram
-  direction TB
-
-  [*] --&gt; raadplegen
-  raadplegen --&gt; idAvailable 
-  state andereflow {
-    direction TB
-    anderequery
-  }
-  idAvailable --&gt; andereflow:nee
-  idAvailable --&gt; datum: ja
-  datum --&gt; andereflow:nee, overdrachtdatum raadplegen
-  datum --&gt; qinput:ja
-  qinput --&gt; query
-
-
-  query --&gt; PEP
-  PEP --&gt; [*]:geen toegang
-  PEP --&gt; resource:toegang
-  resource --&gt; [*]
-  raadplegen:Raadplegen Bemiddelingsregister voor overdracht
-  idAvailable:overdrachtID bekend?
-  andereflow:Ga naar de andere beschrijving
-  anderequery: UCBR-0007-raadplegen
-  qinput: Gebruik overdrachtID + overdrachtDatum + overdrachtDatumMinus1Dag + UzoviCode
-  query: QBR-0008-ZKn
-  PEP:Toegangscontrole PEP
-  datum: overdrachtDatum bekend?
-
-
-
-  style raadplegen fill:#BBDEFB,color:none
-  style notifyWait fill:#FFD600
-  style notifyReceive fill:#C8E6C9
-  style query fill:#00C853
-</code></pre>
+<p></p>
 <table>
 <thead>
 <tr>

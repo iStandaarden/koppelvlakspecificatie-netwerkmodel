@@ -430,7 +430,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../indicatieregister/indicatieregister-2/raadplegen/UCIR-0001-raadplegen.md">
+<a class="md-nav__link" href="../indicatieregister/indicatieregister-2/raadplegen/UCIR-0001-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -442,7 +442,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../indicatieregister/indicatieregister-2/raadplegen/UCIR-0002-raadplegen.md">
+<a class="md-nav__link" href="../indicatieregister/indicatieregister-2/raadplegen/UCIR-0002-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -454,7 +454,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../indicatieregister/indicatieregister-2/raadplegen/UCIR-0003-raadplegen.md">
+<a class="md-nav__link" href="../indicatieregister/indicatieregister-2/raadplegen/UCIR-0003-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -466,7 +466,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../indicatieregister/indicatieregister-2/raadplegen/UCIR-0004-raadplegen.md">
+<a class="md-nav__link" href="../indicatieregister/indicatieregister-2/raadplegen/UCIR-0004-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -478,7 +478,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../indicatieregister/indicatieregister-2/raadplegen/UCIR-0005-raadplegen.md">
+<a class="md-nav__link" href="../indicatieregister/indicatieregister-2/raadplegen/UCIR-0005-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -2318,7 +2318,8 @@
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_5_2_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../leveringsregister/leveringsregister-1/toegangscontrole/">
 <span class="md-ellipsis">
     
   
@@ -2327,8 +2328,11 @@
 
     
   </span>
+</a>
+<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
+</div>
 <nav aria-expanded="false" aria-labelledby="__nav_5_2_3_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_5_2_3">
 <span class="md-nav__icon md-icon"></span>
@@ -2734,67 +2738,13 @@
 <h2 id="raadplegen">Raadplegen<a class="headerlink" href="#raadplegen" title="Permanent link">¶</a></h2>
 <p>De dienst <strong>Raadplegen</strong> wordt aangeboden door de bronhouders aan (toekomstige) afnemer zodat de afnemers instaat worden gesteld relevante informatie in te zien.</p>
 <p>Hier worden alleen de onderdelen beschreven die voortkomen uit de koppelvlak-specificatie. 
-</p><pre class="mermaid-zoom"><code>---
-config:
-  theme: neutral
----
-flowchart RL
-    Client(["💻 Client"])
 
-    subgraph Pipeline["Verwerking van het raadpleegverzoek"]
-        direction RL
-        GQ["GraphQL-query"]
-        OPA["🛡️Toegangscontrole"]
-        GS["GraphQL-schema &lt;br/&gt;Register"]
-        GQ --&gt; OPA --&gt; GS 
-    end
-
-    DB[("🗄️ Bronhouder Register")]
-    IB["Informatiebehoefte"]
-    Client --&gt; IB
-    IB --&gt; GQ
-    GS --&gt; DB
-
-    classDef graphql fill:#f5e6f2,stroke:#E10098,stroke-width:2px,color:#333;
-    classDef opa fill:#e6e8eb,stroke:#5b6470,stroke-width:2px,color:#333;
-    classDef client fill:#f5f5f5,stroke:#333,stroke-width:2px,color:#333;
-    classDef db fill:#d9d9d9,stroke:#555,stroke-width:2px,color:#333;
-
-    class GQ,GS graphql;
-    class OPA opa;
-    class Client,IB client;
-    class DB db;</code></pre>
-Figuur 1 - Vereenvoudigde weergave van raadplegen<p></p>
+Figuur 1 - Vereenvoudigde weergave van raadplegen</p>
 <p>Een toeliching op de onderdelen van raadplegen in het artikel <a href="raadplegen/">Leeswijzer &gt; Raadplegen</a></p>
 <h2 id="notificeren">Notificeren<a class="headerlink" href="#notificeren" title="Permanent link">¶</a></h2>
 <p>De dienst <strong>Notificeren</strong> is er om een deelnemer op de hoogte te brengen dat er relevante informatie beschikbaar is voor die deelnemer.</p>
-<p></p><pre class="mermaid-zoom"><code>---
-config:
-  theme: neutral
----
-flowchart LR
- subgraph Pipeline["Versturen van de notificatie"]
-    direction LR
-        GQ["Aanleiding notificeren"]
-        OPA["Notificatietype"]
-        GS["GraphQL-mutation"]
-  end
-    GQ --&gt; OPA
-    OPA --&gt; GS
-    DB[("🗄️ Bronhouder Register")] --&gt; GQ
-    GS --&gt; Client(["💻 Ontvanger"])
-
-    OPA@{ shape: doc}
-     GQ:::opa
-     OPA:::opa
-     GS:::graphql
-     DB:::db
-     Client:::client
-    classDef graphql fill:#f5e6f2,stroke:#E10098,stroke-width:2px,color:#333
-    classDef opa fill:#e6e8eb,stroke:#5b6470,stroke-width:2px,color:#333
-    classDef client fill:#f5f5f5,stroke:#333,stroke-width:2px,color:#333
-    classDef db fill:#d9d9d9,stroke:#555,stroke-width:2px,color:#333</code></pre>
-Figuur 2 - Vereenvoudigde weergave onderdelen van notificeren<p></p>
+<p>
+Figuur 2 - Vereenvoudigde weergave onderdelen van notificeren</p>
 <p>Een toelichting op de onderdelen van notificeren in het artikel <a href="notificeren/">Leeswijzer &gt; Notificeren</a>.</p>
 <h2 id="fout-melden">(Fout-)Melden<a class="headerlink" href="#fout-melden" title="Permanent link">¶</a></h2>
 <p>Door middel van een melding kan een raadpleger van een bron de bronhouder voorzien van nieuwe informatie die direct betrekking heeft op data in die bron. Een melding loopt altijd van deelnemer (raadpleger) naar een bronhouder.</p>

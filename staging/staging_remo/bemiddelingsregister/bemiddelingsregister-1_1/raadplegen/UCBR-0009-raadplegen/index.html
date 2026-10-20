@@ -430,7 +430,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0001-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0001-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -442,7 +442,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0002-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0002-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -454,7 +454,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0003-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0003-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -466,7 +466,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0004-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0004-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -478,7 +478,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0005-raadplegen.md">
+<a class="md-nav__link" href="../../../../indicatieregister/indicatieregister-2/raadplegen/UCIR-0005-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -2400,7 +2400,8 @@
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_5_2_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../../leveringsregister/leveringsregister-1/toegangscontrole/">
 <span class="md-ellipsis">
     
   
@@ -2409,8 +2410,11 @@
 
     
   </span>
+</a>
+<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
+</div>
 <nav aria-expanded="false" aria-labelledby="__nav_5_2_3_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_5_2_3">
 <span class="md-nav__icon md-icon"></span>
@@ -2872,20 +2876,7 @@
 </nav>
 <article class="md-content__inner md-typeset">
 <h1 id="raadplegen-van-regiehouder-door-de-zorgaanbieder-ucbr-0009">Raadplegen van Regiehouder door de Zorgaanbieder (UCBR-0009)<a class="headerlink" href="#raadplegen-van-regiehouder-door-de-zorgaanbieder-ucbr-0009" title="Permanent link">¶</a></h1>
-<pre class="mermaid-zoom"><code>---
-config:
-  theme: mc
-  look: classic
-  layout: elk
----
-flowchart LR
- subgraph s1["Bemiddelingsregister"]
-          B["Raadplegen Regiehouder"]
-  end
-    A["Zorgaanbieder&lt;br&gt;(regiehouder)"] --&gt; B
-    B@{ shape: terminal}
-    A@{ shape: rounded}
-    style s1 fill:#FFF9C4,stroke:#FFF9C4</code></pre>
+<p></p>
 <h2 id="use-case-beschrijving"><strong>Use Case Beschrijving</strong><a class="headerlink" href="#use-case-beschrijving" title="Permanent link">¶</a></h2>
 <p><strong>Titel:</strong> Raadplegen van Regiehouder door een Zorgaanbieder<br/>
 <strong>Actoren:</strong> Zorgaanbieder is de regiehouder (Coordinator zorg thuis of Dossierhouder) van een client.  </p>
@@ -2922,40 +2913,7 @@ flowchart LR
 <h2 id="proces-raadplegen"><strong>Proces raadplegen</strong><a class="headerlink" href="#proces-raadplegen" title="Permanent link">¶</a></h2>
 <p>Een zorgaanbieder wordt Coordinator zorg thuis of dossierhouder voor een client. Het zorgkantoor registreert dit in Regiehouder. De zorgaanbieder ontvangt hiervan een notificatie <a href="../../notificaties/nieuwe_regiehouder_zorgaanbieder/"><code>NIEUWE_REGIEHOUDER_ZORGAANBIEDER</code></a>. Op basis van deze notificatie kan de zorgaanbieder de informatie in het bemiddelingsregister raadplegen. </p>
 <h3 id="schematisch">Schematisch:<a class="headerlink" href="#schematisch" title="Permanent link">¶</a></h3>
-<pre class="mermaid-zoom"><code>---
-config:
-  theme: neutral
-  look: classic
----
-stateDiagram
-    [*] --&gt; Raadplegen
-    state idAvailable &lt;&lt;choice&gt;&gt;
-
-    Raadplegen --&gt; idAvailable
-    idAvailable --&gt; notifyWait: nee
-    notifyWait --&gt; notifyReceive
-    state chooseQuery &lt;&lt;choice&gt;&gt;
-    idAvailable --&gt; chooseQuery: ja
-    notifyReceive --&gt; chooseQuery
-    chooseQuery --&gt; inputQuery
-    inputQuery --&gt; Query
-    Query --&gt; PEP 
-    PEP --&gt; [*]: geen toegang
-    PEP --&gt; resource: toegang
-    resource --&gt; [*]
-
-    Raadplegen: Raadplegen regierol
-    idAvailable: regiehouderID bekend?
-    notifyWait: Wacht op notificatie
-    notifyReceive: notificatie NIEUWE_REGIEROL_ZORGAANBIEDER ontvangen
-    inputQuery: Gebruik regiehouderID en AGBcode 
-    Query: Gebruik query QBR-0001-ZKi
-
-  style notifyWait fill:#FFD600
-  style Raadplegen fill:#BBDEFB,color:none
-  style notifyReceive,inputQuery fill:#C8E6C9
-  style Query fill:#00C853
-</code></pre>
+<p></p>
 <table>
 <thead>
 <tr>

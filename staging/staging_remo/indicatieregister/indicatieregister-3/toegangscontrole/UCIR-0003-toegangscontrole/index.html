@@ -34,7 +34,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#toegangscontrole-raadplegen-van-wlz-indicatie-door-een-nieuw-verantwoordelijk-zorgkantoor-UCIR-0003">
+<a class="md-skip" href="#toegangscontrole-raadplegen-van-wlz-indicatie-door-een-nieuw-verantwoordelijk-zorgkantoor-ucir-0003">
           Ga naar inhoud
         </a>
 </div>
@@ -430,7 +430,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0001-raadplegen.md">
+<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0001-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -442,7 +442,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0002-raadplegen.md">
+<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0002-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -454,7 +454,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0003-raadplegen.md">
+<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0003-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -466,7 +466,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0004-raadplegen.md">
+<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0004-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -478,7 +478,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0005-raadplegen.md">
+<a class="md-nav__link" href="../../../indicatieregister-2/raadplegen/UCIR-0005-raadplegen/">
 <span class="md-ellipsis">
     
   
@@ -2396,7 +2396,8 @@
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_5_2_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../../leveringsregister/leveringsregister-1/toegangscontrole/">
 <span class="md-ellipsis">
     
   
@@ -2405,8 +2406,11 @@
 
     
   </span>
+</a>
+<label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
+</div>
 <nav aria-expanded="false" aria-labelledby="__nav_5_2_3_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_5_2_3">
 <span class="md-nav__icon md-icon"></span>
@@ -2863,7 +2867,7 @@
 </ol>
 </nav>
 <article class="md-content__inner md-typeset">
-<h1 id="toegangscontrole-raadplegen-van-wlz-indicatie-door-een-nieuw-verantwoordelijk-zorgkantoor-UCIR-0003">Toegangscontrole: Raadplegen van Wlz-indicatie door een nieuw verantwoordelijk Zorgkantoor (UCIR-0003)<a class="headerlink" href="#toegangscontrole-raadplegen-van-wlz-indicatie-door-een-nieuw-verantwoordelijk-zorgkantoor-UCIR-0003" title="Permanent link">¶</a></h1>
+<h1 id="toegangscontrole-raadplegen-van-wlz-indicatie-door-een-nieuw-verantwoordelijk-zorgkantoor-ucir-0003">Toegangscontrole: Raadplegen van Wlz-indicatie door een nieuw verantwoordelijk Zorgkantoor (UCIR-0003)<a class="headerlink" href="#toegangscontrole-raadplegen-van-wlz-indicatie-door-een-nieuw-verantwoordelijk-zorgkantoor-ucir-0003" title="Permanent link">¶</a></h1>
 <p>Beschrijving van de <strong>toegangscontrole</strong> door de Policy Decision Point (PDP) en indien van toepassing Policy Information Point (PIP).</p>
 <p>N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van de ze beschrijving.</p>
 <h2 id="toegangscontrole-pdp">Toegangscontrole PDP<a class="headerlink" href="#toegangscontrole-pdp" title="Permanent link">¶</a></h2>
@@ -2911,60 +2915,7 @@
 <h1 id="toegangscontrole-flows-zorgkantoor-qir-0003-zkngraphql">Toegangscontrole-flows Zorgkantoor: QIR-0003-ZKn.graphql<a class="headerlink" href="#toegangscontrole-flows-zorgkantoor-qir-0003-zkngraphql" title="Permanent link">¶</a></h1>
 <p>Beschrijving van het toegangscontrole-proces door de PEP.</p>
 <p><strong>schematisch:</strong></p>
-<pre class="mermaid-zoom"><code>---
-config:
-  theme: neutral
-  look: classic
----
-stateDiagram
-  direction TB
-  [*] --&gt;  indienen
-  indienen --&gt; validerenT
-  state PEP {
-    direction TB
-
-    validerenT --&gt; validerenR: access-token is geldig
-    state PDP {
-    validerenR --&gt; checkInput01
-    state check01 &lt;&lt;choice&gt;&gt;
-    checkInput01 --&gt; check01
-
-    check01 --&gt; checkInput02:ja
-    check01 --&gt; error:nee
-    state PIP {
-        state check02 &lt;&lt;choice&gt;&gt;
-        checkInput02 --&gt; check02
-        check02 --&gt; error:nee
-        check02 --&gt; access:ja
-        }
-    error
-    access
-    }
-
-  }
-
-  error --&gt; [*]
-  access --&gt; resource
-  resource --&gt; [*]
-
-  PEP:Autorisatie controle PEP
-  PDP:Toegangscontrole PDP
-  PIP:Contextinformatie controle PIP
-  indienen: Ontvang QIR-0003-ZKn + Access token
-  validerenT: Valideer access token
-  validerenR: Valideer Request
-  checkInput01:wlzIndicatieID aanwezig?
-  checkInput02:Is het zorgkantoor volgens Bemiddelingsregister betrokken bij Wlzindicatie?
-  error:geen toegang tot Resource
-
-  access:toegang tot Resource
-  resource: Query mag door naar Indicatieregister
-  style validerenR,checkInput01,checkInput02 fill:#FFD600
-  style valideer2 fill:#C8E6C9
-  style error fill:#D50000
-  style access,Query,resource fill:#00C853
-  style indienen fill:#BBDEFB,color:none
-</code></pre>
+<p></p>
 <table>
 <thead>
 <tr>
