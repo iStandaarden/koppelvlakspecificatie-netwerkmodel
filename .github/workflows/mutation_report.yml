@@ -1,4 +1,4 @@
-name: Mutatieoverzicht bij release Implementatiehandleiding iWlz
+name: Mutatieoverzicht bij release Koppelvlakspecificatie iWlz
 
 # automatisch: workflow start bij publiceren van een release (niet bij concept/draft).
 # Alleen handmatig: Releases -> "Draft a new release" -> "Publish release".
