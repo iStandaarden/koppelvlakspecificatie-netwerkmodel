@@ -68,19 +68,6 @@ plugins:
       timezone: Europe/Amsterdam
       fallback_to_build_date: true
       enable_creation_date: false
-  - to-pdf:
-      enabled_if_env: ENABLED_PDF_EXPORT
-      cover_title: Koppelvlakspecificaties iWlz
-      cover_subtitle: !ENV [PDF_VERSION_LABEL, "onbekende versie"]
-      cover_logo: docs/assets/ZinBanner.png
-      copyright: "iStandaarden.nl"
-      output_path: pdf/koppelvlakspecificaties-iWlz.pdf
-      toc_title: Inhoudsopgave
-      toc_level: 3
-      # heading_shift: true
-      # ordered_chapter_level: 2
-      cover: true
-      back_cover: false
 
 # Custom CSS
 extra_css:
@@ -295,6 +282,7 @@ nav:
               - UCLR-0009: leveringsregister/leveringsregister-1/raadplegen/UCLR-0009-raadplegen.md
               - UCLR-0010: leveringsregister/leveringsregister-1/raadplegen/UCLR-0010-raadplegen.md
           - Toegangscontrole:
+              - leveringsregister/leveringsregister-1/toegangscontrole/index.md
               - UCLR-0001: leveringsregister/leveringsregister-1/toegangscontrole/UCLR-0001-toegangscontrole.md
               - UCLR-0002: leveringsregister/leveringsregister-1/toegangscontrole/UCLR-0002-toegangscontrole.md
               - UCLR-0004: leveringsregister/leveringsregister-1/toegangscontrole/UCLR-0004-toegangscontrole.md
