@@ -41,22 +41,15 @@ jobs:
           restore-keys: |
             mkdocs-material-
 
-      - name: Install system dependencies for WeasyPrint
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y \
-            libpango-1.0-0 \
-            libpangocairo-1.0-0 \
-            libgdk-pixbuf2.0-0 \
-            libffi-dev \
-            libcairo2 \
-            shared-mime-info
+      - run: pip install mkdocs-material mkdocs-glightbox mkdocs-exporter pypdf mike mkdocs-git-revision-date-localized-plugin
 
-      # - run: pip install mkdocs-material mkdocs-glightbox mkdocs-to-pdf mike
-      - run: pip install mkdocs-material mkdocs-glightbox mkdocs-to-pdf mike mkdocs-git-revision-date-localized-plugin
+      # mkdocs-exporter gebruikt een echte browser (Playwright). Dit installeert de browser
+      # en de benodigde systeembibliotheken; WeasyPrint/Pango/Cairo zijn niet meer nodig.
+      - name: Install browser for PDF export
+        run: playwright install chrome --with-deps
 
       - name: Enable PDF export
-        run: echo "ENABLED_PDF_EXPORT=1" >> $GITHUB_ENV
+        run: echo "MKDOCS_EXPORTER_PDF_ENABLED=true" >> $GITHUB_ENV
 
       # --- Staging publicatie ---
       - name: Set version label for PDF cover (staging)

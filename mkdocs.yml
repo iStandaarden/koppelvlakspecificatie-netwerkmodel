@@ -68,19 +68,23 @@ plugins:
       timezone: Europe/Amsterdam
       fallback_to_build_date: true
       enable_creation_date: false
-  - to-pdf:
-      enabled_if_env: ENABLED_PDF_EXPORT
-      cover_title: Koppelvlakspecificaties iWlz
-      cover_subtitle: !ENV [PDF_VERSION_LABEL, "onbekende versie"]
-      cover_logo: docs/assets/ZinBanner.png
-      copyright: "iStandaarden.nl"
-      output_path: pdf/koppelvlakspecificaties-iWlz.pdf
-      toc_title: Inhoudsopgave
-      toc_level: 3
-      # heading_shift: true
-      # ordered_chapter_level: 2
-      cover: true
-      back_cover: false
+  - exporter:
+      formats:
+        pdf:
+          enabled: !ENV [MKDOCS_EXPORTER_PDF_ENABLED, false]
+          concurrency: 4
+          browser:
+            timeout: 120000          # standaard 60 s per pagina
+          covers:
+            front: resources/templates/covers/front.html.j2
+            back: resources/templates/covers/back.html.j2
+          aggregator:                # de complete PDF
+            enabled: true
+            output: pdf/koppelvlakspecificatie-netwerkmodel.pdf
+            covers: book             # 1 voorkant, 1 achterkant
+
+hooks:
+  - hooks/chapter_pdfs.py            # PDF per hoofdstuk, zie hieronder
 
 # Custom CSS
 extra_css:
@@ -105,6 +109,8 @@ extra:
   version:
     provider: mike
     default: current
+  # voor het opnemen van het versienummer in de PDF (optioneel, kan leeg zijn)
+  pdf_version_label: !ENV [PDF_VERSION_LABEL, ""]   
 
 # Markdown extensions
 markdown_extensions:
