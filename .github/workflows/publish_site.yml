@@ -46,7 +46,7 @@ jobs:
       # mkdocs-exporter gebruikt een echte browser (Playwright). Dit installeert de browser
       # en de benodigde systeembibliotheken; WeasyPrint/Pango/Cairo zijn niet meer nodig.
       - name: Install browser for PDF export
-        run: playwright install chrome --with-deps
+        run: playwright install chromium --with-deps
 
       - name: Enable PDF export
         run: echo "MKDOCS_EXPORTER_PDF_ENABLED=true" >> $GITHUB_ENV
