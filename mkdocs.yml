@@ -74,14 +74,19 @@ plugins:
           enabled: !ENV [MKDOCS_EXPORTER_PDF_ENABLED, false]
           concurrency: 4
           browser:
-            timeout: 120000          # standaard 60 s per pagina
+            timeout: 120000
+            debug: true                      # shows browser console messages in the build log
+          stylesheets:
+            - resources/stylesheets/pdf.scss
+          scripts:
+            - resources/scripts/mkdocs-exporter.js
           covers:
             front: resources/templates/covers/front.html.j2
             back: resources/templates/covers/back.html.j2
-          aggregator:                # de complete PDF
+          aggregator:
             enabled: true
             output: pdf/koppelvlakspecificatie-netwerkmodel.pdf
-            covers: book             # 1 voorkant, 1 achterkant
+            covers: book
 
 hooks:
   - hooks/chapter_pdfs.py            # PDF per hoofdstuk, zie hieronder

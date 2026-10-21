@@ -54,7 +54,7 @@ def _pdf_path(site, page):
     return site / Path(page.file.dest_uri).with_suffix(".pdf")
 
 
-@event_priority(-100)  # na mkdocs-exporter
+@event_priority(-200)  # ná mkdocs-exporter (die gebruikt -90, -95 en -100)
 def on_post_build(config):
     if os.environ.get("MKDOCS_EXPORTER_PDF_ENABLED", "").lower() not in ("1", "true"):
         return

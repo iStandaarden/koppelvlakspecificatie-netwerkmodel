@@ -1,0 +1,36 @@
+// Stylesheet voor de PDF-weergave (mkdocs-exporter). Gewone CSS is ook geldige SCSS.
+
+// --- Omslagpagina's (startpunt, pas naar smaak aan) ---
+.mkdocs-exporter-front-cover {
+  break-after: page;
+  padding-top: 6cm;
+  text-align: center;
+
+  .brand   { font-size: 1.2rem; color: #666; margin-bottom: 1.5cm; }
+  .title   { font-size: 2.6rem; font-weight: 700; line-height: 1.2; }
+  .version { font-size: 1.1rem; color: #666; margin-top: 1.5cm; }
+}
+.mkdocs-exporter-back-cover {
+  break-before: page;
+  padding-top: 10cm;
+  text-align: center;
+
+  .title   { font-size: 1.4rem; font-weight: 700; }
+  .version { color: #666; margin-top: 0.5cm; }
+}
+
+// --- Mermaid-diagrammen ---
+// Zoom-wrappers mogen in de PDF niet afkappen of een vaste hoogte houden.
+.mermaid, .mermaid-zoom {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+.mermaid svg, .mermaid-zoom svg {
+  max-width: 100%;
+  height: auto;
+}
+// svg-pan-zoom bedieningsknoppen horen niet in een PDF
+.svg-pan-zoom-control, #svg-pan-zoom-controls {
+  display: none !important;
+}
