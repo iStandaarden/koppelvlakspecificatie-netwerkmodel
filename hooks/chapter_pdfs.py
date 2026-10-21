@@ -30,6 +30,10 @@ _nav = None
 def on_nav(nav, config, files):
     global _nav
     _nav = nav
+    # Maak de bestandsnaam beschikbaar voor de download-knoppen in docs/overrides/main.html
+    for item in nav.items:
+        if isinstance(item, Section) and item.title not in SKIP_CHAPTERS:
+            item.pdf_slug = _slug(item.title)
     return nav
 
 

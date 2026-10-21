@@ -1,0 +1,18 @@
+.pdf-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  margin: 0 0 0.5rem;
+}
+.pdf-downloads .md-button {
+  margin: 0;
+  font-size: 0.7rem;
+}
+.pdf-downloads .twemoji {
+  vertical-align: middle;
+}
+/* Niet meenemen in de PDF's zelf (mkdocs-exporter rendert met print-media) */
+@media print {
+  .pdf-downloads { display: none !important; }
+}

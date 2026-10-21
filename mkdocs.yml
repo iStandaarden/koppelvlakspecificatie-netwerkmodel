@@ -91,6 +91,7 @@ extra_css:
   - css/zin.css
   - css/mermaid-zoom.css
   - css/print.css
+  - css/pdf-buttons.css
 
 # extra JavaScript
 extra_javascript:
@@ -111,6 +112,8 @@ extra:
     default: current
   # voor het opnemen van het versienummer in de PDF (optioneel, kan leeg zijn)
   pdf_version_label: !ENV [PDF_VERSION_LABEL, ""]   
+  pdf_enabled: !ENV [MKDOCS_EXPORTER_PDF_ENABLED, false]
+  pdf_complete: pdf/koppelvlakspecificatie-netwerkmodel.pdf   # must equal aggregator.output
 
 # Markdown extensions
 markdown_extensions:
