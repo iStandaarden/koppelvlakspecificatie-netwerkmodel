@@ -13,7 +13,9 @@ omslagpagina's worden verwijderd. Gaat uit van 1 pagina per omslag.
 import os
 import re
 from pathlib import Path
+from types import SimpleNamespace
 
+from jinja2 import Environment
 from mkdocs.plugins import event_priority
 from mkdocs.structure.pages import Page
 from mkdocs.structure.nav import Section
@@ -24,7 +26,60 @@ HAS_COVERS = True
 # Hoofdstukken (titel in de nav) die je NIET als aparte PDF wilt.
 SKIP_CHAPTERS = set()  # bv. {"Welkom"}
 
+# Map met de cover-templates (relatief aan mkdocs.yml) en de standaard-URL van de complete PDF.
+COVERS_DIR = "resources/templates/covers"
+COMPLETE_PDF = "pdf/koppelvlakspecificatie-netwerkmodel.pdf"  # moet gelijk zijn aan aggregator.output
+
 _nav = None
+_H1 = re.compile(r"^#\s+(.+?)\s*#*\s*$", re.M)
+
+
+def _pdf_enabled():
+    return os.environ.get("MKDOCS_EXPORTER_PDF_ENABLED", "").lower() in ("1", "true")
+
+
+def on_config(config):
+    # Zet de vlaggen voor de download-knoppen (docs/overrides/main.html) hier, zodat ze niet
+    # apart in mkdocs.yml hoeven te staan.
+    config.extra["pdf_enabled"] = _pdf_enabled()
+    config.extra.setdefault("pdf_complete", COMPLETE_PDF)
+    return config
+
+
+def _page_title(page, markdown):
+    # page.title is in on_page_markdown nog leeg voor pagina's zonder titel in nav of front matter;
+    # dan nemen we de eerste H1 uit de markdown.
+    title = page.meta.get("title") or getattr(page, "title", None)
+    if not title:
+        match = _H1.search(markdown)
+        title = match.group(1) if match else Path(page.file.src_uri).stem
+    return title
+
+
+@event_priority(50)  # ná mkdocs-exporter (prioriteit 100), dat de covers vóór de markdown plakt
+def on_page_markdown(markdown, page, config, files):
+    """Vult {{ config... }} en {{ page... }} in de cover-templates in.
+
+    mkdocs-exporter plakt de templates als ruwe tekst vóór/achter de markdown van elke pagina en
+    rendert ze zelf niet. Alleen de template-tekst wordt hier gerenderd; de rest van de pagina
+    blijft ongemoeid (dus {{ }} in Mermaid-diagrammen of codeblokken is veilig).
+    """
+    if not _pdf_enabled() or "mkdocs-exporter-" not in markdown:
+        return markdown
+
+    covers = Path(config["config_file_path"]).parent / COVERS_DIR
+    context = {
+        "config": config,
+        "page": SimpleNamespace(
+            title=_page_title(page, markdown), meta=page.meta, url=page.url, file=page.file
+        ),
+    }
+    env = Environment()
+    for template in sorted(covers.glob("*.j2")):
+        raw = template.read_text(encoding="utf-8").strip("\n")
+        if raw and raw in markdown:
+            markdown = markdown.replace(raw, env.from_string(raw).render(**context))
+    return markdown
 
 
 def on_nav(nav, config, files):
@@ -56,7 +111,7 @@ def _pdf_path(site, page):
 
 @event_priority(-200)  # ná mkdocs-exporter (die gebruikt -90, -95 en -100)
 def on_post_build(config):
-    if os.environ.get("MKDOCS_EXPORTER_PDF_ENABLED", "").lower() not in ("1", "true"):
+    if not _pdf_enabled():
         return
     if _nav is None:
         return

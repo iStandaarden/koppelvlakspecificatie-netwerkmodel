@@ -56,6 +56,28 @@ window.MkDocsExporter = {
     }
     await sleep(300);
 
+    // 4. svg-pan-zoom (mermaid-zoom.js) verwijdert het viewBox van de SVG en schaalt met een
+    //    vaste pixel-matrix, berekend op het schermformaat van de browser. Op een smallere
+    //    PDF-pagina klopt die schaal niet meer. Hier zetten we een viewBox terug op basis van
+    //    de inhoud en halen we de matrix weg, zodat de SVG meeschaalt met de paginabreedte.
+    document.querySelectorAll('.mermaid-zoom-blok svg').forEach((svg) => {
+      const viewport = svg.querySelector('g.svg-pan-zoom_viewport');
+      if (!viewport) return;
+      try {
+        const box = viewport.getBBox();   // negeert de eigen transform van de groep
+        if (!box.width || !box.height) return;
+        const pad = 8;
+        svg.setAttribute('viewBox', `${box.x - pad} ${box.y - pad} ${box.width + 2 * pad} ${box.height + 2 * pad}`);
+        svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+        svg.removeAttribute('width');
+        svg.removeAttribute('height');
+        viewport.removeAttribute('transform');
+        viewport.style.setProperty('transform', 'none', 'important');
+      } catch (error) {
+        console.error('[mkdocs-exporter] viewBox herstellen mislukt:', error);
+      }
+    });
+
     todo = pending();
     if (todo.length > 0) {
       console.error(`[mkdocs-exporter] ${todo.length}/${total} Mermaid-diagram(men) ontbreken nog in de PDF`);

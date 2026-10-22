@@ -1,6 +1,9 @@
 // Stylesheet voor de PDF-weergave (mkdocs-exporter). Gewone CSS is ook geldige SCSS.
 
 // --- Omslagpagina's (startpunt, pas naar smaak aan) ---
+.mkdocs-exporter-front-cover, .mkdocs-exporter-back-cover {
+  display: block !important;   // op de website verborgen via docs/css/pdf-buttons.css
+}
 .mkdocs-exporter-front-cover {
   break-after: page;
   padding-top: 6cm;
@@ -19,18 +22,44 @@
   .version { color: #666; margin-top: 0.5cm; }
 }
 
-// --- Mermaid-diagrammen ---
-// Zoom-wrappers mogen in de PDF niet afkappen of een vaste hoogte houden.
-.mermaid, .mermaid-zoom {
-  height: auto !important;
-  max-height: none !important;
+// --- Paginamarges (kleiner = meer ruimte voor brede diagrammen) ---
+// A4 staand; 190 mm bruikbare breedte bij 10 mm zijmarge.
+@page {
+  size: A4;
+  margin: 12mm 10mm;
+}
+// Material beperkt de contentbreedte en geeft de inhoud eigen marges; in de PDF niet nodig.
+.md-grid { max-width: none !important; }
+.md-content__inner { margin-left: 0 !important; margin-right: 0 !important; }
+
+// --- Mermaid-diagrammen (mermaid-zoom.js) ---
+.mermaid-zoom-blok {
+  height: auto !important;            // JS zet een vaste hoogte voor het scherm
   overflow: visible !important;
+  break-inside: avoid;                // diagram niet over twee pagina's splitsen
 }
-.mermaid svg, .mermaid-zoom svg {
-  max-width: 100%;
-  height: auto;
+.mermaid-zoom-blok__stage {
+  height: auto !important;
 }
-// svg-pan-zoom bedieningsknoppen horen niet in een PDF
-.svg-pan-zoom-control, #svg-pan-zoom-controls {
+.mermaid-zoom-blok__stage svg {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 235mm !important;       // past binnen een A4-pagina met bovenstaande marges
+}
+// Zoom-bediening hoort niet in een PDF
+.mermaid-zoom-blok__hint,
+.mermaid-zoom-blok__fs,
+.svg-pan-zoom-control,
+#svg-pan-zoom-controls {
+  display: none !important;
+}
+// Schaal komt uit het viewBox (zie mkdocs-exporter.js), niet uit de pan-zoom-matrix
+.svg-pan-zoom_viewport {
+  transform: none !important;
+}
+// De verborgen bron alleen verbergen als het diagram ervoor is getekend (bij een fout toont het
+// script de bron zelf als fallback).
+.mermaid-zoom-blok + .mermaid-zoom {
   display: none !important;
 }

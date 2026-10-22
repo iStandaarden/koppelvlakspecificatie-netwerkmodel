@@ -16,3 +16,10 @@
 @media print {
   .pdf-downloads { display: none !important; }
 }
+
+/* mkdocs-exporter plakt de cover-blokken in de pagina-inhoud; op de website horen ze niet te
+   verschijnen. In de PDF worden ze weer getoond via resources/stylesheets/pdf.scss. */
+.mkdocs-exporter-front-cover,
+.mkdocs-exporter-back-cover {
+  display: none;
+}
