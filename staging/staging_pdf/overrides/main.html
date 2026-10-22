@@ -6,3 +6,24 @@
 </div>
 {% endblock %}
 
+{#- Download-knoppen voor de complete PDF en de PDF van het hoofdstuk waarin de pagina staat.
+    Alleen zichtbaar als de PDF-export aan staat (extra.pdf_enabled), anders zouden de links
+    bij lokaal bouwen/serven naar niets verwijzen. -#}
+{% block content %}
+  {% if config.extra.pdf_enabled %}
+    {% set chapter = (page.ancestors | last) if page.ancestors else none %}
+    <div class="pdf-downloads">
+      {% if chapter and chapter.pdf_slug %}
+        <a class="md-button" href="{{ ('pdf/' ~ chapter.pdf_slug ~ '.pdf') | url }}" download target="_blank" rel="noopener">
+          <span class="twemoji">{% include ".icons/material/file-pdf-box.svg" %}</span>
+          Download hoofdstuk: {{ chapter.title }}
+        </a>
+      {% endif %}
+      <a class="md-button md-button--primary" href="{{ config.extra.pdf_complete | url }}" download target="_blank" rel="noopener">
+        <span class="twemoji">{% include ".icons/material/download.svg" %}</span>
+        Download complete PDF
+      </a>
+    </div>
+  {% endif %}
+  {{ super() }}
+{% endblock %}
