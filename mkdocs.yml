@@ -77,16 +77,18 @@ plugins:
             timeout: 120000
             debug: true                      # shows browser console messages in the build log
           stylesheets:
+            - resources/stylesheets/fonts.scss
             - resources/stylesheets/pdf.scss
           scripts:
             - resources/scripts/mkdocs-exporter.js
           covers:
             front: resources/templates/covers/front.html.j2
-            back: resources/templates/covers/back.html.j2
+            # back: resources/templates/covers/back.html.j2
           aggregator:
             enabled: true
             output: pdf/koppelvlakspecificatie-netwerkmodel.pdf
-            covers: book
+            # covers: book
+            covers: limits
 
 hooks:
   - hooks/chapter_pdfs.py            # PDF per hoofdstuk, zie hieronder
@@ -119,6 +121,8 @@ extra:
   pdf_version_label: !ENV [PDF_VERSION_LABEL, ""]   
   pdf_enabled: !ENV [MKDOCS_EXPORTER_PDF_ENABLED, false]
   pdf_complete: pdf/koppelvlakspecificatie-netwerkmodel.pdf   # must equal aggregator.output
+  pdf_title: Koppelvlakspecificatie Netwerkmodel iWlz
+  pdf_copyright: © 2026 iStandaarden.nl
 
 # Markdown extensions
 markdown_extensions:

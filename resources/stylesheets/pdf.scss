@@ -1,65 +1,112 @@
-// Stylesheet voor de PDF-weergave (mkdocs-exporter). Gewone CSS is ook geldige SCSS.
+// Stijl voor de PDF-uitvoer (mkdocs-exporter). Vervangt css/print.css voor de PDF's.
+//
+// Let op: mkdocs-exporter maakt de pagina's op met Paged.js in schermmodus; alleen het eindresultaat
+// wordt geprint. Regels binnen `@media print { }` (zoals in print.css) gelden daardoor niet tijdens
+// het opmaken. Alles hier staat daarom zonder @media, met selectors die sterker zijn dan Material's.
 
-// --- Omslagpagina's (startpunt, pas naar smaak aan) ---
-.mkdocs-exporter-front-cover, .mkdocs-exporter-back-cover {
-  display: block !important;   // op de website verborgen via docs/css/pdf-buttons.css
-}
-.mkdocs-exporter-front-cover {
-  break-after: page;
-  padding-top: 6cm;
-  text-align: center;
+$groen: #026e06;
+$tekst: #222;
+$serif: "Gelasio", Georgia, serif;                         // Gelasio ≈ Georgia (zie fonts.scss)
+$sans:  "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-  .brand   { font-size: 1.2rem; color: #666; margin-bottom: 1.5cm; }
-  .title   { font-size: 2.6rem; font-weight: 700; line-height: 1.2; }
-  .version { font-size: 1.1rem; color: #666; margin-top: 1.5cm; }
-}
-.mkdocs-exporter-back-cover {
-  break-before: page;
-  padding-top: 10cm;
-  text-align: center;
-
-  .title   { font-size: 1.4rem; font-weight: 700; }
-  .version { color: #666; margin-top: 0.5cm; }
-}
-
-// --- Paginamarges (kleiner = meer ruimte voor brede diagrammen) ---
-// A4 staand; 190 mm bruikbare breedte bij 10 mm zijmarge.
+// --- Pagina: formaat, marges, kop- en voetregel ---
 @page {
   size: A4;
-  margin: 12mm 10mm;
+  margin: 20mm 12mm 18mm 12mm;   // smalle zijmarges: meer ruimte voor brede diagrammen
+
+  @top-left {
+    content: string(chapter);    // hoofdstuk (zie .pdf-chapter hieronder)
+    font-family: $sans; font-size: 9pt; font-weight: 700; color: $groen;
+  }
+  @bottom-center {
+    content: "Pagina " counter(page) " van " counter(pages);
+    font-family: $sans; font-size: 9pt; color: #666;
+  }
 }
-// Material beperkt de contentbreedte en geeft de inhoud eigen marges; in de PDF niet nodig.
+// Voorblad zonder kop- en voetregel
+@page cover {
+  @top-left { content: none; }
+  @bottom-center { content: none; }
+}
+
+// --- Basis ---
+body, .md-typeset {
+  font-family: $serif;
+  color: $tekst;
+}
+.md-typeset {
+  font-size: 11pt;
+  line-height: 1.5;
+}
+.md-header, .md-sidebar, .md-footer, .md-nav { display: none !important; }
 .md-grid { max-width: none !important; }
 .md-content__inner { margin-left: 0 !important; margin-right: 0 !important; }
+
+// --- Koppen (Material's `.md-typeset h1` is specifieker dan `h1`, vandaar de selectors) ---
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4 {
+  font-family: $sans;
+  font-weight: 700;
+  break-after: avoid;
+}
+.md-typeset h1 {
+  color: $groen;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3em;
+}
+.md-typeset h2 { color: #333; border-bottom: none; }
+.md-typeset h3 { color: $groen; }
+
+// --- Blokken niet midden doorsnijden ---
+pre, figure, .md-typeset .admonition { break-inside: avoid; }
+// Tabellen mogen over pagina's lopen (anders vastlopen bij grote tabellen), rijen niet splitsen
+.md-typeset table { break-inside: auto; }
+.md-typeset tr { break-inside: avoid; }
+.md-typeset thead { display: table-header-group; }
+
+// --- Voorblad (inhoud uit resources/templates/covers/front.html.j2) ---
+.mkdocs-exporter-front-cover {
+  display: block !important;     // op de website verborgen via docs/css/pdf-buttons.css
+  page: cover;
+  break-after: page;
+  text-align: center;
+  padding-top: 3cm;
+
+  .logo    { display: block; max-width: 14cm; max-height: 5cm; margin: 0 auto 3cm; }
+  .title   { font-family: $sans; font-size: 30pt; font-weight: 700; line-height: 1.2; color: $groen; }
+  .version { font-family: $sans; font-size: 14pt; color: #555; margin-top: 1cm; }
+  .copyright { font-family: $sans; font-size: 10pt; color: #777; margin-top: 8cm; }
+}
+.mkdocs-exporter-back-cover {
+  display: block !important;
+  page: cover;
+  break-before: page;
+}
+
+// --- Hoofdstukmarkering (door hooks/chapter_pdfs.py voor elke pagina geplaatst) ---
+// Nul hoogte, wel in de stroom: levert de tekst voor de kopregel en start elke pagina op een nieuwe bladzijde.
+.pdf-chapter {
+  display: block !important;     // op de website verborgen via docs/css/pdf-buttons.css
+  string-set: chapter content(text);
+  break-before: page;
+  height: 0; margin: 0; padding: 0; overflow: hidden; font-size: 0; line-height: 0;
+}
 
 // --- Mermaid-diagrammen (mermaid-zoom.js) ---
 .mermaid-zoom-blok {
   height: auto !important;            // JS zet een vaste hoogte voor het scherm
   overflow: visible !important;
-  break-inside: avoid;                // diagram niet over twee pagina's splitsen
+  break-inside: avoid;
 }
-.mermaid-zoom-blok__stage {
-  height: auto !important;
-}
+.mermaid-zoom-blok__stage { height: auto !important; }
 .mermaid-zoom-blok__stage svg {
   width: 100% !important;
   height: auto !important;
   max-width: 100% !important;
-  max-height: 235mm !important;       // past binnen een A4-pagina met bovenstaande marges
+  max-height: 225mm !important;       // past binnen de paginahoogte met bovenstaande marges
 }
-// Zoom-bediening hoort niet in een PDF
 .mermaid-zoom-blok__hint,
 .mermaid-zoom-blok__fs,
 .svg-pan-zoom-control,
-#svg-pan-zoom-controls {
-  display: none !important;
-}
-// Schaal komt uit het viewBox (zie mkdocs-exporter.js), niet uit de pan-zoom-matrix
-.svg-pan-zoom_viewport {
-  transform: none !important;
-}
-// De verborgen bron alleen verbergen als het diagram ervoor is getekend (bij een fout toont het
-// script de bron zelf als fallback).
-.mermaid-zoom-blok + .mermaid-zoom {
-  display: none !important;
-}
+#svg-pan-zoom-controls { display: none !important; }
+.svg-pan-zoom_viewport { transform: none !important; }   // schaal komt uit het viewBox (mkdocs-exporter.js)
+.mermaid-zoom-blok + .mermaid-zoom { display: none !important; }

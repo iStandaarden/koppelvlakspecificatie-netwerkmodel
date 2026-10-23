@@ -41,7 +41,7 @@ jobs:
           restore-keys: |
             mkdocs-material-
 
-      - run: pip install mkdocs-material mkdocs-glightbox mkdocs-exporter pypdf mike mkdocs-git-revision-date-localized-plugin
+      - run: pip install mkdocs-material mkdocs-glightbox mkdocs-exporter pypdf reportlab mike mkdocs-git-revision-date-localized-plugin
 
       # mkdocs-exporter gebruikt een echte browser (Playwright). Dit installeert de browser
       # en de benodigde systeembibliotheken; WeasyPrint/Pango/Cairo zijn niet meer nodig.

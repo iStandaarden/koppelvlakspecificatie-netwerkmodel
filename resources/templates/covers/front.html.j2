@@ -1,7 +1,6 @@
 <div class="front-cover">
-  <section>
-    <div class="brand">{{ config.site_name }}</div>
-    <div class="title">{{ page.title }}</div>
-    <div class="version">{{ config.extra.pdf_version_label }}</div>
-  </section>
+  <img class="logo" src="{{ base }}assets/ZinBanner.png" alt="">
+  <div class="title">{{ config.extra.pdf_title }}</div>
+  <div class="version">{{ config.extra.pdf_version_label }}</div>
+  {% if config.extra.pdf_copyright %}<div class="copyright">© {{ config.extra.pdf_copyright }}</div>{% endif %}
 </div>

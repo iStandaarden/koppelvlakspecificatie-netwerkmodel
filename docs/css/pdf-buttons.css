@@ -23,3 +23,8 @@
 .mkdocs-exporter-back-cover {
   display: none;
 }
+
+/* Hoofdstukmarkering voor de kopregel van de PDF; niet tonen op de website. */
+.pdf-chapter {
+  display: none;
+}
