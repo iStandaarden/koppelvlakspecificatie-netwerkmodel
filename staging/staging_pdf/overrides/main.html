@@ -14,15 +14,21 @@
     {% set chapter = (page.ancestors | last) if page.ancestors else none %}
     <div class="pdf-downloads">
       {% if chapter and chapter.pdf_slug %}
-        <a class="md-button" href="{{ ('pdf/' ~ chapter.pdf_slug ~ '.pdf') | url }}" download target="_blank" rel="noopener">
+        <!-- <a class="md-button" href="{{ ('pdf/' ~ chapter.pdf_slug ~ '.pdf') | url }}" download target="_blank" rel="noopener">
           <span class="twemoji">{% include ".icons/material/file-pdf-box.svg" %}</span>
           Download hoofdstuk: {{ chapter.title }}
-        </a>
+        </a> -->
+        <a class="md-button" href="{{ ('pdf/' ~ chapter.pdf_slug ~ '.pdf') | url }}" download target="_blank" rel="noopener">
+          <span class="twemoji">{% include ".icons/material/file-pdf-box.svg" %}</span>
+        </a> 
       {% endif %}
-      <a class="md-button md-button--primary" href="{{ config.extra.pdf_complete | url }}" download target="_blank" rel="noopener">
+      <!-- <a class="md-button md-button--primary" href="{{ config.extra.pdf_complete | url }}" download target="_blank" rel="noopener">
         <span class="twemoji">{% include ".icons/material/download.svg" %}</span>
         Download complete PDF
-      </a>
+      </a> -->
+      <a class="md-button md-button--primary" href="{{ config.extra.pdf_complete | url }}" download target="_blank" rel="noopener">
+        <span class="twemoji">{% include ".icons/material/download.svg" %}</span>
+      </a> 
     </div>
   {% endif %}
   {{ super() }}
