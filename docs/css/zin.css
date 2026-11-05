@@ -65,6 +65,13 @@ a[href^="http"]:not([href*="istandaarden.github.io/koppelvlakspecificatie-netwer
   pointer-events: none; /* voorkomt dat hij klikken op de titel eronder blokkeert */
 }
 
+.md-header--lifted {
+  background-image: url("../assets/img/banner.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* Optioneel: verberg 'm op kleine schermen, waar de header al vol staat */
 @media screen and (max-width: 76.1875em) {
   .md-header__center-image {
