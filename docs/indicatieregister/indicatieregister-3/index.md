@@ -1,4 +1,4 @@
-# Indicatieregister 3 - [![IDR3](https://img.shields.io/badge/IDR-3-pink)]()
+# Indicatieregister 3 - [![IDR3](https://img.shields.io/badge/IDR-3-6aa549?style=flat-square)]()
 
 !!! info "Status: In ontwikkeling" 
 

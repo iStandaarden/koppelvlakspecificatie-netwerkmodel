@@ -6,7 +6,7 @@ Het CIZ verstuurd de volgende notificaties:
 
 | Notificatie | Documentatie | Type | Sinds |
 | :-- | :-- | :-- | :-- |
-| [NIEUWE<br/>_INDICATIE<br/>_ZORGKANTOOR](./nieuwe_indicatie_zorgkantoor.md) |  Notificatie aan het zorgkantoor als het CIZ een nieuwe Wlz-indicatie heeft geregistreerd voor een cliënt die in de regio van dit zorgkantoor woont. | VERPLICHT | [![Static Badge](https://img.shields.io/badge/IR-2-pink)]() |
-| [VERVALLEN<br/>_INDICATIE<br/>_ZORGKANTOOR](./vervallen_indicatie_zorgkantoor.md) | Notificatie aan het zorgkantoor als het CIZ een nieuwe vervaldatum heeft geregistreerd, of een vervaldatum heeft gewijzigd of verwijderd, bij een Wlz-indicatie waarvoor dit zorgkantoor verantwoordelijk is, was of wordt. | VERPLICHT | [![Static Badge](https://img.shields.io/badge/IR-2-pink)]() |
+| [NIEUWE<br/>_INDICATIE<br/>_ZORGKANTOOR](./nieuwe_indicatie_zorgkantoor.md) |  Notificatie aan het zorgkantoor als het CIZ een nieuwe Wlz-indicatie heeft geregistreerd voor een cliënt die in de regio van dit zorgkantoor woont. | VERPLICHT | [![Static Badge](https://img.shields.io/badge/IR-2-6aa549?style=flat-square)]() |
+| [VERVALLEN<br/>_INDICATIE<br/>_ZORGKANTOOR](./vervallen_indicatie_zorgkantoor.md) | Notificatie aan het zorgkantoor als het CIZ een nieuwe vervaldatum heeft geregistreerd, of een vervaldatum heeft gewijzigd of verwijderd, bij een Wlz-indicatie waarvoor dit zorgkantoor verantwoordelijk is, was of wordt. | VERPLICHT | [![Static Badge](https://img.shields.io/badge/IR-2-6aa549?style=flat-square)]() |
 
 

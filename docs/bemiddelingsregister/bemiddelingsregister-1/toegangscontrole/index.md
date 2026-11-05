@@ -8,21 +8,21 @@ Voor een volledige beschrijving van de Raadpleeg usecase ga naar het hoofdstuk [
 ### CIZ
 | Controle bij raadplegen van |  toegangscontrole | Sinds |
 | :-- |:-- | :-- |
-| Bij Indicatie betrokken zorgkantoren raadplegen |  [UCBR-0010-toegangscontrole](./UCBR-0010-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-green)]() | 
-| Bij indicatie betrokken uitvoerende zorgkantoren raadplegen |  [UCBR-0011-toegangscontrole](./UCBR-0011-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-green)]() | 
+| Bij Indicatie betrokken zorgkantoren raadplegen |  [UCBR-0010-toegangscontrole](./UCBR-0010-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-88b76d?style=flat-square)]() | 
+| Bij indicatie betrokken uitvoerende zorgkantoren raadplegen |  [UCBR-0011-toegangscontrole](./UCBR-0011-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-88b76d?style=flat-square)]() | 
 
 ### Zorgaanbieder
 | Controle bij raadplegen van |  toegangscontrole | Sinds |
 | :-- |:-- | :-- |
-| Eigen toewijzing (na notificatie) | [UCBR-0001-toegangscontrole](./UCBR-0001-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-green)]() | 
-| Complete overzicht  | [UCBR-0002_3-toegangscontrole](./UCBR-0002_3-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-green)]() | 
-| Regiehouder rol en periode (na notificatie) | [UCBR-0009-toegangscontrole](./UCBR-0009-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-green)]() | 
+| Eigen toewijzing (na notificatie) | [UCBR-0001-toegangscontrole](./UCBR-0001-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-88b76d?style=flat-square)]() | 
+| Complete overzicht  | [UCBR-0002_3-toegangscontrole](./UCBR-0002_3-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-88b76d?style=flat-square)]() | 
+| Regiehouder rol en periode (na notificatie) | [UCBR-0009-toegangscontrole](./UCBR-0009-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-88b76d?style=flat-square)]() | 
 
 
 ### Zorgkantoor
 | Controle bij raadplegen van |  toegangscontrole | Sinds |
 | :-- |:-- | :-- |
-| Toewijzing als uitvoerend (bovenregionaal) zorgkantoor (na notificatie) | [UCBR-0004-toegangscontrole](./UCBR-0004-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-green)]() | 
-| Complete overzicht als uitvoerend (bovenregionaal) zorgkantoor | [UCBR-0005_6-toeganscontrole](./UCBR-0005_6-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-green)]() |  
-| Dossieroverdracht (na notificatie) | [UCBR-0007-toegangscontrole](./UCBR-0007-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-green)]() |  
-| Complete dossieroverdracht | [UCBR-0008-toegangscontrole](./UCBR-0008-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-green)]() | 
+| Toewijzing als uitvoerend (bovenregionaal) zorgkantoor (na notificatie) | [UCBR-0004-toegangscontrole](./UCBR-0004-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-88b76d?style=flat-square)]() | 
+| Complete overzicht als uitvoerend (bovenregionaal) zorgkantoor | [UCBR-0005_6-toeganscontrole](./UCBR-0005_6-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-88b76d?style=flat-square)]() |  
+| Dossieroverdracht (na notificatie) | [UCBR-0007-toegangscontrole](./UCBR-0007-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-88b76d?style=flat-square)]() |  
+| Complete dossieroverdracht | [UCBR-0008-toegangscontrole](./UCBR-0008-toegangscontrole.md) | [![BMR1](https://img.shields.io/badge/BMR-1-88b76d?style=flat-square)]() | 

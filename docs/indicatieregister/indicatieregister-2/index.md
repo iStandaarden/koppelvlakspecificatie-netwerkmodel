@@ -1,4 +1,4 @@
-# Indicatieregister 2 - [![IDR2](https://img.shields.io/badge/IDR-2-pink)]()
+# Indicatieregister 2 - [![IDR2](https://img.shields.io/badge/IDR-2-6aa549?style=flat-square)]()
 
 !!! info "Status: In productie" 
 
