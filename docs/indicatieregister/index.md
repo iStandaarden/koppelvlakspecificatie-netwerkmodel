@@ -6,8 +6,8 @@ Het indicatieregister is in beheer bij het CIZ en is onderdeel van het iWlz-netw
 
 
 ## Beschikbare Documentatie en status
-| Release             | tag  | Status | Koppelvlakspecificatie | Informatiemodel |
-| :------------------ | :-- |:----- | :--------------------- | :-------------- |
-| **Indicatieregister 2** | [![IDR2](https://img.shields.io/badge/IDR-2-pink)]() | **Lopend** | [Documentatie](./indicatieregister-2/index.md) / [GraphQL](https://github.com/iStandaarden/iWlz-indicatie/blob/Indicatieregister-2/) | [iWlz Indicatieregister 2](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/indicatieregister-2/) |
-| Indicatieregister 3 | [![IDR3](https://img.shields.io/badge/IDR-3-pink)]() | In Ontwikkeling | [Documentatie](./indicatieregister-3/index.md) / [GraphQL](https://github.com/iStandaarden/iWlz-indicatie/blob/Indicatieregister-3/) | [iWlz Indicatieregsiter 3](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/indicatieregister-2/) |
+| Release             | Status | Koppelvlakspecificatie | Informatiemodel |
+| :------------------ | :----- | :--------------------- | :-------------- |
+| **Indicatieregister 2 -** [![IDR2](https://img.shields.io/badge/IDR-2-pink)]() | **Lopend** | [Documentatie](./indicatieregister-2/index.md) / [GraphQL](https://github.com/iStandaarden/iWlz-indicatie/blob/Indicatieregister-2/) | [iWlz Indicatieregister 2](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/indicatieregister-2/) |
+| Indicatieregister 3 - [![IDR3](https://img.shields.io/badge/IDR-3-pink)]() | In Ontwikkeling | [Documentatie](./indicatieregister-3/index.md) / [GraphQL](https://github.com/iStandaarden/iWlz-indicatie/blob/Indicatieregister-3/) | [iWlz Indicatieregsiter 3](https://informatiemodel.istandaarden.nl/informatiemodel/iwlz/netwerk/indicatieregister-2/) |
 
