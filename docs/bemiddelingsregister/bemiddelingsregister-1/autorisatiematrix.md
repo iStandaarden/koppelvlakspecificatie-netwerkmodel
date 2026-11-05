@@ -1,5 +1,4 @@
 # Autorisatiematrix Bemiddelingsregister 1
-*Bemiddelingsregister 1 - versie 1.2: 24-06-2026*
 
 In de autorisatiematrix is per autorisatieregel de toegang op attribuutniveau vastgelegd.
 
