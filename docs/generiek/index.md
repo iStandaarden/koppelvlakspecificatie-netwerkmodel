@@ -7,5 +7,5 @@ De koppelvlakspecificatie generiek is er voor de standaardisatie van de diensten
 ## Beschikbare Documentatie en status
 | Release             | Status | Koppelvlakspecificatie | Informatiemodel |
 | :------------------ | :----- | :--------------------- | :-------------- |
-| **Generiek**| **Lopend** | [Documentatie]([./bemiddelingsregister-1/index.md](https://istandaarden.github.io/Afsprakenstelsel-iWlz/current/applicatie/diensten/notificeren-en-melden/)) / [GraphQL](https://github.com/iStandaarden/iWlz-generiek/) | n.v.t. |
+| **Generiek**| **Lopend** | [Documentatie](https://istandaarden.github.io/Afsprakenstelsel-iWlz/current/applicatie/diensten/notificeren-en-melden/) / [GraphQL](https://github.com/iStandaarden/iWlz-generiek/) | n.v.t. |
 
