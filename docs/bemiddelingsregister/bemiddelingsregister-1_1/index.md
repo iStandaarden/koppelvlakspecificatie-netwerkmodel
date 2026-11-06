@@ -1,4 +1,4 @@
-# Koppelvlakspecificatie Bemiddelingsregister 1.1
+# Bemiddelingsregister 1.1 - [![BMR1.1](https://img.shields.io/badge/BMR-1.1-88b76d?style=flat-square)]() 
 
 !!! info "Status: In ontwikkeling" 
     Documentatie bij de koppelvlakspecificatie van het **Bemiddelingsregister Release 1.1**. 

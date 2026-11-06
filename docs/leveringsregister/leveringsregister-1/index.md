@@ -1,4 +1,4 @@
-# Koppelvlakspecificatie Leveringsregister 1
+# Koppelvlakspecificatie Leveringsregister 1 - [![LVR1](https://img.shields.io/badge/LVR-1-a5c991?style=flat-square)]() 
 
 !!! info "Status: In Ontwikkeling" 
     Documentatie bij de koppelvlakspecificatie van het **Leveringsregister Release 1**. 

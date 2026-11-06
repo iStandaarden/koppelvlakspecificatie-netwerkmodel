@@ -28,7 +28,7 @@ theme:
         icon: material/weather-night
         name: Switch to dark mode
       primary: custom
-      accent: deep orange
+      accent: custom
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -36,7 +36,7 @@ theme:
         icon: material/weather-sunny
         name: Switch to system preference
       primary: custom
-      accent: deep purple
+      accent: custom
   features:
     - navigation.top
     # - header.autohide
@@ -115,6 +115,9 @@ markdown_extensions:
       permalink: true
       toc_depth: 3
   - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -295,6 +298,7 @@ nav:
               - UCLR-0009: leveringsregister/leveringsregister-1/raadplegen/UCLR-0009-raadplegen.md
               - UCLR-0010: leveringsregister/leveringsregister-1/raadplegen/UCLR-0010-raadplegen.md
           - Toegangscontrole:
+              - leveringsregister/leveringsregister-1/toegangscontrole/index.md
               - UCLR-0001: leveringsregister/leveringsregister-1/toegangscontrole/UCLR-0001-toegangscontrole.md
               - UCLR-0002: leveringsregister/leveringsregister-1/toegangscontrole/UCLR-0002-toegangscontrole.md
               - UCLR-0004: leveringsregister/leveringsregister-1/toegangscontrole/UCLR-0004-toegangscontrole.md

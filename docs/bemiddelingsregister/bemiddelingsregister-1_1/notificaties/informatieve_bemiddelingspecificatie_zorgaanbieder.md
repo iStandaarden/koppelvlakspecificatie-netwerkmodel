@@ -8,12 +8,14 @@ Notificatie aan de zorgaanbieder die betrokken is bij de zorglevering aan een cl
 !!! warning
     ## Implementatie fasen
     Deze Notificatie heeft een afhankelijkheid met de implementatie-fase van het bemiddelingsregister door de zorgkantoren. Er zijn 3 fasen:    
-    | Fase   	| Bemiddelingsregister   	| ZK33 	| Silvester AW33 	| Voor welke zorgaanbieders? |
-    | :------	| :--------------------	| :--	| :-- | :-- |
-    | **1** 	| Niet alle zorgkantoren hebben een bemiddelingsregister 	| Ja   	| Ja 	| zorgaanbieders die horen bij verantwoordelijk zorgkantoor 	|
-    | **2** 	| Alle zorgkantoren hebben een bemiddelingsregister     	| Nee  	| Ja 	| alle zorgaanbieders   |
-    | **3** 	| Alle zorgkantoren hebben een bemiddelingsregister en alle zorgaanbieders zijn aangesloten op het bemiddelingsregister    	| Nee  	| Nee | *geen* / *optioneel* / *alle zorgaanbieders* |    
-    Waar het nodig is de fasering mee te nemen zal dit hieronder worden aangegeven. 
+    
+    | Fase   	| Bemiddelingsregister   	| ZK33 	| Silvester AW33 	| Voor welke zorgaanbieders? |  
+    | :------	| :--------------------	| :--	| :-- | :-- |  
+    | **1** 	| Niet alle zorgkantoren hebben een bemiddelingsregister 	| Ja   	| Ja 	| zorgaanbieders die horen bij verantwoordelijk zorgkantoor 	|  
+    | **2** 	| Alle zorgkantoren hebben een bemiddelingsregister     	| Nee  	| Ja 	| alle zorgaanbieders   |  
+    | **3** 	| Alle zorgkantoren hebben een bemiddelingsregister en alle zorgaanbieders zijn aangesloten op het bemiddelingsregister    	| Nee  	| Nee | *geen* / *optioneel* / *alle zorgaanbieders* |  
+
+    Waar het nodig is de fasering mee te nemen zal dit hieronder worden aangegeven.  
 
 ## Aanleiding
 **De trigger voor de notificatie is:** 
@@ -23,7 +25,9 @@ Notificatie aan de zorgaanbieder die betrokken is bij de zorglevering aan een cl
 ## Instructie
 
 ### Trigger voor verzending per fase
+
 **Trigger voor FASE 1:**
+
 | **Scenario** 	| Notificatie voor informatieve bemiddelingspecificatie zorgaanbieder 	|
 |---	|---	|
 | **Gegeven** 	| een bemiddeling met bestaande bemiddelingsspecificaties 	|
@@ -36,6 +40,7 @@ Notificatie aan de zorgaanbieder die betrokken is bij de zorglevering aan een cl
 |  **En** 	| wordt deze notificatie verzonden aan de zorgaanbieder als de betreffende zorgaanbieder **wel** is aangesloten op het netwerkmodel 	|
 
 **Trigger voor FASE 2:**
+
 | **Scenario** 	| Notificatie voor informatieve bemiddelingspecificatie zorgaanbieder 	|
 |---	|---	|
 | **Gegeven** 	| een bemiddeling met bestaande bemiddelingsspecificaties 	|
@@ -43,15 +48,16 @@ Notificatie aan de zorgaanbieder die betrokken is bij de zorglevering aan een cl
 | **En** 	| als er andere bemiddelingsspecificaties zijn binnen dezelfde bemiddeling die overlappen met de nieuwe of gewijzigde Bemiddelingspecificatie 	|
 | **En** 	| die overlappende bemiddelingspecificaties zijn, op het moment dat de nieuwe bemiddelingsspecificatie wordt geregistreerd of de gewijzigde bemiddelingsspecificatie wordt gewijzigd, niet beëindigd  	|
 | **Dan** 	| wordt er voor de zorgaanbieder(s) van die overlappende specificaties een notificatie INFORMATIEVE_BEMIDDELINGSPECIFICATIE_ZORGAANBIEDER opgesteld 	|
-| ~~*Als*~~   | ~~de ontvangende zorgaanbieder bij het verantwoordelijke zorgkantoor hoort~~ |
+| ~~Als~~   | ~~de ontvangende zorgaanbieder bij het verantwoordelijke zorgkantoor hoort~~ |
 |  **En** 	| wordt deze notificatie verzonden aan Silvester als de betreffende zorgaanbieder **niet** is aangesloten op het netwerkmodel 	|
 |  **En** 	| wordt deze notificatie verzonden aan de zorgaanbieder als de betreffende zorgaanbieder **wel** is aangesloten op het netwerkmodel 	|
+
 
 **Trigger voor FASE 3:**
 
 *Als de notificatie wordt gehandhaafd, is de trigger hetzelfde als van FASE 2.*
 
-### **Overlap bepaling (voor alle fasen gelijk)**
+## **Overlap bepaling (voor alle fasen gelijk)**
 | Gegeven: | een Bemiddelingspecificatie A  (BS A)|
 | --: | :-- | 
 | Dan: | is sprake van overlap tussen Bemiddelingspecificatie A en 1 (of meer) andere Bemiddelingspecificatie(s) |
@@ -59,6 +65,7 @@ Notificatie aan de zorgaanbieder die betrokken is bij de zorglevering aan een cl
 | En:	| wordt de overlap bepaald op basis van de periode vanaf de ingangsdatum (of eerder vaststellingsmoment) t/m de einddatum van de Bemiddelingspecificaties |
 
 **Voorbeeld**
+
 | BS      	| **Vaststellings-<br/>moment** 	| **Ingangsdatum** 	| **Einddatum** 	| **Overlap met A** 	| **Toelichting**                                                   	| **Q4-24** 	| **Q1-25** 	| **Q2-25** 	| **Q3-25** 	| **Q4-25** 	| **Q1-26** 	|
 |---------	|-------------------------	|------------------	|---------------	|-------------------	|-------------------------------------------------------------------	|-----------	|-----------	|-----------	|-----------	|-----------	|-----------	|
 | **A**   	| 01-08-2025 00:00        	| 01-01-2025       	| 31-12-2025    	|                   	|                                                                   	|           	|  OOO      	|  OOO      	|  OOO      	|  OOO      	|           	|
@@ -70,13 +77,15 @@ Notificatie aan de zorgaanbieder die betrokken is bij de zorglevering aan een cl
 
 *OOO = Overlap (3 maanden) / XXX = geen overlap (3 maanden)*
 
-### Verzend bepaling
+## Verzend bepaling
+
 | Gegeven: | een Bemiddelingspecificatie A (BS A) met een wijziging op 1 augustus 2025 (Q3-25)|
 | --: | :-- | 
 | Dan: | is sprake van verzending wanneer er **overlap** is met Bemiddelingspecificatie A en 1 (of meer) andere Bemiddelingspecificatie(s) |
 | EN | deze Bemiddelingspecificatie(s) zijn op je het moment van vaststelling van de wijziging van Bemiddelingspecificatie A (vaststellingsmoment = 01-08-2025) niet beëindigd (toewijzingEinddatum overlappende bemiddelingspecificatie(s) < 01-08-2025) |
 
 **Voorbeeld**
+
 | BS 	| Vaststellingsmoment 	| Ingangsdatum 	| Einddatum 	| Overlap<br/> met A 	| VERZENDEN 	| Toelichting 	|
 |---	|---	|---	|---	|---	|---	|---	|
 | A 	| **01-08-2025:00:00** 	| 01-01-2025 	| 31-12-2025 	|   	|   	|   	|
