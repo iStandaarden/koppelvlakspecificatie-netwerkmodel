@@ -1,7 +1,6 @@
 :root > * {
   --md-primary-fg-color:        #026e06;
-  --md-primary-fg-color--light: #06950a;
-  --md-primary-fg-color--dark:  #06950a;
+  --md-accent-fg-color:         #f5a624;
 }
 
 a:hover {
@@ -65,10 +64,17 @@ a[href^="http"]:not([href*="istandaarden.github.io/koppelvlakspecificatie-netwer
   pointer-events: none; /* voorkomt dat hij klikken op de titel eronder blokkeert */
 }
 
+.md-tabs {
+  background-image: url("../assets/img/banner.avif");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
 .md-header--lifted {
   background-image: url("../assets/img/banner.avif");
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
 }
 
@@ -102,6 +108,10 @@ a[href^="http"]:not([href*="istandaarden.github.io/koppelvlakspecificatie-netwer
 /* Shrink the bottom copyright bar */
 .md-footer-meta__inner {
   padding: 0.3rem 0.6rem !important;
+}
+
+.md-footer {
+  background-color: #275937 !important;
 }
 
 .md-copyright {
