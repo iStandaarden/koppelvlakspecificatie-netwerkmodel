@@ -42,7 +42,7 @@ De koppelvlak-specificatie maken onderdeel uit van de specificaties van het Netw
 
     Het afsprakenstelsel heeft als doel deelnemers aan het iWlz-netwerkmodel op een uniforme en eenduidige wijze te informeren over de geldende afspraken, procedures en regels. Het vormt daarmee de basis voor samenwerking en gegevensuitwisseling binnen het iWlz-netwerkmodel.
 
-    [:octicons-arrow-up-right-24: lees verder](https://istandaarden.github.io/Afsprakenstelsel-iWlz/)
+    [lees verder](https://istandaarden.github.io/Afsprakenstelsel-iWlz/)
 
 -   :material-monitor-dashboard:{ .lg .middle } __Informatiemodel iStandaarden__
 
