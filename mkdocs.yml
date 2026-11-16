@@ -68,19 +68,6 @@ plugins:
       timezone: Europe/Amsterdam
       fallback_to_build_date: true
       enable_creation_date: false
-  - to-pdf:
-      enabled_if_env: ENABLED_PDF_EXPORT
-      cover_title: Koppelvlakspecificaties iWlz
-      cover_subtitle: !ENV [PDF_VERSION_LABEL, "onbekende versie"]
-      cover_logo: docs/assets/ZinBanner.png
-      copyright: "iStandaarden.nl"
-      output_path: pdf/koppelvlakspecificaties-iWlz.pdf
-      toc_title: Inhoudsopgave
-      toc_level: 3
-      # heading_shift: true
-      # ordered_chapter_level: 2
-      cover: true
-      back_cover: false
 
 # Custom CSS
 extra_css:
@@ -90,10 +77,9 @@ extra_css:
 
 # extra JavaScript
 extra_javascript:
-  - assets/javascripts/svg-pan-zoom.min.js
   - https://unpkg.com/mermaid/dist/mermaid.min.js
-  # - assets/javascripts/mermaid-panzoom.js
   - assets/javascripts/mermaid-zoom.js
+  - assets/javascripts/external-links.js
 
 extra:
   # --- mike-versioning ---
@@ -131,11 +117,11 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid-zoom
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format:
+            !!python/name:pymdownx.superfences.fence_code_format # Navigation structure
 
-# Navigation structure
 nav:
-  - Welkom: 
+  - Welkom:
       - index.md
       - Versiebeheer: welkom/versiebeheer.md
       - Release notes: welkom/release-notes.md
@@ -145,9 +131,9 @@ nav:
       - Notificeren: leeswijzer/notificeren.md
   - Indicatieregister:
       - indicatieregister/index.md
-      - Indicatieregister 2: 
+      - Indicatieregister 2:
           - indicatieregister/indicatieregister-2/index.md
-          - Raadplegen: 
+          - Raadplegen:
               - indicatieregister/indicatieregister-2/raadplegen/index.md
               - UCIR-0001: indicatieregister/indicatieregister-2/raadplegen/UCIR-0001-raadplegen.md
               - UCIR-0002: indicatieregister/indicatieregister-2/raadplegen/UCIR-0002-raadplegen.md
@@ -166,9 +152,9 @@ nav:
               - Nieuwe indicatie zorgkantoor: indicatieregister/indicatieregister-2/notificaties/nieuwe_indicatie_zorgkantoor.md
               - Vervallen indicatie zorgkantoor: indicatieregister/indicatieregister-2/notificaties/vervallen_indicatie_zorgkantoor.md
           - Autorisatiematrix: indicatieregister/indicatieregister-2/autorisatiematrix.md
-      - Indicatieregister 3: 
+      - Indicatieregister 3:
           - indicatieregister/indicatieregister-3/index.md
-          - Raadplegen: 
+          - Raadplegen:
               - indicatieregister/indicatieregister-3/raadplegen/index.md
               - UCIR-0001: indicatieregister/indicatieregister-3/raadplegen/UCIR-0001-raadplegen.md
               - UCIR-0002: indicatieregister/indicatieregister-3/raadplegen/UCIR-0002-raadplegen.md

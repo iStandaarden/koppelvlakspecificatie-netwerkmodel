@@ -16,6 +16,35 @@
  *
  * mermaid en svg-pan-zoom worden gebruikt wanneer ze al via extra_javascript
  * geladen zijn; anders laadt dit script ze zelf van CDN.
+ * 
+ * Er zit ook een mogelijkheid in om de hoogte van een diagram te forceren via CSS:
+ * Het activeren daarvan wanneer er 1 diagram in de markdown staat gaat dmv:
+ *   <style>
+ *    .mermaid-zoom-blok { --mermaid-zoom-hoogte: 900px; }
+ *   </style>
+ * 
+ * Zet dit bovenaan de markdown, zodat het in de DOM staat voordat het diagram gerenderd wordt.
+ * 
+ * Staan er meerdere diagrammen in de markdown, dan kan je ze individueel forceren dmv:
+ *  <style>
+ *   .diagram-900 { --mermaid-zoom-hoogte: 900px; }
+ *   .diagram-600 { --mermaid-zoom-hoogte: 600px; }
+ *  </style>
+ * 
+ * En dan in de markdown:
+ *  <div class="mermaid-zoom diagram-900">
+ *  ```mermaid
+ *   graph TD;
+ *     A-->B;
+ *  ```
+ *  </div>
+ * 
+ *  <div class="mermaid-zoom diagram-600">
+ *  ```mermaid
+ *   graph TD;
+ *    A-->B;
+ *  ```
+ *  </div>
  */
 (function () {
   "use strict";
@@ -111,8 +140,9 @@
 
     var svg = stage.querySelector("svg");
     var natuurlijkeHoogte = svg.getBoundingClientRect().height || 400;
-    var normaleHoogte = Math.max(180, Math.min(Math.ceil(natuurlijkeHoogte) + 32, Math.round(window.innerHeight * 0.7)));
-    blok.style.height = normaleHoogte + "px";
+    var gewenst = getComputedStyle(blok).getPropertyValue("--mermaid-zoom-hoogte").trim();
+    var normaleHoogte = gewenst || (Math.max(180, Math.min(Math.ceil(natuurlijkeHoogte) + 32, Math.round(window.innerHeight * 0.7))) + "px");
+    blok.style.height = normaleHoogte;
 
     svg.style.maxWidth = "none";
     svg.style.width = "100%";
@@ -138,7 +168,7 @@
     var knop = maakFullscreenKnop(blok, herpas);
     blok.appendChild(knop);
     document.addEventListener("fullscreenchange", function () {
-      blok.style.height = document.fullscreenElement === blok ? "100%" : normaleHoogte + "px";
+      blok.style.height = document.fullscreenElement === blok ? "100%" : normaleHoogte;
       setTimeout(herpas, 150);
     });
     window.addEventListener("resize", function () { setTimeout(herpas, 150); });
