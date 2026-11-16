@@ -30,17 +30,57 @@ Ga eerst naar de [**LEESWIJZER**](./leeswijzer/index.md) voor de algemene toelic
 
 
 
+
 ## Andere onderdelen Netwerkmodel iWlz
-De koppelvlak-specificatie maken onderdeel uit van de **iStandaard iWlz**. De andere onderdelen die samen het Netwerkmodel iWlz vormen zijn:
+De koppelvlak-specificatie maken onderdeel uit van de specificaties van het Netwerkmodel iWlz. De documentatie van andere onderdelen die samen het Netwerkmodel iWlz vormen zijn:
 
-  - [Het Netwerkmodel iWlz](https://www.istandaarden.nl/algemeen/map/netwerkmodel)
-  - [Afsprakenstelsel iWlz](https://istandaarden.github.io/Afsprakenstelsel-iWlz/)
-  - [Informatiemodel iStandaarden](https://informatiemodel.istandaarden.nl/)
+<div class="grid cards" markdown>
+
+-   :material-file-sign:{ .lg .middle } __Afsprakenstelsel iWlz__
+
+    ---
+
+    Het afsprakenstelsel heeft als doel deelnemers aan het iWlz-netwerkmodel op een uniforme en eenduidige wijze te informeren over de geldende afspraken, procedures en regels. Het vormt daarmee de basis voor samenwerking en gegevensuitwisseling binnen het iWlz-netwerkmodel.
+
+    [:octicons-arrow-up-right-24: lees verder](https://istandaarden.github.io/Afsprakenstelsel-iWlz/)
+
+-   :material-monitor-dashboard:{ .lg .middle } __Informatiemodel iStandaarden__
+
+    ---
+
+    In het Informatiemodel iStandaarden liggen de specificaties voor de registers vast. Het model biedt een totaaloverzicht van de lopende releases en ziet u welke releases in ontwikkeling zijn.
+
+    U vindt er ook de informatiemodellen van de iWmo, iJw, iEb en iPgb.
+
+    [lees verder](https://informatiemodel.istandaarden.nl/)
 
 
+</div>
 
 ## Meer informatie
-  - Portaal voor iStandaarden in de Zorg en Ondersteuning: [homepagina iStandaarden](https://www.istandaarden.nl)
-  - Aanvullende Documentatie Netwerkmodel iWlz: [homepage GitHub documentatie](https://istandaarden.github.io)
 
+<div class="grid cards" markdown>
 
+-   :material-information-outline:{ .lg .middle } __Portaal voor iStandaarden in de Zorg en Ondersteuning__
+
+    ---
+
+    Alles over **iStandaarden**: van beheer, governance en samenwerking met de keten tot het informatiemodel voor veilige en eenduidige gegevensuitwisseling in de zorg.
+
+    [lees verder](https://www.istandaarden.nl)
+
+-   :material-lan:{ .lg .middle } __Het Netwerkmodel__
+
+    ---
+
+    Het Netwerkmodel iWlz vervangt het huidige berichtenverkeer binnen de Wlz. Gegevens blijven bij de bron en zijn beschikbaar voor geautoriseerde partijen: betrouwbaar en actueel. Lees er meer over op de website van iStandaarden.
+
+    [lees verder](https://www.istandaarden.nl/algemeen/map/netwerkmodel)
+
+ 
+
+</div>
+
+---
+
+[Terug](https://istandaarden.github.io/current/) naar *Aanvullende documentatie Netwerkmodel*
