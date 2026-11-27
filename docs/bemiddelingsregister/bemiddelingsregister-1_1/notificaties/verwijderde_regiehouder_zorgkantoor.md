@@ -2,9 +2,9 @@
 
 ## Documentatie
 
-Notificatie aan het uitvoerende zorgkantoor dat op het moment dat het verantwoordelijke zorgkantoor een `Regiehouder` heeft verwijderd een actuele `Bemiddelingsspecificatie` heeft.
+Notificatie aan het uitvoerend zorgkantoor dat op het moment dat het verantwoordelijke zorgkantoor een `Regiehouder` heeft verwijderd een actuele `Bemiddelingsspecificatie` heeft.
 
-Het uitvoerende zorgkantoor is dan geïnformeerd over de wijziging van een regierol aan een zorgaanbieder door het verantwoordelijk zorgkantoor. De notificatie bevat informatie waarmee het zorgkantoor de Regiehouder (en regierol) kan raadplegen.
+Het uitvoerend zorgkantoor is dan geïnformeerd over de wijziging van een regierol aan een zorgaanbieder door het verantwoordelijke zorgkantoor. De notificatie bevat informatie waarmee het zorgkantoor de Regiehouder (en regierol) kan raadplegen.
 
 
 ## Aanleiding

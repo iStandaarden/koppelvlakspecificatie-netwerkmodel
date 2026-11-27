@@ -26,7 +26,7 @@ flowchart LR
 
 ### Precondities:
 - De Uitstelperiode is opgenomen in het Leveringsregister.
-- Het zorgkantoor is betrokken bij de levering van zorg aan de client door de registratie van een bemiddelingspecificatie door het verantwoordelijk zorgkantoor.
+- Het zorgkantoor is betrokken bij de levering van zorg aan de client door de registratie van een bemiddelingspecificatie door het verantwoordelijke zorgkantoor.
 
 
 ### Autorisatie:

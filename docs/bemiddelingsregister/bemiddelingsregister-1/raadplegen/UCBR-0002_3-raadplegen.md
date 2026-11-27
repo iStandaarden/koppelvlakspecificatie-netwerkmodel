@@ -24,7 +24,7 @@ flowchart LR
 
 ### Precondities:
 - De Bemiddelingspecificatie is opgenomen in het Bemiddelingsregister.
-- De zorgaanbieder is door het verantwoordelijk zorgkantoor betrokken bij de levering van zorg aan de client door de registratie van een bemiddelingspecificatie.
+- De zorgaanbieder is door het verantwoordelijke zorgkantoor betrokken bij de levering van zorg aan de client door de registratie van een bemiddelingspecificatie.
 - De zorgaanbieder weet de toewijzing ingangsdatum, het vaststellingMoment en de toewijzing einddatum van de eigen bemiddelingspecificatie.
 
 

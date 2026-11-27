@@ -1,4 +1,4 @@
-# Raadplegen van de Overdracht door het nieuw verantwoordelijk zorgkantoor inclusief contactgegevens en regiehouder (UCBR-0008) 
+# Raadplegen van de Overdracht door het nieuwe verantwoordelijke zorgkantoor inclusief contactgegevens en regiehouder (UCBR-0008) 
 
 ```mermaid
 ---
@@ -24,7 +24,7 @@ flowchart LR
 
 ### Precondities:
 - De Overdracht is opgenomen in het Bemiddelingsregister.
-- Het zorgkantoor wordt verantwoordelijk voor de bemiddeling van zorg aan de client door de registratie van een overdracht door het huidige verantwoordelijk zorgkantoor.
+- Het zorgkantoor wordt verantwoordelijk voor de bemiddeling van zorg aan de client door de registratie van een overdracht door het huidige verantwoordelijke zorgkantoor.
 
 
 ### Autorisatie:

@@ -2,9 +2,9 @@
 
 ## Documentatie
 
-Notificatie aan het verantwoordelijke zorgkantoor dat als verantwoordelijk zorgkantoor is geregistreerd in de overdracht die is verwijderd
+Notificatie aan het verantwoordelijk zorgkantoor dat als verantwoordelijk zorgkantoor is geregistreerd in de overdracht die is verwijderd
 
-Het nieuw verantwoordelijke zorgkantoor is daarmee op de hoogte gesteld dat de dossieroverdracht van een client ongedaan is gemaakt. 
+Het nieuw verantwoordelijk zorgkantoor is daarmee op de hoogte gesteld dat de dossieroverdracht van een client ongedaan is gemaakt. 
 
 ## Aanleiding
 **De trigger voor de notificatie is:** 

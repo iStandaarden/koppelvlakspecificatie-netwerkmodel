@@ -4,7 +4,7 @@
 
 Notificatie aan de zorgaanbieder als het verantwoordelijke zorgkantoor de regieperiode van deze zorgaanbieder heeft gewijzigd.   
 
-De zorgaanbieder is daarmee geïnformeerd over de wijziging in de periode van een regierol door het verantwoordelijk zorgkantoor. De notificatie bevat informatie waarmee de zorgaanbieder de Regiehouder (en regierol) kan raadplegen.
+De zorgaanbieder is daarmee geïnformeerd over de wijziging in de periode van een regierol door het verantwoordelijke zorgkantoor. De notificatie bevat informatie waarmee de zorgaanbieder de Regiehouder (en regierol) kan raadplegen.
 
 ## Aanleiding
 **De trigger voor de notificatie is:** 

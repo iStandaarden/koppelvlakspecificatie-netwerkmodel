@@ -2,7 +2,7 @@
 
 ## Documentatie
 
-Notificatie aan het nieuwe verantwoordelijke zorgkantoor als het huidige (oude) verantwoordelijke zorgkantoor een Overdracht heeft gewijzigd.
+Notificatie aan het nieuw verantwoordelijk zorgkantoor als het huidige (oude) verantwoordelijke zorgkantoor een Overdracht heeft gewijzigd.
 
 Het nieuwe zorgkantoor is daarmee op de hoogte gesteld van de aanwezigheid van een dossieroverdracht van een client. De notificatie bevat informatie waarmee dat zorgkantoor de Overdracht kan raadplegen.
 

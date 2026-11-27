@@ -27,7 +27,7 @@ flowchart LR
 
 ### Precondities:
 - De Levering is opgenomen in het Leveringsregister
-- De aanbieder is door het verantwoordelijk zorgkantoor betrokken bij de levering van zorg en ondersteuning aan de cliënt door de registratie van een bemiddelingspecificatie.
+- De aanbieder is door het verantwoordelijke zorgkantoor betrokken bij de levering van zorg en ondersteuning aan de cliënt door de registratie van een bemiddelingspecificatie.
 
 ### Autorisatie
 Een aanbieder mag voor het leveren van zorg en ondersteuning aan een cliënt de gegevens over de status van de levering van de zorg of ondersteuning raadplegen die horen bij overlappende bemiddelingspecificaties.

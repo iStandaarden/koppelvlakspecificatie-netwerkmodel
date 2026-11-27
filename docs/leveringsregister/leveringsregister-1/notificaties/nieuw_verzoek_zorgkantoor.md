@@ -55,7 +55,7 @@ opstellen:- dat verantwoordelijk is
 
 
 ## Documentatie
-Notificatie aan het verantwoordelijke zorgkantoor wanneer de aanbieder – die van dit zorgkantoor een Bemiddelingsspecificatie heeft ontvangen – een nieuw verzoek registreert.
+Notificatie aan het verantwoordelijk zorgkantoor wanneer de aanbieder – die van dit zorgkantoor een Bemiddelingsspecificatie heeft ontvangen – een nieuw verzoek registreert.
 
 Het zorgkantoor is daarmee geïnformeerd over de registratie van een nieuw verzoek. 
 

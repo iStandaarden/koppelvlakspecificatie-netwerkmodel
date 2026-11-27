@@ -2,7 +2,7 @@
 
 ## Documentatie
 
-Notificatie aan het uitvoerende zorgkantoor als het verantwoordelijke zorgkantoor een nieuwe Bemiddelingspecificatie voor een gecontracteerde zorgaanbieder (van dit uitvoerende zorgkantoor) heeft verwijderd.
+Notificatie aan het uitvoerend zorgkantoor als het verantwoordelijke zorgkantoor een nieuwe Bemiddelingspecificatie voor een gecontracteerde zorgaanbieder (van dit uitvoerend zorgkantoor) heeft verwijderd.
 
 Het uitvoerende (bovenregionale) zorgkantoor is daarmee geïnformeerd over een verwijdering van een bemiddelingsspecificatie voor een gecontracteerde zorgaanbieder.
 

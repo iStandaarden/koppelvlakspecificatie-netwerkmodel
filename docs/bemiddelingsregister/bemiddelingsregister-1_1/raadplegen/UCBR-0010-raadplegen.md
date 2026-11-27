@@ -24,7 +24,7 @@ flowchart LR
 
 ### Precondities:
 - De wlzIndicatieID is opgenomen in het Bemiddelingsregister.
-- De Bemiddeling bevat de informatie met de verbinding tussen de Wlz indicatie en het verantwoordelijke zorgkantoor
+- De Bemiddeling bevat de informatie met de verbinding tussen de Wlz indicatie en het verantwoordelijk zorgkantoor
 
 
 ### Autorisatie:
@@ -44,7 +44,7 @@ Het CIZ mag voor het beoordelen van recht op Wlz de entiteit Bemiddeling in het 
 
 ## **Proces raadplegen**
 
-Door verhuizingen van de client kan het verantwoordelijk zorgkantoor gewijzigd zijn en niet meer het initieel verantwoordelijk zorgkantoor zijn. Het CIZ raadpleegt op basis van de wlzIndicatieID in het Bemiddelingregister de betrokken verantwoordelijk zorgkantoren. 
+Door verhuizingen van de client kan het verantwoordelijk zorgkantoor gewijzigd zijn en niet meer het initieel verantwoordelijk zorgkantoor zijn. Het CIZ raadpleegt op basis van de wlzIndicatieID in het Bemiddelingregister de betrokken verantwoordelijke zorgkantoren. 
 
 
 ### Schematisch:

@@ -1,4 +1,4 @@
-# Toegangscontrole: Raadplegen van Wlz-indicatie door uitvoerende Zorgkantoor (UCIR-0004) 
+# Toegangscontrole: Raadplegen van Wlz-indicatie door het uitvoerende zorgkantoor (UCIR-0004) 
 
 Beschrijving van de **toegangscontrole** door de Policy Decision Point (PDP) en indien van toepassing Policy Information Point (PIP).
 

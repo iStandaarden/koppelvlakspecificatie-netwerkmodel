@@ -24,7 +24,7 @@ flowchart LR
 
 ### Precondities:
 - De Bemiddelingspecificatie is opgenomen in het Bemiddelingsregister.
-- Het zorgkantoor is betrokken bij de levering van zorg aan de client door de registratie van een bemiddelingspecificatie door het verantwoordelijk zorgkantoor.
+- Het zorgkantoor is betrokken bij de levering van zorg aan de client door de registratie van een bemiddelingspecificatie door het verantwoordelijke zorgkantoor.
 
 
 ### Autorisatie:
@@ -44,7 +44,7 @@ Het zorgkantoor mag de toewijzing raadplegen.
 
 ## **Proces raadplegen**
 
-Een zorgaanbieder wordt bij de zorg van een client betrokken door het zorgkantoor. Het zorgkantoor registreert een bemiddelingspecificatie (toewijzing) voor het leveren van zorg door de zorgaanbieder. Als de zorgaanbieder contract heeft bij een zorgkantoor uit een andere regio (bovenregionaal) dan het verantwoordelijke zorgkantoor, ontvangt dat bovenregionale zorgkantoor de notificatie [`NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGKANTOOR](../notificaties/nieuwe_bemiddelingspecificatie_zorgkantoor.md). Op basis van deze notificatie kan het zorgkantoor de informatie in het bemiddelingsregister raadplegen. 
+Een zorgaanbieder wordt bij de zorg van een client betrokken door het zorgkantoor. Het zorgkantoor registreert een bemiddelingspecificatie (toewijzing) voor het leveren van zorg door de zorgaanbieder. Als de zorgaanbieder contract heeft bij een zorgkantoor uit een andere regio (bovenregionaal) dan het verantwoordelijk zorgkantoor, ontvangt dat bovenregionale zorgkantoor de notificatie [`NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGKANTOOR](../notificaties/nieuwe_bemiddelingspecificatie_zorgkantoor.md). Op basis van deze notificatie kan het zorgkantoor de informatie in het bemiddelingsregister raadplegen. 
 
 !!! info
     Voor een volledige beeld moeten er altijd 2 bevragingen worden uitgevoerd.

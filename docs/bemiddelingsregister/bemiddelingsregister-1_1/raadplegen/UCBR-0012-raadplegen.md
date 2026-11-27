@@ -24,7 +24,7 @@ flowchart LR
 
 ### Precondities:
 - De Bemiddelingspecificatie is opgenomen in het Bemiddelingsregister.
-- Het zorgkantoor is betrokken bij de levering van zorg aan de cliënt door de registratie van een bemiddelingspecificatie door het verantwoordelijk zorgkantoor.
+- Het zorgkantoor is betrokken bij de levering van zorg aan de cliënt door de registratie van een bemiddelingspecificatie door het verantwoordelijke zorgkantoor.
 
 
 ### Autorisatie:

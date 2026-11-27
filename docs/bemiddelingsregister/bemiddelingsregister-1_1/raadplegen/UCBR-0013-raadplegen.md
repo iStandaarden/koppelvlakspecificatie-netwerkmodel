@@ -24,7 +24,7 @@ flowchart LR
 
 ### Precondities:
 - De Regiehouder is opgenomen in het Bemiddelingsregister.
-- Het zorgkantoor is betrokken bij de levering van zorg aan de cliënt door de registratie van een bemiddelingspecificatie door het verantwoordelijk zorgkantoor die bij dezelfde Bemiddeling hoort als de te raadplegen Regiehouder.
+- Het zorgkantoor is betrokken bij de levering van zorg aan de cliënt door de registratie van een bemiddelingspecificatie door het verantwoordelijke zorgkantoor die bij dezelfde Bemiddeling hoort als de te raadplegen Regiehouder.
 
 
 ### Autorisatie:

@@ -24,7 +24,7 @@ flowchart LR
 
 ### Precondities:
 - De Wlz-indicatie is opgenomen in het Indicatieregister.
-- Het Zorgkantoor is door het verantwoordelijk zorgkantoor betrokken bij de levering van zorg aan de client door de registratie van een bemiddelingspecificatie
+- Het Zorgkantoor is door het verantwoordelijke zorgkantoor betrokken bij de levering van zorg aan de client door de registratie van een bemiddelingspecificatie
 
 ### Autorisatie:
 Een zorgkantoor mag voor het toeleiden van een client de Wlz-indicatie raadplegen die hoort bij de toewijzingen waarvoor dat zorgkantoor uitvoerend zorgkantoor is
@@ -43,7 +43,7 @@ Een zorgkantoor mag voor het toeleiden van een client de Wlz-indicatie raadplege
 
 
 ## **Proces raadplegen**
-Een bovenregionaal zorgkantoor wordt bij de zorg van een client betrokken door het verantwoordelijk zorgkantoor. Het verantwoordelijk zorgkantoor registreert een bemiddelingspecificatie voor een zorgaanbieder die onder verantwoordelijkheid van het bovenregional zorgkantoor valt. 
+Een bovenregionaal zorgkantoor wordt bij de zorg van een client betrokken door het verantwoordelijke zorgkantoor. Het verantwoordelijke zorgkantoor registreert een bemiddelingspecificatie voor een zorgaanbieder die onder verantwoordelijkheid van het bovenregional zorgkantoor valt. 
 
 Het zorgkantoor ontvangt hiervan een notificatie ```NIEUWE_BEMIDDELINGSPECIFICATIE_ZORGKANTOOR```. Op basis van deze notificatie kan het zorgkantoor de ```wlzIndicatieID``` raadplegen in het Bemiddelingsregister (zie hiervoor de queries voor het raadplegen van het [Bemiddelingsregister](https://github.com/iStandaarden/iWlz-bemiddeling)). Met deze ```wlzIndicatieID``` kan het zorgkantoor de Wlz-indicatie gegevens raadplegen. 
 

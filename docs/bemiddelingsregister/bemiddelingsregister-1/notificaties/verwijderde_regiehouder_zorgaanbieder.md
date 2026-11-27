@@ -4,7 +4,7 @@
 
 Notificatie aan de zorgaanbieder als het verantwoordelijke zorgkantoor de regiehouder van deze zorgaanbieder heeft verwijderd.   
 
-De zorgaanbieder is daarmee geïnformeerd over de verwijdering van een regierol door het verantwoordelijk zorgkantoor. 
+De zorgaanbieder is daarmee geïnformeerd over de verwijdering van een regierol door het verantwoordelijke zorgkantoor. 
 
 ## Aanleiding
 **De trigger voor de notificatie is:** 
