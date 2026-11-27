@@ -2,7 +2,7 @@
 
 De dienst **Notificeren** is er om een deelnemer op de hoogte te brengen dat er relevante informatie beschikbaar is voor die deelnemer.
 
-Hier worden alleen de onderdelen beschreven die voortkomen uit de koppelvlak-specificatie. 
+Hier worden alleen de onderdelen beschreven die voortkomen uit de koppelvlakspecificatie. 
 
 ```mermaid
 ---
@@ -50,4 +50,4 @@ Het versturen van de notificatie verloopt technisch via een **GraphQL-mutation**
 
 
 ### Meer informatie over de dienst Notificeren
-Ga voor meer informatie over notificeren naar het Afsprakenstelsel: [Afsprakenstelsel iWlz Netwerkmodel > Applicatie > Diensten > Notificeren en Melden](https://istandaarden.github.io/Afsprakenstelsel-iWlz/current/applicatie/diensten/notificeren-en-melden/)
+Ga voor meer informatie over notificeren naar het Afsprakenstelsel: [Afsprakenstelsel Netwerkmodel iWlz > Applicatie > Diensten > Notificeren en Melden](https://istandaarden.github.io/Afsprakenstelsel-iWlz/current/applicatie/diensten/notificeren-en-melden/)

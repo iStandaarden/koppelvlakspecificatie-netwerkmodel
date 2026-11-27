@@ -1,5 +1,5 @@
 # Site information
-site_name: Koppelvlakspecificatie Netwerkmodel
+site_name: Koppelvlakspecificaties Netwerkmodel
 site_url: https://istandaarden.github.io/koppelvlakspecificatie-netwerkmodel/
 
 # Repository information
@@ -77,14 +77,14 @@ extra_css:
 
 # extra JavaScript
 extra_javascript:
-  - https://unpkg.com/mermaid/dist/mermaid.min.js
+  - https://unpkg.com/mermaid@11/dist/mermaid.min.js
   - assets/javascripts/mermaid-zoom.js
   - assets/javascripts/external-links.js
 
 extra:
   # --- mike-versioning ---
   # 'provider: mike' activeert de versie-dropdown in de header van Material.
-  # 'default: current' zorgt dat bezoekers die op de root-url landen (.../Afsprakenstelsel-iWlz/)
+  # 'default: current' zorgt dat bezoekers die op de root-url landen (.../koppelvlakspecificatie-netwerkmodel/)
   # altijd de geldige/huidige versie zien (via de 'current'-alias, zie de publish-site workflow).
   # De 'future'-versie (in ontwikkeling) is alleen bereikbaar via de dropdown of een directe URL,
   # nooit via de root.
@@ -118,8 +118,9 @@ markdown_extensions:
         - name: mermaid
           class: mermaid-zoom
           format:
-            !!python/name:pymdownx.superfences.fence_code_format # Navigation structure
+            !!python/name:pymdownx.superfences.fence_code_format
 
+# Navigation structure
 nav:
   - Welkom:
       - index.md
@@ -249,25 +250,25 @@ nav:
               - UCBR-0013: bemiddelingsregister/bemiddelingsregister-1_1/toegangscontrole/UCBR-0013-toegangscontrole.md
           - Notificaties:
               - bemiddelingsregister/bemiddelingsregister-1_1/notificaties/index.md
-              - Gewijzigde Bemiddelingspecificatie Zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/gewijzigde_bemiddelingspecificatie_zorgaanbieder.md
-              - Gewijzigde Bemiddelingspecificatie Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/gewijzigde_bemiddelingspecificatie_zorgkantoor.md
-              - Gewijzigde Overdracht Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/gewijzigde_overdracht_zorgkantoor.md
-              - Gewijzigde Regiehouder Zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/gewijzigde_regiehouder_zorgaanbieder.md
-              - Gewijzigde Regiehouder Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/gewijzigde_regiehouder_zorgkantoor.md
-              - Informatieve Bemiddelingspecificatie Zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/informatieve_bemiddelingspecificatie_zorgaanbieder.md
-              - Informatieve Gewijzigde Bemiddelingspecificatie Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/informatieve_gewijzigde_bemiddelingspecificatie_zorgkantoor.md
-              - Informatieve Nieuwe Bemiddelingspecificatie Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/informatieve_nieuwe_bemiddelingspecificatie_zorgkantoor.md
-              - Informatieve Verwijderde Bemiddelingspecificatie Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/informatieve_verwijderde_bemiddelingspecificatie_zorgkantoor.md
-              - Nieuwe Bemiddelingspecificatie Zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/nieuwe_bemiddelingspecificatie_zorgaanbieder.md
-              - Nieuwe Bemiddelingspecificatie Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/nieuwe_bemiddelingspecificatie_zorgkantoor.md
-              - Nieuwe Overdracht Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/nieuwe_overdracht_zorgkantoor.md
-              - Nieuwe Regiehouder Zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/nieuwe_regiehouder_zorgaanbieder.md
-              - NIeuwe Regiehouder Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/nieuwe_regiehouder_zorgkantoor.md
-              - Verwijderde Bemiddelingspecificatie Zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/verwijderde_bemiddelingspecificatie_zorgaanbieder.md
-              - Verwijderde Bemiddelingspecificatie Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/verwijderde_bemiddelingspecificatie_zorgkantoor.md
-              - Verwijderde Overdracht Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/verwijderde_overdracht_zorgkantoor.md
-              - Verwijderde Regiehouder Zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/verwijderde_regiehouder_zorgaanbieder.md
-              - Verwijderde Regiehouder Zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/verwijderde_regiehouder_zorgkantoor.md
+              - Gewijzigde bemiddelingspecificatie zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/gewijzigde_bemiddelingspecificatie_zorgaanbieder.md
+              - Gewijzigde bemiddelingspecificatie zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/gewijzigde_bemiddelingspecificatie_zorgkantoor.md
+              - Gewijzigde overdracht zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/gewijzigde_overdracht_zorgkantoor.md
+              - Gewijzigde regiehouder zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/gewijzigde_regiehouder_zorgaanbieder.md
+              - Gewijzigde regiehouder zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/gewijzigde_regiehouder_zorgkantoor.md
+              - Informatieve bemiddelingspecificatie zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/informatieve_bemiddelingspecificatie_zorgaanbieder.md
+              - Informatieve gewijzigde bemiddelingspecificatie zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/informatieve_gewijzigde_bemiddelingspecificatie_zorgkantoor.md
+              - Informatieve nieuwe bemiddelingspecificatie zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/informatieve_nieuwe_bemiddelingspecificatie_zorgkantoor.md
+              - Informatieve verwijderde bemiddelingspecificatie zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/informatieve_verwijderde_bemiddelingspecificatie_zorgkantoor.md
+              - Nieuwe bemiddelingspecificatie zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/nieuwe_bemiddelingspecificatie_zorgaanbieder.md
+              - Nieuwe bemiddelingspecificatie zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/nieuwe_bemiddelingspecificatie_zorgkantoor.md
+              - Nieuwe overdracht zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/nieuwe_overdracht_zorgkantoor.md
+              - Nieuwe regiehouder zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/nieuwe_regiehouder_zorgaanbieder.md
+              - Nieuwe regiehouder zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/nieuwe_regiehouder_zorgkantoor.md
+              - Verwijderde bemiddelingspecificatie zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/verwijderde_bemiddelingspecificatie_zorgaanbieder.md
+              - Verwijderde bemiddelingspecificatie zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/verwijderde_bemiddelingspecificatie_zorgkantoor.md
+              - Verwijderde overdracht zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/verwijderde_overdracht_zorgkantoor.md
+              - Verwijderde regiehouder zorgaanbieder: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/verwijderde_regiehouder_zorgaanbieder.md
+              - Verwijderde regiehouder zorgkantoor: bemiddelingsregister/bemiddelingsregister-1_1/notificaties/verwijderde_regiehouder_zorgkantoor.md
           - Autorisatiematrix: bemiddelingsregister/bemiddelingsregister-1_1/autorisatiematrix.md
   - Leveringsregister:
       - leveringsregister/index.md

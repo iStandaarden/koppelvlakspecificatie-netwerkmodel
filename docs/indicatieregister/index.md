@@ -2,7 +2,7 @@
 
 ## Inleiding
 
-Het indicatieregister is in beheer bij het CIZ en is onderdeel van het iWlz-netwerkmodel. Het bevat de gegevens van door het CIZ afgegeven indicatiebesluiten in het kader van zorg binnen de Wlz. Nadat een cliënt heeft aangegeven zorg nodig te hebben, bepaalt het CIZ op welke zorg de klant recht heeft. Dit wordt vastgelegd in het indicatiebesluit.
+Het indicatieregister is in beheer bij het CIZ en is onderdeel van het Netwerkmodel iWlz. Het bevat de gegevens van door het CIZ afgegeven indicatiebesluiten in het kader van zorg binnen de Wlz. Nadat een cliënt heeft aangegeven zorg nodig te hebben, bepaalt het CIZ op welke zorg de klant recht heeft. Dit wordt vastgelegd in het indicatiebesluit.
 
 
 ## Beschikbare Documentatie en status

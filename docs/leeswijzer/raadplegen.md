@@ -2,7 +2,7 @@
 
 De dienst **Raadplegen** wordt aangeboden door de bronhouders aan (toekomstige) afnemer zodat de afnemers instaat worden gesteld relevante informatie in te zien.
 
-Hier worden alleen de onderdelen beschreven die voortkomen uit de koppelvlak-specificatie. 
+Hier worden alleen de onderdelen beschreven die voortkomen uit de koppelvlakspecificatie. 
 ```mermaid
 ---
 config:
@@ -74,5 +74,5 @@ Die componenten die onderdeel zijn van het raadplegen zijn:
 
 
 ### Meer informatie over de dienst Raadplegen
-Ga voor meer informatie over raadplegen naar het Afsprakenstelsel: [Afsprakenstelsel iWlz Netwerkmodel > Applicatie > Diensten > Raadplegen](https://istandaarden.github.io/Afsprakenstelsel-iWlz/current/applicatie/diensten/raadplegen/)
+Ga voor meer informatie over raadplegen naar het Afsprakenstelsel: [Afsprakenstelsel Netwerkmodel iWlz > Applicatie > Diensten > Raadplegen](https://istandaarden.github.io/Afsprakenstelsel-iWlz/current/applicatie/diensten/raadplegen/)
 

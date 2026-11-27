@@ -2,7 +2,7 @@
 
 ## Inleiding
 
-In het netwerkmodel is er een *bronhouder* met een *register* waar een *client* informatie kan ***(1) raadplegen***. Deze raadpleging kan de client uitvoeren naar aanleiding van het ***(2) notificeren*** door een bronhouder van een bepaalde gebeurtenis die relevant is voor de ontvanger van een *notificatie*. Andersom, wanneer een raadpleger de bronhouder van relevantie informatie op de hoogte stellen, verloopt dat via ***(3) Melden***
+In het netwerkmodel is er een *bronhouder* met een *register* waar een *client* informatie kan ***(1) raadplegen***. Deze raadpleging kan de client uitvoeren naar aanleiding van het ***(2) notificeren*** door een bronhouder van een bepaalde gebeurtenis die relevant is voor de ontvanger van een *notificatie*. Andersom, wanneer een raadpleger de bronhouder van relevante informatie op de hoogte wil stellen, verloopt dat via ***(3) Melden***
 
 ```mermaid
 ---
@@ -20,19 +20,16 @@ sequenceDiagram
         end
         
 ```
-Figuur 1 - Overzicht actoren en basis acties netwerkmodel
+Figuur 1 - Overzicht actoren en basisacties netwerkmodel
 
 
-Technisch verloopt het raadplegen en notificeren en melden met [GraphQL](https://graphql.org). Hiervoor zijn **koppelvlak-specificaties** opgesteld. De documentatie van deze koppelvlak-specificaties is hier te vinden. 
+Technisch verloopt het raadplegen en notificeren en melden met behulp van [GraphQL](https://graphql.org). Hiervoor zijn **koppelvlakspecificaties** opgesteld. De documentatie van deze koppelvlakspecificaties is te vinden op deze website. 
 
 ## Leeswijzer Koppelvlakspecificaties
 Ga eerst naar de [**LEESWIJZER**](./leeswijzer/index.md) voor de algemene toelichting over hoe de documentatie is opgebouwd en wat elk onderdeel beschrijft.
 
-
-
-
 ## Andere onderdelen Netwerkmodel iWlz
-De koppelvlak-specificatie maken onderdeel uit van de specificaties van het Netwerkmodel iWlz. De documentatie van andere onderdelen die samen het Netwerkmodel iWlz vormen zijn:
+De koppelvlakspecificaties zijn onderdeel van de specificaties van het Netwerkmodel iWlz. De documentatie van andere onderdelen die samen het Netwerkmodel iWlz vormen is:
 
 <div class="grid cards" markdown>
 
@@ -40,7 +37,7 @@ De koppelvlak-specificatie maken onderdeel uit van de specificaties van het Netw
 
     ---
 
-    Het afsprakenstelsel heeft als doel deelnemers aan het iWlz-netwerkmodel op een uniforme en eenduidige wijze te informeren over de geldende afspraken, procedures en regels. Het vormt daarmee de basis voor samenwerking en gegevensuitwisseling binnen het iWlz-netwerkmodel.
+    Het afsprakenstelsel heeft als doel deelnemers aan het Netwerkmodel iWlz op een uniforme en eenduidige wijze te informeren over de geldende afspraken, procedures en regels. Het vormt daarmee de basis voor samenwerking en gegevensuitwisseling binnen het Netwerkmodel iWlz.
 
     [lees verder](https://istandaarden.github.io/Afsprakenstelsel-iWlz/)
 
@@ -48,9 +45,9 @@ De koppelvlak-specificatie maken onderdeel uit van de specificaties van het Netw
 
     ---
 
-    In het Informatiemodel iStandaarden liggen de specificaties voor de registers vast. Het model biedt een totaaloverzicht van de lopende releases en ziet u welke releases in ontwikkeling zijn.
+    In het Informatiemodel iStandaarden liggen de specificaties voor de registers vast. Het model biedt een totaaloverzicht van de lopende releases en van de releases die in ontwikkeling zijn.
 
-    U vindt er ook de informatiemodellen van de iWmo, iJw, iEb en iPgb.
+    Het Informatiemodel iStandaarden bevat ook de specificaties voor de  berichtenstandaarden iWlz, iWmo, iJw, iEb en iPgb.
 
     [lees verder](https://informatiemodel.istandaarden.nl/)
 

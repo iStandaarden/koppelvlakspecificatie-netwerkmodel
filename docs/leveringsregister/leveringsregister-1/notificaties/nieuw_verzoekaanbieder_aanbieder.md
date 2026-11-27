@@ -57,7 +57,7 @@ opstellen:- in VerzoekAanbieder
 ## Documentatie
 Notificatie aan de aanbieder die door een aanbieder met een regierol is betrokken bij een nieuw verzoek voor het leveren van zorg of ondersteuning. 
 
-De aanbieder is daarmee geinformeerd van de registratie. 
+De aanbieder is daarmee geïnformeerd over de registratie. 
 
 De notificatie bevat informatie waarmee de aanbieder de VerzoekAanbieder kan raadplegen.
 
