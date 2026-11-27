@@ -1,11 +1,11 @@
 # Leeswijzer
 
-Elke koppelvlak-specificatie van een register bevat uit dezelfde componenten. Een GraphQL-schema, GraphQL-query specificatie(s), usecases voor raadpleging, toegangscontrole beschrijvingen en functionele beschrijvingen van de notificaties en de autorisatiematrix.
+Elke koppelvlakspecificatie van een register bestaat uit dezelfde componenten. Een GGraphQL-schema, GraphQL-queryspecificaties, usecases voor raadpleging, de autorisatiematrix, beschrijvingen van de toegangscontrole en functionele beschrijvingen van de notificaties.
 
 ## Raadplegen
 De dienst **Raadplegen** wordt aangeboden door de bronhouders aan (toekomstige) afnemer zodat de afnemers instaat worden gesteld relevante informatie in te zien.
 
-Hier worden alleen de onderdelen beschreven die voortkomen uit de koppelvlak-specificatie. 
+Hier worden alleen de onderdelen beschreven die voortkomen uit de koppelvlakspecificatie. 
 ```mermaid
 ---
 config:
@@ -80,6 +80,6 @@ Een toelichting op de onderdelen van notificeren in het artikel [Leeswijzer > No
 ## (Fout-)Melden
 Door middel van een melding kan een raadpleger van een bron de bronhouder voorzien van nieuwe informatie die direct betrekking heeft op data in die bron. Een melding loopt altijd van deelnemer (raadpleger) naar een bronhouder.
 
-Op dit moment is er alleen sprake van het melding-type "Foutmelding". Daarmee kan een raadpleger van een register een geconstateerde overtreding op een *Gegevensregel* melden aan de bronhouder, door meegeven van de regelcode en een recordID. Hiervoor is de [generieke](../generiek/index.md) koppelvlak specificatie opgesteld. 
+Op dit moment is er alleen sprake van het melding-type "Foutmelding". Daarmee kan een raadpleger van een register een geconstateerde overtreding op een *Gegevensregel* melden aan de bronhouder, door meegeven van de regelcode en een recordID. Hiervoor is de [generieke](../generiek/index.md) koppelvlakspecificatie opgesteld. 
 
 Hoe dit verloopt is beschreven in het Afsprakenstelsel iWlz. [Afsprakenstelsel iWlz > Applicatie > Diensten > Notificeren en melden](https://istandaarden.github.io/Afsprakenstelsel-iWlz/current/applicatie/diensten/notificeren-en-melden/#4-meldingen)

@@ -2,9 +2,9 @@
 
 ## Documentatie
 
-Notificatie aan het verantwoordelijke zorgkantoor dat als verantwoordelijk zorgkantoor is geregistreerd in de overdracht waarvan de inhoud is gewijzigd. 
+Notificatie aan het verantwoordelijk zorgkantoor dat als verantwoordelijk zorgkantoor is geregistreerd in de overdracht waarvan de inhoud is gewijzigd. 
 
-Het nieuw verantwoordelijke zorgkantoor is daarmee op de hoogte gesteld van wijziging in een dossieroverdracht van een client. De notificatie bevat informatie waarmee dat zorgkantoor de Overdracht kan raadplegen.
+Het nieuw verantwoordelijk zorgkantoor is daarmee op de hoogte gesteld van wijziging in een dossieroverdracht van een client. De notificatie bevat informatie waarmee dat zorgkantoor de Overdracht kan raadplegen.
 
 ## Aanleiding
 **De trigger voor de notificatie is:** 

@@ -57,7 +57,7 @@ stateDiagram
 ## Documentatie
 Notificatie aan het zorgkantoor wanneer de aanbieder een leveringperiode verwijdert.
 
-Het zorgkantoor is daarmee geïnformeerd van de verwijdering van een leveringperiode. 
+Het zorgkantoor is daarmee geïnformeerd over de verwijdering van een leveringperiode. 
 
 De notificatie bevat informatie waarmee het zorgkantoor op de hoogte is van de verwijderde leveringperiode.
 
@@ -68,7 +68,7 @@ De trigger voor het opstellen van de notificatie is:
 ## Instructie
 Stel de notificatie op voor: 
 > 1. het zorgkantoor dat **verantwoordelijk** is voor de bemiddelingspecificatie waarnaar is verwezen met `bemiddelingspecificatieID` in de `Levering` waaronder de *verwijderde* `Leveringperiode` was geregistreerd.
-> 2. het zorgkantoor dat **uitvoerend** is voor de bemiddelingspecificatie waarnaar is verwezen met `bemiddelingspecificatieID` in de `Levering` waaronder de *verwijderde* `Leveringperiode` was geregistreerd, indien deze afwijkend is aan het verantwoordelijk zorgkantoor.
+> 2. het zorgkantoor dat **uitvoerend** is voor de bemiddelingspecificatie waarnaar is verwezen met `bemiddelingspecificatieID` in de `Levering` waaronder de *verwijderde* `Leveringperiode` was geregistreerd, indien deze afwijkend is van het verantwoordelijk zorgkantoor.
 
 ## Type
 Het type notificatie is:

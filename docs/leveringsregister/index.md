@@ -2,7 +2,7 @@
 
 ## Inleiding
 
-Het Leveringsregister is in beheer bij de (zorg)aanbieder en is onderdeel van het iWlz-netwerkmodel. Het Leveringsregister bevat gegevens over de levering van zorg en ondersteuning. Wanneer een cliënt recht heeft op zorg uit de Wlz en de aanbieder een bemiddelingspecificatie heeft ontvangen van het zorgkantoor, start de aanbieder het proces om zorg te leveren. Het resultaat hiervan registreert de aanbieder in het Leveringsregister.
+Het Leveringsregister is in beheer bij de (zorg)aanbieder en is onderdeel van het Netwerkmodel iWlz. Het Leveringsregister bevat gegevens over de levering van zorg en ondersteuning. Wanneer een cliënt recht heeft op zorg uit de Wlz en de aanbieder een bemiddelingspecificatie heeft ontvangen van het zorgkantoor, start de aanbieder het proces om zorg te leveren. Het resultaat hiervan registreert de aanbieder in het Leveringsregister.
 
 
 ## Beschikbare Documentatie en status

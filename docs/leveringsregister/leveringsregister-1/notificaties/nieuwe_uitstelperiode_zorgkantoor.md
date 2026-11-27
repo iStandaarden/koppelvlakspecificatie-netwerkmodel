@@ -57,7 +57,7 @@ stateDiagram
 ## Documentatie
 Notificatie aan het zorgkantoor wanneer de aanbieder een nieuwe uitstelperiode registreert.
 
-Het zorgkantoor is daarmee geïnformeerd van de registratie van een nieuwe uitstelperiode. 
+Het zorgkantoor is daarmee geïnformeerd over de registratie van een nieuwe uitstelperiode. 
 
 De notificatie bevat informatie waarmee het zorgkantoor de uitstelperiode kan raadplegen.
 
@@ -68,7 +68,7 @@ De trigger voor het opstellen van de notificatie is:
 ## Instructie
 Stel de notificatie op voor: 
 > 1. het zorgkantoor dat **verantwoordelijk** is voor de bemiddelingspecificatie waarnaar is verwezen met `bemiddelingspecificatieID` in de `Levering` waaronder de `Uitstelperiode` is geregistreerd.
-> 2. het zorgkantoor dat **uitvoerend** is voor de bemiddelingspecificatie waarnaar is verwezen met `bemiddelingspecificatieID` in de `Levering` waaronder de `Uitstelperiode` is geregistreerd, indien deze afwijkend is aan het verantwoordelijk zorgkantoor.
+> 2. het zorgkantoor dat **uitvoerend** is voor de bemiddelingspecificatie waarnaar is verwezen met `bemiddelingspecificatieID` in de `Levering` waaronder de `Uitstelperiode` is geregistreerd, indien deze afwijkend is van het verantwoordelijk zorgkantoor.
 
 ## Type
 Het type notificatie is:

@@ -24,7 +24,7 @@ flowchart LR
 
 ### Precondities:
 - De Wlz-indicatie is opgenomen in het Indicatieregister.
-- De zorgaanbieder is door het verantwoordelijk zorgkantoor betrokken bij de levering van zorg aan de client door de registratie van een bemiddelingspecificatie
+- De zorgaanbieder is door het verantwoordelijke zorgkantoor betrokken bij de levering van zorg aan de client door de registratie van een bemiddelingspecificatie
 
 ### Autorisatie:
 Een zorgaanbieder met een toewijzing voor het leveren van zorg aan een cliënt mag de bijbehorende Wlz-indicatie van de cliënt raadplegen.

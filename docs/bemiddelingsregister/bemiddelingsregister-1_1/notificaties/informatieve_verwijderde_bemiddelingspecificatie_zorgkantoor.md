@@ -2,9 +2,9 @@
 
 ## Documentatie
 
-Notificatie aan het uitvoerende zorgkantoor als het verantwoordelijke zorgkantoor een Bemiddelingspecificatie  heeft verwijderd, die niet van dat uitvoerende zorgkantoor is of voor het verantwoordelijke zorgkantoor zelf.
+Notificatie aan het uitvoerend zorgkantoor als het verantwoordelijke zorgkantoor een Bemiddelingspecificatie  heeft verwijderd, die niet van dat uitvoerend zorgkantoor is of voor het verantwoordelijk zorgkantoor zelf.
 
-Het uitvoerende (bovenregionale) zorgkantoor is daarmee informatief geïnformeerd over een verwijdering van een bemiddelingsspecificatie die overlapt met een bemiddelingspecificatie van dat uitvoerende zorgkantoor. 
+Het uitvoerende (bovenregionale) zorgkantoor is daarmee informatief geïnformeerd over een verwijdering van een bemiddelingsspecificatie die overlapt met een bemiddelingspecificatie van dat uitvoerend zorgkantoor. 
 
 ## Aanleiding
 **De trigger voor de notificatie is:** 
@@ -58,8 +58,8 @@ trigger:- Bemiddelingspecificatie
     opstellen: - voor het uitvoerendZorgkantoor
     opstellen: - met een met de verwijderde bemiddelingspecificatie
     opstellen: - overlappende bemiddelingspecificatie
-    opstellen: - als dit een ander is dan het verantwoordelijke zorgkantoor
-    opstellen: - en niet hetzelfde als het uitvoerende zorgkantoor van de 
+    opstellen: - als dit een ander is dan het verantwoordelijk zorgkantoor
+    opstellen: - en niet hetzelfde als het uitvoerend zorgkantoor van de 
     opstellen: - nieuwe bemiddelingspecificatie zelf
   verstuur:Verstuur 
   verstuur:notificatie

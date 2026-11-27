@@ -57,7 +57,7 @@ stateDiagram
 ## Documentatie
 Notificatie aan het zorgkantoor wanneer de aanbieder een behandelingperiode wijzigt.
 
-Het zorgkantoor is daarmee geïnformeerd van de wijziging van een behandelingperiode. 
+Het zorgkantoor is daarmee geïnformeerd over de wijziging van een behandelingperiode. 
 
 De notificatie bevat informatie waarmee het zorgkantoor de gewijzigde behandelingperiode kan raadplegen.
 
@@ -68,7 +68,7 @@ De trigger voor het opstellen van de notificatie is:
 ## Instructie
 Stel de notificatie op voor: 
 > 1. het zorgkantoor dat **verantwoordelijk** is voor de bemiddelingspecificatie waarnaar is verwezen met `bemiddelingspecificatieID` in de `Levering` waaronder de gewijzigde `Behandelingperiode` is geregistreerd.
-> 2. het zorgkantoor dat **uitvoerend** is voor de bemiddelingspecificatie waarnaar is verwezen met `bemiddelingspecificatieID` in de `Levering` waaronder de gewijzigde `Behandelingperiode` is geregistreerd, indien deze afwijkend is aan het verantwoordelijk zorgkantoor.
+> 2. het zorgkantoor dat **uitvoerend** is voor de bemiddelingspecificatie waarnaar is verwezen met `bemiddelingspecificatieID` in de `Levering` waaronder de gewijzigde `Behandelingperiode` is geregistreerd, indien deze afwijkend is van het verantwoordelijk zorgkantoor.
 
 ## Type
 Het type notificatie is:

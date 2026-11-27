@@ -1,4 +1,4 @@
-# Raadplegen van Wlz-indicatie door nieuw verantwoordelijk Zorgkantoor (UCIR-0003) 
+# Raadplegen van Wlz-indicatie door nieuw verantwoordelijk zorgkantoor (UCIR-0003) 
 
 ```mermaid
 ---
@@ -24,7 +24,7 @@ flowchart LR
 
 ### Precondities:
 - De Wlz-indicatie is opgenomen in het Indicatieregister.
-- Het nieuw verantwoordelijk zorgkantoor is door dossieroverdracht verantwoordelijk gemaakt voor een client door het huidig verantwoordelijk zorgkantoor.
+- Het nieuw verantwoordelijk zorgkantoor is door dossieroverdracht verantwoordelijk gemaakt voor een client door het huidige verantwoordelijke zorgkantoor.
 
 
 ### Autorisatie:
@@ -44,9 +44,9 @@ Een zorgkantoor mag voor het toeleiden van een cliënt de Wlz-indicatie raadpleg
 
 
 ## **Proces raadplegen**
-Een zorgkantoor wordt door dossieroverdracht verantwoordelijk voor de client en mag dan de Wlz indicatie van die client raadplegen in het Indicatieregister. Hiervoor heeft dat zorgkantoor de `wlzIndicatieID` nodig. Hiervoor moet het nieuw verantwoordelijke zorgkantoor eerst het Bemiddelingsregistratie raadplegen. 
+Een zorgkantoor wordt door dossieroverdracht verantwoordelijk voor de client en mag dan de Wlz indicatie van die client raadplegen in het Indicatieregister. Hiervoor heeft dat zorgkantoor de `wlzIndicatieID` nodig. Hiervoor moet het nieuwe verantwoordelijke zorgkantoor eerst het Bemiddelingsregistratie raadplegen. 
 
-Het nieuw verantwoordelijke zorgkantoor ontvangt van het huidig verantwoordelijke zorgkantoor de notificatie `NIEUWE_OVERDRACHT_ZORGKANTOOR`. Op basis van deze notificatie kan het zorgkantoor de ```wlzIndicatieID``` raadplegen in het Bemiddelingsregister (zie hiervoor de queries voor het raadplegen van het [Bemiddelingsregister](https://github.com/iStandaarden/iWlz-bemiddeling)). Met deze ```wlzIndicatieID``` kan het zorgkantoor vervolgens de Wlz-indicatie gegevens raadplegen. 
+Het nieuw verantwoordelijk zorgkantoor ontvangt van het huidige verantwoordelijke zorgkantoor de notificatie `NIEUWE_OVERDRACHT_ZORGKANTOOR`. Op basis van deze notificatie kan het zorgkantoor de ```wlzIndicatieID``` raadplegen in het Bemiddelingsregister (zie hiervoor de queries voor het raadplegen van het [Bemiddelingsregister](https://github.com/iStandaarden/iWlz-bemiddeling)). Met deze ```wlzIndicatieID``` kan het zorgkantoor vervolgens de Wlz-indicatie gegevens raadplegen. 
 
 
 

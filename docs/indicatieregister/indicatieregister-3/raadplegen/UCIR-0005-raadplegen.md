@@ -1,4 +1,4 @@
-# Raadplegen van WlzIndicatieID door nieuw verantwoordelijk Zorgkantoor via ZK31 (UCIR-0005) 
+# Raadplegen van WlzIndicatieID door nieuw verantwoordelijk zorgkantoor via ZK31 (UCIR-0005) 
 
 ```mermaid
 ---
@@ -24,7 +24,7 @@ flowchart LR
 
 ### Precondities:
 - De Wlz-indicatie is opgenomen in het Indicatieregister.
-- Het nieuw verantwoordelijk zorgkantoor is door ontvangst van een ZK31 verantwoordelijk gemaakt voor een client door het huidig verantwoordelijk zorgkantoor.
+- Het nieuw verantwoordelijk zorgkantoor is door ontvangst van een ZK31 verantwoordelijk gemaakt voor een client door het huidige verantwoordelijke zorgkantoor.
 
 
 ### Autorisatie:

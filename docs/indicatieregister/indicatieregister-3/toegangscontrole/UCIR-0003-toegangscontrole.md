@@ -1,4 +1,4 @@
-# Toegangscontrole: Raadplegen van Wlz-indicatie door een nieuw verantwoordelijk Zorgkantoor (UCIR-0003) 
+# Toegangscontrole: Raadplegen van Wlz-indicatie door een nieuw verantwoordelijk zorgkantoor (UCIR-0003) 
 
 Beschrijving van de **toegangscontrole** door de Policy Decision Point (PDP) en indien van toepassing Policy Information Point (PIP).
 
@@ -6,7 +6,7 @@ N.b. Het valideren van de Acces-token door de PEP is geen onderdeel van de ze be
 
 ## Toegangscontrole PDP
 ### Subject
-- **Entiteit:** Nieuw verantwoordelijk Zorgkantoor
+- **Entiteit:** Nieuw verantwoordelijk zorgkantoor
 - **Kenmerk:** In bezit van een access-token met daarin de eigen `uzovicode`
 
 

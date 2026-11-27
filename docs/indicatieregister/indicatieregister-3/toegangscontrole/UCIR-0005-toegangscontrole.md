@@ -1,4 +1,4 @@
-# Toegangscontrole: Raadplegen van WlzIndicatieID door nieuw verantwoordelijk Zorgkantoor via ZK31 (UCIR-0005)
+# Toegangscontrole: Raadplegen van WlzIndicatieID door nieuw verantwoordelijk zorgkantoor via ZK31 (UCIR-0005)
 
 Beschrijving van de **toegangscontrole** door de Policy Decision Point (PDP) en indien van toepassing Policy Information Point (PIP). 
 

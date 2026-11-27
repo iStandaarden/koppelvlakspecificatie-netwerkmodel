@@ -1,4 +1,4 @@
-# Toegangscontrole: Raadplegen van de Overdracht door het nieuw verantwoordelijk zorgkantoor (UCBR-0007)  
+# Toegangscontrole: Raadplegen van de Overdracht door het nieuwe verantwoordelijke zorgkantoor (UCBR-0007)  
 
 Beschrijving van de **toegangscontrole** door de Policy Decision Point (PDP) en indien van toepassing Policy Information Point (PIP).
 

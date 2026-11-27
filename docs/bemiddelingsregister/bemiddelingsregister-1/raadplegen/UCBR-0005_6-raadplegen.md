@@ -24,7 +24,7 @@ flowchart LR
 
 ### Precondities:
 - De Bemiddelingspecificatie is opgenomen in het Bemiddelingsregister.
-- Het Zorgkantoor is door het verantwoordelijk zorgkantoor betrokken bij de levering van zorg aan de client door de registratie van een bemiddelingspecificatie.
+- Het Zorgkantoor is door het verantwoordelijke zorgkantoor betrokken bij de levering van zorg aan de client door de registratie van een bemiddelingspecificatie.
 - Het Zorgkantoor weet de toewijzing ingangsdatum, het vaststellingsmoment en de toewijzing einddatum van de bemiddelingspecificatie.
 
 
@@ -48,7 +48,7 @@ Een zorgkantoor mag voor het toeleiden van de client de Bemiddelingspecificatie 
 
 ## **Proces raadplegen**
 
-Een zorgaanbieder wordt bij de zorg van een client betrokken door het zorgkantoor. Het zorgkantoor registreert een bemiddelingspecificatie (toewijzing) voor het leveren van zorg door de zorgaanbieder. Als de zorgaanbieder contract heeft bij een zorgkantoor uit een andere regio (bovenregionaal) dan het verantwoordelijke zorgkantoor, heeft dat zorgkantoor een (eigen) bemiddelingsspecificatie voor het leveren van zorg (zie ook: [UCBR-0004-raadplegen](UCBR-0004-raadplegen.md)). Met de aanvullende informatie uit de eigen bemiddelingsspecificatie mag dat zorgkantoor ook de bemiddelingspecificaties van de andere betrokken zorgaanbieders raadplegen. Hiervoor zijn naast de eigen `bemiddelingspecificatieID` en de eigen `uzoviCode`,  ook de `toewijzingIngangsdatum` en het `vaststellingMoment` nodig en de `toewijzingEinddatum` zodra de eigen bemiddelingspecificatie een `toewijzingEinddatum` heeft. Deze informatie is nodig om de periode-overlap met de andere bemiddelingsspecificaties met de eigen bemiddelingspecificatie te bepalen.  
+Een zorgaanbieder wordt bij de zorg van een client betrokken door het zorgkantoor. Het zorgkantoor registreert een bemiddelingspecificatie (toewijzing) voor het leveren van zorg door de zorgaanbieder. Als de zorgaanbieder contract heeft bij een zorgkantoor uit een andere regio (bovenregionaal) dan het verantwoordelijk zorgkantoor, heeft dat zorgkantoor een (eigen) bemiddelingsspecificatie voor het leveren van zorg (zie ook: [UCBR-0004-raadplegen](UCBR-0004-raadplegen.md)). Met de aanvullende informatie uit de eigen bemiddelingsspecificatie mag dat zorgkantoor ook de bemiddelingspecificaties van de andere betrokken zorgaanbieders raadplegen. Hiervoor zijn naast de eigen `bemiddelingspecificatieID` en de eigen `uzoviCode`,  ook de `toewijzingIngangsdatum` en het `vaststellingMoment` nodig en de `toewijzingEinddatum` zodra de eigen bemiddelingspecificatie een `toewijzingEinddatum` heeft. Deze informatie is nodig om de periode-overlap met de andere bemiddelingsspecificaties met de eigen bemiddelingspecificatie te bepalen.  
 
 
 !!! info

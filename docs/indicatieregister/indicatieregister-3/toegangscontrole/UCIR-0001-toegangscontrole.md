@@ -1,4 +1,4 @@
-# Toegangscontrole: Raadplegen Indicatieregister door initieel verantwoordelijk Zorgkantoor (UCIR-00001)
+# Toegangscontrole: Raadplegen Indicatieregister door initieel verantwoordelijk zorgkantoor (UCIR-00001)
 
 Beschrijving van de **toegangscontrole** door de Policy Decision Point (PDP) en indien van toepassing Policy Information Point (PIP).
 

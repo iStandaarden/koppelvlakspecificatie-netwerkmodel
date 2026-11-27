@@ -4,7 +4,7 @@
 
 Notificatie aan de zorgaanbieder als het verantwoordelijke zorgkantoor deze zorgaanbieder als Regiehouder heeft geregistreerd.   
 
-De zorgaanbieder is daarmee geïnformeerd over de toekenning van een regierol door het verantwoordelijk zorgkantoor. De notificatie bevat informatie waarmee de zorgaanbieder de Regiehouder (en regierol) kan raadplegen.
+De zorgaanbieder is daarmee geïnformeerd over de toekenning van een regierol door het verantwoordelijke zorgkantoor. De notificatie bevat informatie waarmee de zorgaanbieder de Regiehouder (en regierol) kan raadplegen.
 
 ## Aanleiding
 **De trigger voor de notificatie is:** 

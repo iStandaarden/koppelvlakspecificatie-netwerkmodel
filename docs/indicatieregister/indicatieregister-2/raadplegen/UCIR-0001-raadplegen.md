@@ -1,4 +1,4 @@
-# Raadplegen van Wlz-indicatie door initieel verantwoordelijk Zorgkantoor (UCIR-0001) 
+# Raadplegen van Wlz-indicatie door initieel verantwoordelijk zorgkantoor (UCIR-0001) 
 
 ```mermaid
 ---
@@ -19,8 +19,8 @@ flowchart LR
 
 
 ## **Use Case Beschrijving**  
-**Titel:** Raadplegen van Wlz-indicatie door initieel verantwoordelijk Zorgkantoor  
-**Actoren:** Initieel verantwoordelijk Zorgkantoor  
+**Titel:** Raadplegen van Wlz-indicatie door initieel verantwoordelijk zorgkantoor  
+**Actoren:** Initieel verantwoordelijk zorgkantoor  
 
 ### Precondities:
 - De Wlz-indicatie is opgenomen in het Indicatieregister.

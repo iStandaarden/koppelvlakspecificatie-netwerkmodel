@@ -1,4 +1,4 @@
-# Toegangscontrole: Raadpleeg Verzoek door verantwoordelijk zorgkantoor (UCLR-0004-ZK)
+# Toegangscontrole: Raadpleeg Verzoek door het verantwoordelijke zorgkantoor (UCLR-0004-ZK)
 
 !!! warning
     Voor de controle op de toegang van deze query is er een PIP controle nodig. De toets of dit mogelijk met de huidige informatie mogelijk is, is moet nog plaatsvinden. De query kan nog wijzigen, wat effect kan hebben op het schema.

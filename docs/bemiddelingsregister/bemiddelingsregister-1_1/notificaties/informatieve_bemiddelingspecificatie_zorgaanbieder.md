@@ -11,7 +11,7 @@ Notificatie aan de zorgaanbieder die betrokken is bij de zorglevering aan een cl
     
     | Fase   	| Bemiddelingsregister   	| ZK33 	| Silvester AW33 	| Voor welke zorgaanbieders? |  
     | :------	| :--------------------	| :--	| :-- | :-- |  
-    | **1** 	| Niet alle zorgkantoren hebben een bemiddelingsregister 	| Ja   	| Ja 	| zorgaanbieders die horen bij verantwoordelijk zorgkantoor 	|  
+    | **1** 	| Niet alle zorgkantoren hebben een bemiddelingsregister 	| Ja   	| Ja 	| zorgaanbieders die horen bij het verantwoordelijk zorgkantoor 	|  
     | **2** 	| Alle zorgkantoren hebben een bemiddelingsregister     	| Nee  	| Ja 	| alle zorgaanbieders   |  
     | **3** 	| Alle zorgkantoren hebben een bemiddelingsregister en alle zorgaanbieders zijn aangesloten op het bemiddelingsregister    	| Nee  	| Nee | *geen* / *optioneel* / *alle zorgaanbieders* |  
 
@@ -35,7 +35,7 @@ Notificatie aan de zorgaanbieder die betrokken is bij de zorglevering aan een cl
 | **En** 	| als er andere bemiddelingsspecificaties zijn binnen dezelfde bemiddeling die overlappen met de nieuwe of gewijzigde Bemiddelingspecificatie 	|
 | **En** 	| die overlappende bemiddelingspecificaties zijn, op het moment dat de nieuwe bemiddelingsspecificatie wordt geregistreerd of de gewijzigde bemiddelingsspecificatie wordt gewijzigd, niet beëindigd  	|
 | **Dan** 	| wordt er voor de zorgaanbieder(s) van die overlappende specificaties een notificatie INFORMATIEVE_BEMIDDELINGSPECIFICATIE_ZORGAANBIEDER opgesteld 	|
-| **Als**   | de ontvangende zorgaanbieder bij het verantwoordelijke zorgkantoor hoort. |
+| **Als**   | de ontvangende zorgaanbieder bij het verantwoordelijk zorgkantoor hoort. |
 |  **En** 	| wordt deze notificatie verzonden aan Silvester als de betreffende zorgaanbieder **niet** is aangesloten op het netwerkmodel 	|
 |  **En** 	| wordt deze notificatie verzonden aan de zorgaanbieder als de betreffende zorgaanbieder **wel** is aangesloten op het netwerkmodel 	|
 
@@ -48,7 +48,7 @@ Notificatie aan de zorgaanbieder die betrokken is bij de zorglevering aan een cl
 | **En** 	| als er andere bemiddelingsspecificaties zijn binnen dezelfde bemiddeling die overlappen met de nieuwe of gewijzigde Bemiddelingspecificatie 	|
 | **En** 	| die overlappende bemiddelingspecificaties zijn, op het moment dat de nieuwe bemiddelingsspecificatie wordt geregistreerd of de gewijzigde bemiddelingsspecificatie wordt gewijzigd, niet beëindigd  	|
 | **Dan** 	| wordt er voor de zorgaanbieder(s) van die overlappende specificaties een notificatie INFORMATIEVE_BEMIDDELINGSPECIFICATIE_ZORGAANBIEDER opgesteld 	|
-| ~~Als~~   | ~~de ontvangende zorgaanbieder bij het verantwoordelijke zorgkantoor hoort~~ |
+| ~~Als~~   | ~~de ontvangende zorgaanbieder bij het verantwoordelijk zorgkantoor hoort~~ |
 |  **En** 	| wordt deze notificatie verzonden aan Silvester als de betreffende zorgaanbieder **niet** is aangesloten op het netwerkmodel 	|
 |  **En** 	| wordt deze notificatie verzonden aan de zorgaanbieder als de betreffende zorgaanbieder **wel** is aangesloten op het netwerkmodel 	|
 

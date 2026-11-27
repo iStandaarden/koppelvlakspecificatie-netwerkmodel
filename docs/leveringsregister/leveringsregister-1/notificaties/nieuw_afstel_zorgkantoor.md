@@ -57,7 +57,7 @@ stateDiagram
 ## Documentatie
 Notificatie aan het zorgkantoor wanneer de aanbieder een nieuw afstel registreert.
 
-Het zorgkantoor is daarmee geïnformeerd van de registratie van een nieuw afstel. 
+Het zorgkantoor is daarmee geïnformeerd over de registratie van een nieuw afstel. 
 
 De notificatie bevat informatie waarmee het zorgkantoor het afstel kan raadplegen.
 
@@ -68,7 +68,7 @@ De trigger voor het opstellen van de notificatie is:
 ## Instructie
 Stel de notificatie op voor: 
 > 1. het zorgkantoor dat **verantwoordelijk** is voor de bemiddelingspecificatie waarnaar is verwezen met `bemiddelingspecificatieID` in de `Levering` waaronder het `Afstel` is geregistreerd.
-> 2. het zorgkantoor dat **uitvoerend** is voor de bemiddelingspecificatie waarnaar is verwezen met `bemiddelingspecificatieID` in de `Levering` waaronder het `Afstel` is geregistreerd, indien deze afwijkend is aan het verantwoordelijk zorgkantoor.
+> 2. het zorgkantoor dat **uitvoerend** is voor de bemiddelingspecificatie waarnaar is verwezen met `bemiddelingspecificatieID` in de `Levering` waaronder het `Afstel` is geregistreerd, indien deze afwijkend is van het verantwoordelijk zorgkantoor.
 
 ## Type
 Het type notificatie is:

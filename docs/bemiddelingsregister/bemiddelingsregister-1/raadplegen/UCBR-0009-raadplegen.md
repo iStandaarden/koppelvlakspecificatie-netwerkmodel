@@ -24,7 +24,7 @@ flowchart LR
 
 ### Precondities:
 - De Regiehouder is opgenomen in het Bemiddelingsregister.
-- De zorgaanbieder is door het verantwoordelijk zorgkantoor geregistreerd als Coordinator Zorg Thuis of Dossierhouder in Regiehouder
+- De zorgaanbieder is door het verantwoordelijke zorgkantoor geregistreerd als Coordinator Zorg Thuis of Dossierhouder in Regiehouder
 
 
 ### Autorisatie:
